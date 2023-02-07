@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+    master:
+      image: httpd
+      container_name: master
+      pull_policy: always
+      restart: always
+      ports:
+      - "80:80"
+      labels:
+      - 'com.centurylinklabs.watchtower.enable=true'
+    development:
+      build: . 
+      container_name: development
+      pull_policy: always
+      restart: always
+      ports:
+      - "8080:80"
+      labels:
+      - 'com.centurylinklabs.watchtower.enable=true'
+    watchtower:
+      image: containrrr/watchtower
+      container_name: watchtower
+      restart: always
+      container_name: watchtower
+      command: '--interval 30 --label-enable --cleanup'
+      volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      labels:
+      - 'com.centurylinklabs.watchtower.enable: true'

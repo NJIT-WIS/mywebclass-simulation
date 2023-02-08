@@ -3,11 +3,12 @@ version: "3.8"
 services:
     master:
       image: kaw393939/mywebsite:master 
-      container_name: master
+      deploy:
+        replicas: 2
       pull_policy: always
       restart: always
       ports:
-      - "80:80"
+      - "80-81:80"
       labels:
       - 'com.centurylinklabs.watchtower.enable=true'
     development:

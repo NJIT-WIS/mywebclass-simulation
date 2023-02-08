@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
     master:
-      image: httpd
+      image: kaw393939/mywebsite:master 
       container_name: master
       pull_policy: always
       restart: always
@@ -17,6 +17,8 @@ services:
       restart: always
       ports:
       - "8080:80"
+      volumes:
+      - ./public_html/:/usr/local/apache2/htdocs/
       labels:
       - 'com.centurylinklabs.watchtower.enable=true'
     watchtower:

@@ -20,8 +20,6 @@ services:
       - "8080:80"
       volumes:
       - ./public_html/:/usr/local/apache2/htdocs/
-      labels:
-      - 'com.centurylinklabs.watchtower.enable=true'
     watchtower:
       image: containrrr/watchtower
       container_name: watchtower

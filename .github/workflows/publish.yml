@@ -8,7 +8,7 @@ on:
       - 'v*'
 
 env:
-  DOCKER_REPO_NAME: kaw393939/mywebsite
+  DOCKER_REPO_NAME: kaw393939/mywebclass
 
 jobs:
   build:

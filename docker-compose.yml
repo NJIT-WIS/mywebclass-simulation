@@ -24,7 +24,6 @@ services:
       image: containrrr/watchtower
       container_name: watchtower
       restart: always
-      container_name: watchtower
       command: '--interval 30 --label-enable --cleanup'
       volumes:
       - /var/run/docker.sock:/var/run/docker.sock

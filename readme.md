@@ -15,3 +15,6 @@
 2. type npm install in the project folder
 3. type npm start to start live preview and open your browser / it will automaticly change when you edit any file in the
    SRC directory 
+
+
+1. docker compose up <- starts in the foregrond and you will see logs cntrl c to kill

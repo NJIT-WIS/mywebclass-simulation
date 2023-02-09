@@ -1,4 +1,0 @@
-# mywebclass
-
-## Install Instructions
-

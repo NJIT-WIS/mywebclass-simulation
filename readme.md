@@ -39,7 +39,7 @@ respective GitHub repos into Canvas.
 
 1. Make a branch for each feature / change
 2. Commit to the branch in small clear commits that describe the change to each file(s) i.e. "Added name to readme"
-3. "git push origin <branch name>" or do it from the Pycharm commit menu to push the branch with the changes to the
+3. "git push origin YourBranchName" or do it from the Pycharm commit menu to push the branch with the changes to the
    central project that you and your partner(s) share.
 4. Go on GitHub create a pull request to merge the branch you just pushed into master. You may get a merge conflict and
    will need to edit the merge conflict on GitHub before it will let you merge. A way to avoid this is that one person

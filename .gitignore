@@ -5,3 +5,8 @@ node_modules*
 .idea
 public_html
 venv
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/app/__pycache__/
+.github/workflows/*.bak

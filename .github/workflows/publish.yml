@@ -41,8 +41,8 @@ jobs:
       - name: Test with pytest and playwright
         id: automated-tests
         run: |
-          pytest
-          npx playwright test --config=./tests/config/playwright.config.js
+          pytest -c pytest.ini
+          npx playwright test --config=playwright.config.js
       - if: steps.automated-tests.outcome == 'success'
         name: Login to DockerHub
         uses: docker/login-action@v1

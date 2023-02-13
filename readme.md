@@ -110,4 +110,5 @@ respective GitHub repos into Canvas.
 3. "npm run build" Builds the site using webpack and deploys to public_html and you can see it on localhost:8080 without
    rebuilding the dockerfile manually because of the volume share setup by the docker compose file.
 4. "npm run clean" Deletes anything in the public_html folder.
+5. "npx playwright test" <- Run the playwright tests
 

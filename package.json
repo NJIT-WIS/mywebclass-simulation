@@ -1,5 +1,5 @@
 {
-  "name": "collab",
+  "name": "MyWebClass.org",
   "version": "0.1.0",
   "description": "git collaboration using  ci/cd pipline and docker",
   "main": "src/index.js",
@@ -7,10 +7,11 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "test",
-    "clean": "rm -rf ./dist",
+    "test": "python -m pytest -c pytest.ini && npx playwright test --config=playwright.config.js",
+    "install_backend": "python -m pip install -r requirements.txt",
     "start": "webpack serve --open --config webpack.config.js",
-    "build": "webpack  --config webpack.config.js"
+    "build": "webpack  --config webpack.config.js",
+    "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,12 +24,14 @@
   },
   "homepage": "https://github.com/NJIT-WIS/collab#readme",
   "devDependencies": {
+    "@playwright/test": "^1.30.0",
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.3",
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "live-server": "^1.2.2",
     "mini-css-extract-plugin": "^2.7.2",
+    "playwright": "^1.30.0",
     "postcss-loader": "^7.0.2",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",

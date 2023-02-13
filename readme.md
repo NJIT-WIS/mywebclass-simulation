@@ -1,13 +1,7 @@
 # Assigment Instructions
 
 This assignment will begin to teach you how to work in a development team and show you how all of what we have learned
-comes together to enable a productive development process within a team. If you already have this setup by doing
-it in class, you need to do it again for the GitHub classroom assignment. You need to form a group, and you can
-find a group of 2-3 people by asking on Slack or the discussion board in Canvas for this unit. Each person in the group
-needs to complete the assignment, so that each member understands how to set everything up as the team leader. Each team
-member will submit their own GitHub classroom repository. If you have previously done this in class you will need to do
-a "docker compose down" in the folder of the previous project, so that all the services stop and are removed from that
-attempt.  *YOU WILL GET PROBLEMS IF YOU DON'T DO THIS!*
+comes together to enable a productive development process within a team.  You will need to create a group of 2-3 people and each member of the group is required to play the role of "team member" and "team leader".  All members of the group are required to create pull requests to merge a branch on GitHub; however, only the "team leader" should merge the branch to master after reviewing and approving it.
 
 To complete this assignment each partner will click the button to accept the assignment and follow the Installation
 instructions below. The first feature(s) that you and your partner(s) will make are to add your names to the readme file

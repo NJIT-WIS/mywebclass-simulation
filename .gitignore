@@ -3,7 +3,6 @@ grade/__pycache__
 .pytest_cache
 node_modules*
 .idea
-public_html
 venv
 /test-results/
 /playwright-report/

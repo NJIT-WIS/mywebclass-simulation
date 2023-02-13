@@ -27,19 +27,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16 
-      - run: npm install
-      - run: npm run build
       - name: Install dependencies
         run: |
           npm install
           npm run build
-          python -m pip install --upgrade pip
-          pip install pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Test with pytest and playwright
         id: automated-tests
         run: |
-          pytest
+          pytest -c ./tests/config/pytest.ini
           npx playwright test --config=./tests/config/playwright.config.js
       - if: steps.automated-tests.outcome == 'success'
         name: Login to DockerHub

@@ -7,9 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "python -m pytest -c pytest.ini && npx playwright test --config=.\\tests\\config\\playwright.config.js",
-    "install_backend": "python -m pip install -r .\\requirements.txt",
-    "start": "webpack serve --open --config .\\webpack.config.js",
+    "test": "python -m pytest -c pytest.ini && npx playwright test --config=playwright.config.js",
+    "install_backend": "python -m pip install -r requirements.txt",
+    "start": "webpack serve --open --config webpack.config.js",
     "build": "webpack  --config webpack.config.js",
     "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js"
   },

@@ -33,8 +33,6 @@ jobs:
         run: |
           npm install
           npm run build
-          npx playwright install --with-deps
-          npm install -D @playwright/test
           python -m pip install --upgrade pip
           pip install pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi

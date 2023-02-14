@@ -31,6 +31,7 @@ jobs:
         run: |
           npm install
           npm run build
+          npx playwright install-deps
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Test with pytest and playwright
         id: automated-tests

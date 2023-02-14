@@ -1,7 +1,7 @@
 {
-  "name": "MyWebClass.org",
+  "name": "mywebclass.org",
   "version": "0.1.0",
-  "description": "git collaboration using  ci/cd pipline and docker",
+  "description": "Help for students and teachers learning advanced technologies.",
   "main": "src/index.js",
   "directories": {
     "test": "tests"
@@ -13,16 +13,21 @@
     "build": "webpack  --config webpack.config.js",
     "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js"
   },
+  "standard": {
+    "ignore": [
+      "public_html"
+    ]
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NJIT-WIS/collab.git"
+    "url": "git+https://github.com/NJIT-WIS/mywebclass.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Keith Williams @ NJIT.EDU",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NJIT-WIS/collab/issues"
+    "url": "https://github.com/NJIT-WIS/mywebclass/issues"
   },
-  "homepage": "https://github.com/NJIT-WIS/collab#readme",
+  "homepage": "https://github.com/NJIT-WIS/mywebclass#readme",
   "devDependencies": {
     "@playwright/test": "^1.30.0",
     "autoprefixer": "^10.4.13",

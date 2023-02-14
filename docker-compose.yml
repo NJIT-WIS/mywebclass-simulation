@@ -1,25 +1,37 @@
 version: "3.8"
 
 services:
-    master:
+    master_branch:
       image: kaw393939/mywebclass:master
-      deploy:
-        replicas: 2
+      container_name: master_branch
       pull_policy: always
       restart: always
       ports:
-      - "80-81:80"
+      - "80:80"
       labels:
       - 'com.centurylinklabs.watchtower.enable=true'
-    development:
-      build: . 
-      container_name: development
+    development_branch:
+      image: kaw393939/mywebclass:development
+      container_name: development_branch
       pull_policy: always
+      restart: always
+      ports:
+        - "8080:80"
+      labels:
+        - 'com.centurylinklabs.watchtower.enable=true'
+    local_public_html_build:
+      build: .
+      container_name: local_public_html_web_server
       restart: always
       ports:
       - "8080:80"
       volumes:
       - ./public_html/:/usr/local/apache2/htdocs/
+    local_app_build:
+      build: ./app
+      container_name: app
+      volumes:
+        - ./requirements.txt:/home/myuser/requirements.txt
     watchtower:
       image: containrrr/watchtower
       container_name: watchtower

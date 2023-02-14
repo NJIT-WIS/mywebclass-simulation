@@ -16,12 +16,12 @@ services:
       pull_policy: always
       restart: always
       ports:
-        - "8080:80"
+        - "8000:80"
       labels:
         - 'com.centurylinklabs.watchtower.enable=true'
     local_public_html_build:
       build: .
-      container_name: local_public_html_web_server
+      container_name: local_public_html_build
       restart: always
       ports:
       - "8080:80"

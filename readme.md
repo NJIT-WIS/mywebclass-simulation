@@ -17,3 +17,11 @@
    started
 6. "docker compose down" Deletes all the services that the docker-compose.yml file in the current directory of command
    started
+
+## GIT Commands
+
+## NPM / Node Commands
+
+## Python Commands
+
+## Linux Commands

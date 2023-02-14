@@ -24,6 +24,10 @@ module.exports = {
       filename: 'article.html'
 
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/articles.html',
+      filename: 'articles.html'
+    }),
     new FaviconsWebpackPlugin('src/images/favicon.png') // svg works too!
 
   ],

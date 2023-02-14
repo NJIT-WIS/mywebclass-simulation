@@ -12,6 +12,7 @@ module.exports = {
     devServer: {
         static: './public_html',
         hot: false,
+        port: 5000,
     },
     plugins: [
         new HtmlWebpackPlugin({

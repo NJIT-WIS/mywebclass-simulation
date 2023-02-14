@@ -16,7 +16,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.html',
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/article.html',
+      filename: 'article.html'
+
     }),
     new FaviconsWebpackPlugin('src/images/favicon.png') // svg works too!
 

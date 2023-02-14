@@ -28,6 +28,8 @@
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.3",
     "css-loader": "^6.7.3",
+    "favicons": "^7.0.2",
+    "favicons-webpack-plugin": "^6.0.0",
     "html-webpack-plugin": "^5.5.0",
     "live-server": "^1.2.2",
     "mini-css-extract-plugin": "^2.7.2",

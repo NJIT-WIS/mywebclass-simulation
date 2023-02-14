@@ -8,7 +8,6 @@
   },
   "scripts": {
     "test": "npx standard && python -m pytest -c pytest.ini && npx playwright test --config=playwright.config.js",
-    "install_backend": "python -m pip install -r requirements.txt",
     "start": "webpack serve --open --config webpack.config.js",
     "build": "webpack  --config webpack.config.js",
     "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js"
@@ -16,6 +15,12 @@
   "standard": {
     "ignore": [
       "public_html"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "semistandard",
+      "standard-jsx"
     ]
   },
   "repository": {
@@ -33,9 +38,11 @@
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.3",
     "css-loader": "^6.7.3",
+    "eslint": "^8.34.0",
     "favicons": "^7.0.2",
     "favicons-webpack-plugin": "^6.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "i": "^0.3.7",
     "live-server": "^1.2.2",
     "mini-css-extract-plugin": "^2.7.2",
     "playwright": "^1.30.0",

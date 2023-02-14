@@ -28,6 +28,10 @@ module.exports = {
       template: 'src/articles.html',
       filename: 'articles.html'
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/installation.html',
+      filename: 'installation.html'
+    }),
     new FaviconsWebpackPlugin('src/images/favicon.png') // svg works too!
 
   ],

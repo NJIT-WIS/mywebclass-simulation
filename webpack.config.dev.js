@@ -15,7 +15,7 @@ while (directories.length > 0) {
 }
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/js/main.js',
   output: {
     filename: 'index.js',
@@ -32,7 +32,8 @@ module.exports = {
     ...htmlFiles.map(htmlFile =>
       new HtmlWebpackPlugin({
         template: htmlFile,
-        filename: htmlFile.replace(path.normalize('src/'), '')
+        filename: htmlFile.replace(path.normalize('src/'), ''),
+        inject: true
       })
     )
   ],
@@ -40,13 +41,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/i,
-        loader: 'html-loader',
-        options: {
-          sources: {
-            // Enables processing inside the <noscript> tag
-            scriptingEnabled: true
-          }
-        }
+        use: 'html-loader'
       },
       {
         test: /\.(png|jpg)$/i,
@@ -77,7 +72,7 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           // filename: 'fonts/[name]-[hash][ext][query]'
-          filename: 'assets/fonts/[name][ext][query]'
+          filename: 'fonts/[name][ext][query]'
         }
       },
       {

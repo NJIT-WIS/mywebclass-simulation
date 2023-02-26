@@ -15,7 +15,7 @@ while (directories.length > 0) {
 }
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/js/main.js',
   output: {
     filename: 'index.js',

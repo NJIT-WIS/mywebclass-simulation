@@ -33,7 +33,7 @@ module.exports = {
       new HtmlWebpackPlugin({
         template: htmlFile,
         filename: htmlFile.replace(path.normalize('src/'), ''),
-        inject: false
+        inject: true
       })
     )
   ],

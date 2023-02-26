@@ -15,7 +15,7 @@ while (directories.length > 0) {
 }
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/js/main.js',
   output: {
     filename: 'index.js',
@@ -44,7 +44,7 @@ module.exports = {
         use: 'html-loader'
       },
       {
-        test: /\.(png|jpg)$/i,
+        test: /\.(png|jpg|ico)$/i,
         type: 'asset',
         use: [{
           loader: 'image-webpack-loader',

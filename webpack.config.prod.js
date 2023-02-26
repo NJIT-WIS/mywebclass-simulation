@@ -44,7 +44,7 @@ module.exports = {
         use: 'html-loader'
       },
       {
-        test: /\.(png|jpg)$/i,
+        test: /\.(png|jpg|ico)$/i,
         type: 'asset',
         use: [{
           loader: 'image-webpack-loader',

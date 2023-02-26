@@ -72,7 +72,7 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           // filename: 'fonts/[name]-[hash][ext][query]'
-          filename: 'assets/fonts/[name][ext][query]'
+          filename: 'fonts/[name][ext][query]'
         }
       },
       {

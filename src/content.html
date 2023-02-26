@@ -4,15 +4,15 @@
 <head>
     <!--characterset UTF-8 Watch this: https://youtu.be/MijmeoH9LT4 -->
 
-    <title>MyWebClass.org</title>
+    <title>MyWebClass.org | Our Content</title>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Basic meta info -->
-    <meta name="keywords" content="My Webclass Homepage">
+    <meta name="keywords" content="My Webclass Content Page">
     <meta name="author" content="Keith Williams" />
-    <meta name="description" content="A project to provide educational resources to web development teachers">
+    <meta name="description" content="A page to serve as the default content page">
 
     <!--OpenGraph meta -->
     <meta property="og:title" content="" />
@@ -32,12 +32,12 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#scrollspy-collapsible" data-offset="20">
     <div class="container-fluid">
         <header class="container">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">MyWebClass.org</a>
+                    <a class="navbar-brand" href="/">MyWebClass.org</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -45,9 +45,6 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Home</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="content.html">Content Template</a>
                             </li>
@@ -57,9 +54,81 @@
             </nav>
         </header>
         <main class="mt-3">
-            <div class="row  text-center">
-                <div class="col-md-8 themed-grid-col">.col-md-8</div>
-                <div class="col-6 col-md-4 themed-grid-col">.col-6 .col-md-4</div>
+            <div class="container-fluid">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Our Content</li>
+                    </ol>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- Scrollspy -->
+                        <div id="scrollspy-collapsible" class="sticky-top">
+                          <ul class="nav flex-column nav nav-pills  menu-sidebar">
+                            <li class="nav-item">
+                              <a class="nav-link " href="#example-1-collapsible">Section 1</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#example-2-collapsible">Section 2</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link collapsible-scrollspy" href="#example-3-collapsible">Section 3</a>
+                              <ul class="nav flex-column ps-2">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#example-sub-A-collapsible">Subsection A</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#example-sub-B-collapsible">Subsection B</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#example-4-collapsible">Section 4</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- Scrollspy -->
+                      </div>
+                    <div class="col-md-8">
+                      <!-- Spied element -->
+                      <div
+                        data-mdb-spy="scroll"
+                        data-mdb-target="#scrollspy-collapsible"
+                        data-mdb-offset="0"
+                        class="scrollspy-example"
+                      >
+                        <section id="example-1-collapsible">
+                          <h3>Section 1</h3>
+                          ...
+                        </section>
+                        <section id="example-2-collapsible">
+                          <h3>Section 2</h3>
+                          ...
+                        </section>
+                        <section id="example-3-collapsible">
+                          <h3>Section 3</h3>
+                          ...
+                          <section id="example-sub-A-collapsible">
+                            <h3>Subsection A</h3>
+                            ...
+                          </section>
+                          <section id="example-sub-B-collapsible">
+                            <h3>Subsection B</h3>
+                            ...
+                          </section>
+                        </section>
+                        <section id="example-4-collapsible">
+                          <h3>Section 4</h3>
+                          ...
+                        </section>
+                      </div>
+                      <!-- Spied element -->
+                    </div>
+                  
+
+                  </div>
             </div>
 
         </main>
@@ -68,6 +137,9 @@
                 <div class="col">
                     <h5>About Us</h5>
                     <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="our_story.html" class="nav-link p-0 text-muted">Our Story</a>
+                        </li>
+
                         <li class="nav-item mb-2"><a href="privacy.html" class="nav-link p-0 text-muted">Privacy
                                 Policy</a></li>
 
@@ -79,10 +151,6 @@
                     <ul class="nav">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
                                     class="bi bi-linkedin me-2"></i></a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                                    class="bi bi-instagram me-2"></i></a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                                    class="bi bi-github me-2"></i></a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
                                     class="bi bi-twitter me-2"></i></a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i

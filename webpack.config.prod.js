@@ -1,57 +1,79 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const fs = require('fs')
+
+// Look for .html files
+const htmlFiles = []
+const directories = ['src']
+while (directories.length > 0) {
+  const directory = directories.pop()
+  const dirContents = fs.readdirSync(directory)
+    .map(file => path.join(directory, file))
+
+  htmlFiles.push(...dirContents.filter(file => file.endsWith('.html')))
+  directories.push(...dirContents.filter(file => fs.statSync(file).isDirectory()))
+}
+
 module.exports = {
+  mode: 'production',
   entry: './src/js/main.js',
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, './public_html')
+    path: path.resolve(__dirname, './public_html'),
+    clean: true
   },
   devtool: 'source-map',
-  mode: 'production',
   devServer: {
     static: './public_html',
     hot: false,
     port: 3000
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: 'src/index.html',
-      filename: 'index.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/article.html',
-      filename: 'article.html'
-
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/articles.html',
-      filename: 'articles.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: 'src/installation.html',
-      filename: 'installation.html'
-    }),
-    new FaviconsWebpackPlugin('src/images/favicon.png') // svg works too!
-
+    ...htmlFiles.map(htmlFile =>
+      new HtmlWebpackPlugin({
+        template: htmlFile,
+        filename: htmlFile.replace(path.normalize('src/'), ''),
+        inject: false
+      })
+    )
   ],
   module: {
     rules: [
+      {
+        test: /\.html$/i,
+        use: 'html-loader'
+      },
+      {
+        test: /\.(png|jpg)$/i,
+        type: 'asset',
+        use: [{
+          loader: 'image-webpack-loader',
+          options: {
+            pngquant: {
+              quality: [0.90, 0.95]
+            }
+          }
+        }],
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024 // 10kb
+          }
+        },
+        generator: {
+          filename: 'assets/images/[name]-[hash][ext]'
+        }
+      },
+      {
+        test: /\.(webmanifest)$/i,
+        type: 'asset/resource'
+      },
       {
         test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/i,
         type: 'asset/resource',
         generator: {
           // filename: 'fonts/[name]-[hash][ext][query]'
-          filename: 'fonts/[name][ext][query]'
+          filename: 'assets/fonts/[name][ext][query]'
         }
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource'
-      },
-      {
-        test: /\.(webmanifest)$/i,
-        type: 'asset/resource'
       },
       {
         test: /\.(scss)$/,

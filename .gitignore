@@ -9,3 +9,4 @@ venv
 /playwright/.cache/
 /app/__pycache__/
 .github/workflows/*.bak
+.vscode/

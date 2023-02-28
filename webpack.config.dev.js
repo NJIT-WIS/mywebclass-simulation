@@ -25,7 +25,7 @@ module.exports = {
   devtool: 'source-map',
   devServer: {
     hot: false,
-    port: 8080
+    port: 3000
   },
   plugins: [
     ...htmlFiles.map(htmlFile =>

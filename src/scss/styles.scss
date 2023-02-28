@@ -5,20 +5,18 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+html {
+    overflow-y: scroll;
+  }
 
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+:root {
+    --banner-height: 64px;
+  }
 
-}
+body.banner-offset {
+    margin-top: calc(var(--bs-gutter-y) + var(--banner-height));
+  }
 
-
-/* Styles required only for the example above */
-.scrollspy-example-collapsible {
-    position: relative;
-    height: 200px;
-    overflow: auto;
+  #sidebarMenu .nav-link.active {
+    text-decoration: underline;
   }

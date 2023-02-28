@@ -21,16 +21,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Enable Docker BuildKit
-        run: docker build --progress=plain --secret id=DOCKER_BUILDKIT_CONFIG,env=DOCKER_BUILDKIT_CONFIG=./config.json -o type=docker,dest=./Dockerfile .
-        env:
-          DOCKER_BUILDKIT_CONFIG: |
-            {
-              "build": {
-                "cache-from": ["type=registry,ref={{ .Image }}"],
-                "cache-to": ["type=inline"]
-              }
-            }
+
       - name: Cache dependencies
         uses: actions/cache@v3
         with:

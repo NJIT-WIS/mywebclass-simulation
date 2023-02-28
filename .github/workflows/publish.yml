@@ -20,10 +20,18 @@ jobs:
         node-version: [ "18" ]
 
     steps:
-      - name: Set up Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Enable Docker BuildKit
+        run: docker build --progress=plain --secret id=DOCKER_BUILDKIT_CONFIG,env=DOCKER_BUILDKIT_CONFIG=./config.json --platform=local -o type=docker,dest=./Dockerfile .
+        env:
+          DOCKER_BUILDKIT_CONFIG: |
+            {
+              "build": {
+                "cache-from": ["type=registry,ref={{ .Image }}"],
+                "cache-to": ["type=inline"]
+              }
+            }  
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
@@ -34,8 +42,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ env.DOCKER_REPO_NAME }}-
             ${{ runner.os }}-
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Set up Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}  
       - name: Install dependencies
         run: |
           npm install
@@ -69,3 +79,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          parallel: 4

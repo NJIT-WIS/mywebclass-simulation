@@ -24,6 +24,16 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache
+            ./node_modules
+          key: ${{ runner.os }}-${{ env.DOCKER_REPO_NAME }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.DOCKER_REPO_NAME }}-
+            ${{ runner.os }}-
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install dependencies

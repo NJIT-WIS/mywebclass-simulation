@@ -22,7 +22,7 @@ jobs:
 
       - name: Start Docker container
         run: docker run -d -p 3000:80 myapp
-
+        
       - name: Install dependencies
         run: npm ci
       - name: Install playwright browsers

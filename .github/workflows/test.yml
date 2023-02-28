@@ -24,8 +24,8 @@ jobs:
       - name: Start Docker container
         uses: docker://$DOCKER_IMAGE
         with:
-          env:
-            PW_SERVICE_BASE_URL: http://localhost:8080
+            env:
+              PW_SERVICE_BASE_URL: http://localhost:8080
 
       - name: Install dependencies
         run: docker exec $DOCKER_IMAGE npm ci

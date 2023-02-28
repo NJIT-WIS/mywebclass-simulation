@@ -14,15 +14,21 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
    
+      - name: Build Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: false
+          tags: $DOCKER_IMAGE
+
       - name: Start Docker container
-        runs:
-          using: 'docker'
-          image: 'Dockerfile'
-        run: |
-          export PW_SERVICE_BASE_URL=http://localhost:8080
+        uses: docker://$DOCKER_IMAGE
+        with:
+          env:
+            PW_SERVICE_BASE_URL: http://localhost:8080
 
       - name: Install dependencies
-        run: npm ci
+        run: docker exec $DOCKER_IMAGE npm ci
 
       - name: Run Playwright tests
         uses: microsoft/playwright-github-action@v1

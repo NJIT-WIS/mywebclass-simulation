@@ -18,20 +18,7 @@ services:
       ports:
         - "8000:80"
       labels:
-        - 'com.centurylinklabs.watchtower.enable=true'
-    local_public_html_build:
-      build: .
-      container_name: local_public_html_build
-      restart: always
-      ports:
-      - "8080:80"
-      volumes:
-      - ./public_html/:/usr/local/apache2/htdocs/
-    local_app_build:
-      build: ./app
-      container_name: app
-      volumes:
-        - ./requirements.txt:/home/myuser/requirements.txt
+        - 'com.centurylinklabs.watchtower.enable=true' 
     watchtower:
       image: containrrr/watchtower
       container_name: watchtower

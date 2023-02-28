@@ -23,7 +23,6 @@ jobs:
           context: .
           file: Dockerfile
           push: false
-          platforms: linux/amd64
           tags: ${{ env.DOCKER_IMAGE }}:latest
 
       - name: Start Docker container

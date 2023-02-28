@@ -28,7 +28,7 @@ jobs:
 
       - name: Start Docker container
         run: |
-          docker run -d -p 8080:80 ${{ env.DOCKER_IMAGE }}:latest
+          docker run -d -p 8080:80 --network host ${{ env.DOCKER_IMAGE }}:latest
           export PW_SERVICE_BASE_URL=http://localhost:8080
 
       - name: Install dependencies

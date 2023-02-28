@@ -2,8 +2,7 @@ name: Build and Test Docker Image
 
 on:
   push:
-    branches:
-      - main
+  pull_request:
 
 env:
   DOCKER_IMAGE: kaw393939/mywebclass

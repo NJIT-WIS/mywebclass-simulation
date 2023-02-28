@@ -93,7 +93,7 @@ function generateAnchorLinks () {
     headingLevels[level].appendChild(listItem)
   })
 
-  linksContainer.classList.add('anchor-links', 'ps-4')
+  linksContainer.classList.add('anchor-links')
   const sidebarMenu = document.querySelector('#sidebarMenu')
   sidebarMenu.appendChild(linksContainer)
 

@@ -43,6 +43,7 @@ jobs:
       - name: Test Playwright
         id: playwright-tests
         run: |
+          npx playwright install
           npx playwright test --config=playwright.config.js
       - if: steps.playwright-tests.outcome == 'success'
         name: Login to DockerHub

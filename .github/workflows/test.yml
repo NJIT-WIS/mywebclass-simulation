@@ -13,22 +13,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-
-      - name: Build Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: Dockerfile
-          push: false
-          platforms: linux/amd64
-          tags: ${{ env.DOCKER_IMAGE }}:latest
-
+   
       - name: Start Docker container
+        runs:
+          using: 'docker'
+          image: 'Dockerfile'
         run: |
-          docker run -d -p 8080:80 --network host ${{ env.DOCKER_IMAGE }}:latest
           export PW_SERVICE_BASE_URL=http://localhost:8080
 
       - name: Install dependencies

@@ -1,5 +1,5 @@
 # Use a Node.js base image with Alpine Linux
-FROM node:18-buster AS build
+FROM node AS build
 
 # Set the working directory to /app
 WORKDIR /app

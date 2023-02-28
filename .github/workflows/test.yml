@@ -2,7 +2,8 @@ name: Build and Test Docker Image
 
 on:
   push:
-  pull_request:
+    branches:
+      - main
 
 env:
   DOCKER_IMAGE: kaw393939/mywebclass
@@ -23,11 +24,12 @@ jobs:
           context: .
           file: Dockerfile
           push: false
-          tags: ${{ env.DOCKER_IMAGE }}
+          platforms: linux/amd64
+          tags: ${{ env.DOCKER_IMAGE }}:latest
 
       - name: Start Docker container
         run: |
-          docker run -d -p 8080:80 ${{ env.DOCKER_IMAGE }}
+          docker run -d -p 8080:80 ${{ env.DOCKER_IMAGE }}:latest
           export PW_SERVICE_BASE_URL=http://localhost:8080
 
       - name: Install dependencies
@@ -38,4 +40,4 @@ jobs:
         with:
           browser: chromium
           install-browser: true
-          script-path: tests
+          script-path: path/to/playwright/tests

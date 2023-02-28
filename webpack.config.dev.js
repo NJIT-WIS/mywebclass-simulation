@@ -19,12 +19,11 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, './public_html'),
+    path: path.resolve(__dirname, './docs'),
     clean: true
   },
   devtool: 'source-map',
   devServer: {
-    static: './public_html',
     hot: false,
     port: 3000
   },

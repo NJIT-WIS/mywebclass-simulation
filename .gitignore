@@ -10,4 +10,4 @@ venv
 /app/__pycache__/
 .github/workflows/*.bak
 .vscode
-public_html
+docs

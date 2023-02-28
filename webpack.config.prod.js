@@ -1,53 +1,53 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const fs = require('fs');
-const TerserPlugin = require('terser-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const imageminMozjpeg = require('imagemin-mozjpeg');
-const imageminPngquant = require('imagemin-pngquant');
-const glob = require("glob");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const fs = require('fs')
+const TerserPlugin = require('terser-webpack-plugin')
+const ImageminPlugin = require('imagemin-webpack-plugin').default
+const imageminMozjpeg = require('imagemin-mozjpeg')
+const imageminPngquant = require('imagemin-pngquant')
+const glob = require('glob')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { PurgeCSSPlugin } = require('purgecss-webpack-plugin')
 const PATHS = {
-  src: path.join(__dirname, "src"),
-};
+  src: path.join(__dirname, 'src')
+}
 // Look for .html files
-const htmlFiles = [];
-const directories = ['src'];
+const htmlFiles = []
+const directories = ['src']
 while (directories.length > 0) {
-  const directory = directories.pop();
+  const directory = directories.pop()
   const dirContents = fs.readdirSync(directory).map((file) =>
     path.join(directory, file)
-  );
+  )
 
   htmlFiles.push(
     ...dirContents.filter((file) => file.endsWith('.html'))
-  );
+  )
   directories.push(
     ...dirContents.filter((file) => fs.statSync(file).isDirectory())
-  );
+  )
 }
 
 module.exports = {
   mode: 'production',
   entry: {
-    main: './src/js/main.js',
+    main: './src/js/main.js'
   },
   output: {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, './docs'),
-    clean: true,
+    clean: true
   },
   optimization: {
     splitChunks: {
       cacheGroups: {
         styles: {
-          name: "styles",
+          name: 'styles',
           test: /\.css$/,
-          chunks: "all",
-          enforce: true,
-        },
-      },
+          chunks: 'all',
+          enforce: true
+        }
+      }
     },
     runtimeChunk: 'single',
     minimize: true,
@@ -55,10 +55,10 @@ module.exports = {
       new TerserPlugin({
         extractComments: false,
         terserOptions: {
-          compress: { drop_console: true },
-        },
-      }),
-    ],
+          compress: { drop_console: true }
+        }
+      })
+    ]
   },
   plugins: [
     ...htmlFiles.map(
@@ -66,36 +66,36 @@ module.exports = {
         new HtmlWebpackPlugin({
           template: htmlFile,
           filename: htmlFile.replace(path.normalize('src/'), ''),
-          inject: true,
+          inject: true
         })
     ),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: '[name].css'
     }),
     new PurgeCSSPlugin({
-      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
     }),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
       plugins: [
         imageminMozjpeg({
-          quality: 80,
+          quality: 80
         }),
         imageminPngquant({
-          quality: [0.8, 0.9],
-        }),
-      ],
-    }),
+          quality: [0.8, 0.9]
+        })
+      ]
+    })
   ],
   module: {
     rules: [
       {
         test: /\.html$/i,
-        use: 'html-loader',
+        use: 'html-loader'
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
         test: /\.(js|jsx)$/,
@@ -108,12 +108,12 @@ module.exports = {
                 [
                   'import',
                   { libraryName: 'antd', style: true },
-                  'antd',
-                ],
-              ],
-            },
-          },
-        ],
+                  'antd'
+                ]
+              ]
+            }
+          }
+        ]
       },
       {
         test: /\.(png|jpg|ico)$/i,
@@ -123,19 +123,19 @@ module.exports = {
             loader: 'image-webpack-loader',
             options: {
               pngquant: {
-                quality: [0.9, 0.95],
-              },
-            },
-          },
+                quality: [0.9, 0.95]
+              }
+            }
+          }
         ],
         parser: {
           dataUrlCondition: {
-            maxSize: 10 * 1024, // 10kb
-          },
+            maxSize: 10 * 1024 // 10kb
+          }
         },
         generator: {
-          filename: 'assets/images/[name]-[contenthash][ext]',
-        },
+          filename: 'assets/images/[name]-[contenthash][ext]'
+        }
       },
       {
         test: /\.(webmanifest)$/i,

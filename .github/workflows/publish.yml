@@ -16,8 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.11"]
-        node-version: ["16"]
+        node-version: ["lts/*"]
 
     steps:
       - name: Checkout code

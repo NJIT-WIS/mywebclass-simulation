@@ -5,7 +5,7 @@ on:
   pull_request:
 
 env:
-  DOCKER_IMAGE: kaw393939/mywebclass
+  DOCKER_IMAGE: kaw393939/mywebclass:latest
 
 jobs:
   build-and-test:

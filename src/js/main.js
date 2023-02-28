@@ -1,6 +1,6 @@
 /* eslint-disable no-undef, no-unused-vars */
 import '../scss/styles.scss'
-import * as bootstrap from 'bootstrap'
+import 'bootstrap/js/dist/scrollspy'
 
 // Function to estimate the reading time for an article
 function estimateReadingTime () {

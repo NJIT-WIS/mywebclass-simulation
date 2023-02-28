@@ -5,7 +5,7 @@ on:
   pull_request:
 
 env:
-  DOCKER_IMAGE: kaw393939/mywebclass:latest
+  DOCKER_IMAGE: kaw393939/mywebclass
 
 jobs:
   build-and-test:
@@ -23,7 +23,7 @@ jobs:
           context: .
           file: Dockerfile
           push: false
-          tags: ${{ env.DOCKER_IMAGE }}:latest
+          tags: ${{ env.DOCKER_IMAGE }}
 
       - name: Start Docker container
         run: |

@@ -4,8 +4,6 @@ on:
   push:
   pull_request:
 
-env:
-  DOCKER_IMAGE: kaw393939/mywebclass
 
 jobs:
   build-and-test:
@@ -18,17 +16,14 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Build Docker image
-        run: docker build --tag $DOCKER_IMAGE .
+        run: docker build --tag myapp .
 
       - name: Start Docker container
-        run: docker run -d -p 8080:80 -e PW_SERVICE_BASE_URL=http://localhost:8080 $DOCKER_IMAGE
-
-      - name: Install dependencies
-        run: docker exec $DOCKER_IMAGE npm ci
+        run: docker run -d -p 8080:80 -e PW_SERVICE_BASE_URL=http://localhost:8080 myapp
 
       - name: Run Playwright tests
         uses: microsoft/playwright-github-action@v1
         with:
           browser: chromium
           install-browser: true
-          script-path: path/to/playwright/tests
+          script-path: tests

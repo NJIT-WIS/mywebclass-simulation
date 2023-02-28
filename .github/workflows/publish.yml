@@ -50,9 +50,15 @@ jobs:
           npm install
           npx playwright install-deps
       - name: Test with Playwright
+        uses: microsoft/playwright-github-action@v1
         id: playwright-tests
-        run: |
-          npm test
+        with:
+          browser: chromium
+          install: true
+          working-directory: ./tests
+          script: |
+            npm install
+            npm test
       - if: steps.playwright-tests.outcome == 'success'
         name: Login to DockerHub
         uses: docker/login-action@v2

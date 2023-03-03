@@ -23,10 +23,6 @@ module.exports = {
     clean: true
   },
   devtool: 'source-map',
-  devServer: {
-    hot: false,
-    port: 3000
-  },
   plugins: [
     ...htmlFiles.map(htmlFile =>
       new HtmlWebpackPlugin({

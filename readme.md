@@ -49,6 +49,7 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 - [GitHubPages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - Configure your project with the DockerHub Username and Password in the project settings and make a repo.  
 - Change the repo in the gituhub workflow files as necessary.
+- Update your issue templates as pre the requirements of your project.  I have my templates for my own needs; however, you should update them for yours.
 
 ## Table of Contents
 - [Introduction to Career Opportuities made Possible by this Simulation](sprint_1_preface.md)

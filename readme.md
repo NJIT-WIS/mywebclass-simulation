@@ -42,6 +42,8 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 4. TBD
 
 # Project Setup
+## I am giving you my code; howevever, you should replace what I did with your own work.  Feel free to choose another CSS framework; howevever, you must complete the project simulation's requirements. 
+
 - [GitHubPages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - Configure your project with the DockerHub Username and Password in the project settings and make a repo.  
 - Change the repo in the gituhub workflow files as necessary.
@@ -52,8 +54,8 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 - [Project 1 - Sprint 1 - Sprint One - Episode 1](sprint_1.md)
 
 ## Coming Attractions:
-- Sprint 2
-- Sprint 3
+- Sprint 2 - Designing for Growth
+- Sprint 3 - Web Security 
 - Sprint 4
 
 

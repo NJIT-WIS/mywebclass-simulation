@@ -49,7 +49,7 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 - Change the repo in the gituhub workflow files as necessary.
 
 ## Table of Contents
-- [Preface](sprint_1_preface.md)
+- [Introduction to Career Opportuities made Possible by this Simulation](sprint_1_preface.md)
 - [New Employee Orientation - The Setting of the Simulation](sprint_1_orientation.md)
 - [Project 1 - Sprint 1 - Sprint One - Episode 1](sprint_1.md)
 

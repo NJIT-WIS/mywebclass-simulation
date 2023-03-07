@@ -41,6 +41,9 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 3. Part 3 - Project Introduction
 4. TBD
 
+# GitHubPages Setup with Branches to Deploy Your Project:
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+Configure your project with the DockerHub Username and Password in the project settings and make a repo.  Change the repo in the gituhub workflow files as necessary.
 
 ## Table of Contents
 - [Preface](sprint_1_preface.md)
@@ -51,5 +54,6 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 - Sprint 2
 - Sprint 3
 - Sprint 4
+
 
 # ADD YOUR PROJECT LINKS BELOW THIS 

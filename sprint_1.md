@@ -20,8 +20,8 @@ Let's work together to meet these requirements and create a website that is incl
 compliant. By doing so, we will create a solid foundation for our website that will allow us to grow and help people
 from all over the world.
 
-# Project Tasks
-1. [Team Management - 20% Project 1 Grade](sprint_1_team_management.md)
+# Project Tasks - Each Team Member must Turn Their Own In For Grading
+1. [Team Management - 20% Project Grade](sprint_1_team_management.md)
 2. [Project Management - 20% of Project Grade](sprint_1_project_managmenent.md) 
 3. [Project Analysis - 20% of Project Grade](sprint_1_project_analysis.md)
 4. [Devops and Site Reliability](sprint_1_devops_sr.md)

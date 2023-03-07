@@ -24,7 +24,7 @@ P. Williams
 
 Welcome to the MyWebClass.org Simulation project! In this project, you'll have the opportunity to develop your skills in project management and web development, and to gain hands-on experience working with real-world tools and technologies.
 
-To get started, we recommend using project management methodologies like Kanban, Scrum, Scrumban, Lean, and Agile to work more efficiently, deliver value to customers, and stay nimble and innovative. You should also use online tools like Slack, Microsoft Teams, or Zoom to work with your team.
+To get started, we recommend using project management methodologies like Kanban, Scrum, Scrumban, Lean, and Agile to work more efficiently, deliver value to customers, and stay nimble and innovative. You should also use online tools like Slack, Discorse, Google Calendar, Microsoft Teams, or Zoom to work with your team.
 
 To install the project, use PyCharm and the git clone command. You'll also need to install the project dependencies with the command npm install. Additionally, set up your own Docker Hub repository for the build image and add your Docker username and password to GitHub secrets to allow for automatic uploading with the GitHub Action.
 
@@ -55,8 +55,8 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 
 ## Coming Attractions:
 - Sprint 2 - Designing for Growth
-- Sprint 3 - Web Security 
-- Sprint 4
+- Sprint 3 - Building a CMS
+- Sprint 4 - TBD
 
 
 # ADD YOUR PROJECT LINKS BELOW THIS 

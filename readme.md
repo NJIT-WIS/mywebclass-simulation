@@ -20,7 +20,7 @@ Best regards,
 
 P. Williams
 
-# Project Introduction
+## Project Introduction
 
 Welcome to the MyWebClass.org Simulation project! In this project, you'll have the opportunity to develop your skills in project management and web development, and to gain hands-on experience working with real-world tools and technologies.
 
@@ -29,6 +29,17 @@ To get started, we recommend using project management methodologies like Kanban,
 To install the project, use PyCharm and the git clone command. You'll also need to install the project dependencies with the command npm install. Additionally, set up your own Docker Hub repository for the build image and add your Docker username and password to GitHub secrets to allow for automatic uploading with the GitHub Action.
 
 Finally, use Playwright to create powerful and reliable automated tests for web applications. By mastering these concepts and tools, you'll be well on your way to creating high-quality web applications and delivering value to your customers. Good luck with the MyWebClass.org Simulation project!
+
+## Link to Project Deployments
+
+- GitHub Pages: https://njit-wis.github.io/mywebclass-simulation/
+- Oracle Cloud: http://www.mywebclass.org
+
+## Instructor Project Videos - Will Be Updated as They Are Recorded
+1. [Part 1 - Getting Ready for Project 1](https://youtu.be/b60nwHeJjrQ)
+2. [Part 2 - Lean and Using ChatGPT for The Project ](https://youtu.be/EZMRNybUtUI)
+3. Part 3 - Project Introduction
+4. TBD
 
 
 ## Table of Contents
@@ -40,3 +51,5 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 - Sprint 2
 - Sprint 3
 - Sprint 4
+
+# ADD YOUR PROJECT LINKS BELOW THIS 

@@ -1,4 +1,4 @@
-# Lean and Agile Principles for Empowering Teachers and Students in a Changing World: spoken by Founder and Ceo at new Employee Orientation
+# Capacity Planning and Technology Evaluation
 Introduction
 Welcome to MyWebClass.org, where we're all about revolutionizing education in the modern software industry. Our values include people, learning, efficiency, and dependability, and we're led by the visionary Keith Williams.
 

@@ -46,7 +46,9 @@ module.exports = defineConfig({
     screenshotPath: path.join(process.cwd(), 'screenshots'),
 
     // Set video options for failed tests.
-    video: 'retain-on-failure',
+    
+    // Always record a video for each test.
+    video: 'on',
     videoSize: { width: 1920, height: 1080 },
     videoPath: path.join(process.cwd(), 'videos')
   },

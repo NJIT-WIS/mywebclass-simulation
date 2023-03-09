@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: test-results
-          path: screenshots/, videos/
+          path: test-results/screenshots/, test-results/videos/
 
       - name: Upload code coverage results
         uses: actions/upload-artifact@v3

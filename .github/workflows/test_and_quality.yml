@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Just Test with Playwright
 
 on:
   # Runs on pushes targeting the default branch
@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 18.x
 
@@ -28,7 +28,7 @@ jobs:
         run: npm run test
 
       - name: Upload screenshots and videos of failed tests
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: test-results
           path: screenshots/, videos/
@@ -41,7 +41,7 @@ jobs:
           npm run w3c
 
       - name: Upload code coverage results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: coverage-results
           path: coverage/

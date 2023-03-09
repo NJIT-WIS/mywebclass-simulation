@@ -1,5 +1,5 @@
-const { defineConfig, devices } = require('@playwright/test');
-const path = require('path');
+const { defineConfig, devices } = require('@playwright/test')
+const path = require('path')
 
 module.exports = defineConfig({
   // Directory where test files are located.
@@ -78,7 +78,7 @@ module.exports = defineConfig({
           ]
         }
       }
-    },
+    }
 
     // Uncomment and configure projects for other browsers, such as Firefox and Safari.
     // {

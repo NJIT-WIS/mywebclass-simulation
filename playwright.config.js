@@ -16,7 +16,7 @@ module.exports = defineConfig({
     actionTimeout: 0,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    screenshotPath: path.join(process.cwd(), 'screenshots'),  
+    screenshotPath: path.join(process.cwd(), 'screenshots'),
     video: 'on',
     videoSize: { width: 1920, height: 1080 },
     videoPath: path.join(process.cwd(), 'videos')

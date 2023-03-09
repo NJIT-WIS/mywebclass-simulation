@@ -1,79 +1,107 @@
-// @ts-check
-const { defineConfig, devices } = require('@playwright/test')
+const { defineConfig, devices } = require('@playwright/test');
+const path = require('path');
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
-
-/**
- * @see https://playwright.dev/docs/test-configuration
- */
 module.exports = defineConfig({
+  // Directory where test files are located.
   testDir: './tests',
-  /* Maximum time one test can run for. */
+
+  // Maximum time each test can run for.
   timeout: 30 * 1000,
+
+  // Maximum time the expect() function should wait for a condition to be met.
   expect: {
-    /**
-     * Maximum time expect() should wait for the condition to be met.
-     * For example in `await expect(locator).toHaveText();`
-     */
     timeout: 5000
   },
-  /* Run tests in files in parallel */
+
+  // Run tests in files in parallel.
   fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
+
+  // Forbid test.only() on CI environments.
   forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
+
+  // Retry failed tests up to 2 times on CI environments.
   retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
+
+  // Opt out of parallel tests on CI environments.
   workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+
+  // Use the 'list' reporter for test results.
+  reporter: 'list',
+
+  // Set shared settings for all projects.
   use: {
-    /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
+    // Maximum time each action such as click() can take. Defaults to 0 (no limit).
     actionTimeout: 0,
-    /* Base URL to use in actions like `await page.goto('/')`. */
+
+    // Base URL to use in actions like await page.goto('/').
+    // Uncomment and set a value if your tests need to navigate to a specific URL.
     // baseURL: 'http://localhost:3000',
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry'
+    // Collect trace when retrying the failed test.
+    // See https://playwright.dev/docs/trace-viewer
+    trace: 'on-first-retry',
+
+    // Set screenshot options for failed tests.
+    screenshot: 'only-on-failure',
+    screenshotPath: path.join(process.cwd(), 'screenshots'),
+
+    // Set video options for failed tests.
+    video: 'retain-on-failure',
+    videoSize: { width: 1920, height: 1080 },
+    videoPath: path.join(process.cwd(), 'videos')
   },
 
-  /* Configure projects for major browsers */
+  // Configure projects for major browsers.
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] }
-    }
+      use: {
+        ...devices['Desktop Chrome'],
 
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
+        // Set context options for the browser.
+        contextOptions: {
+          viewport: {
+            width: 1920,
+            height: 1080
+          },
+          userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36',
+          acceptDownloads: true
+        },
 
-    /* Test against branded browsers. */
+        // Set additional options for the browser.
+        launchOptions: {
+          headless: true,
+          args: [
+            '--disable-infobars',
+            '--disable-notifications',
+            '--disable-web-security'
+          ]
+        }
+      }
+    },
+
+    // Uncomment and configure projects for other browsers, such as Firefox and Safari.
     // {
-    //   name: 'Microsoft Edge',
-    //   use: { channel: 'msedge' },
+    //   name: 'firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox'],
+    //     launchOptions: { headless: true }
+    //   }
     // },
     // {
-    //   name: 'Google Chrome',
-    //   use: { channel: 'chrome' },
-    // },
+    //   name: 'webkit',
+    //   use: {
+    //     ...devices['Desktop Safari'],
+    //     launchOptions: { headless: true }
+    //   }
+    // }
   ],
 
-  /* Folder for test artifacts such as screenshots, videos, traces, etc. */
+  // Folder for test artifacts such as screenshots, videos, traces, etc.
+  // Uncomment and set a value if you want to specify an output directory.
   // outputDir: 'test-results/',
 
-  /* Run your local dev server before starting the tests */
+  // Start a local development server before running tests.
   webServer: {
     command: 'npm run start',
     port: 3000,

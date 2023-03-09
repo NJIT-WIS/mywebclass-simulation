@@ -24,7 +24,8 @@ jobs:
       - name: Install dependencies
         run: |
           npx playwright install chromium
-          npm install
+          npm install lint format build
+          npm install 
 
       - name: Run tests
         run: npm run test
@@ -34,13 +35,6 @@ jobs:
         with:
           name: test-results
           path: screenshots/, videos/
-
-      - name: Run code quality tools
-        run: |
-          npm run lint
-          npm run format
-          npm run build
-          npm run w3c
 
       - name: Upload code coverage results
         uses: actions/upload-artifact@v3

@@ -3,7 +3,7 @@ name: Question
 about: Use this to ask the instructor a question.
 title: ''
 labels: question
-assignees: kaw393939
+assignees: ''
 
 ---
 

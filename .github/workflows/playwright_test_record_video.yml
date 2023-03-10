@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           npx playwright install chromium
-          npm install lighthouse
+          npm install -g lighthouse
           npm install 
           npm run start & npx wait-on http://localhost:3000
 

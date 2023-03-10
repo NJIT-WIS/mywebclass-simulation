@@ -5,11 +5,11 @@ const { chromium } = require('playwright');
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  const report = fs.readFileSync('test-results/lighthousereport.json', 'utf8');
+  const report = fs.readFileSync('./test-results/lighthousereport.json', 'utf8');
   const reportObj = JSON.parse(report);
 
   await page.setContent(reportObj.report);
-  await page.pdf({ path: 'test-results/lighthouse/report.pdf', format: 'A4' });
+  await page.pdf({ path: './test-results/lighthouse/report.pdf', format: 'A4' });
 
   await browser.close();
 })();

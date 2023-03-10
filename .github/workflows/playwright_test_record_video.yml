@@ -24,19 +24,18 @@ jobs:
       - name: Install dependencies
         run: |
           npx playwright install chromium
-          npm install lint format build
           npm install -g lighthouse
           npm install 
+          npm run start
 
-      - name: Run tests
-        run: npm run test
+      - name: Run PLaywright tests
+        run: npx playwright test --config=playwright.config.js
 
-      - name: Run Lighthouse
+      - name: Generate Lighthouse Report and Convert it to PDF using script.js
         run: |
-            npm run start
-            lighthouse http://localhost:3000 --output html --output-path test-results/report.html
-
-      - name: Upload screenshots and videos of failed tests
+            lighthouse http://localhost:3000 --output json --output-path ./test-results/lighthouse/report.json
+            node create_pdf_from_lighthouseJsonOutput.js
+      - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3
         with:
           name: test-results

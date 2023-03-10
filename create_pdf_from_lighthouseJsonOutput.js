@@ -5,7 +5,7 @@ const { chromium } = require('playwright');
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  const report = fs.readFileSync('report.json', 'utf8');
+  const report = fs.readFileSync('./test-results/report.json', 'utf8');
   const reportObj = JSON.parse(report);
 
   if (typeof reportObj.report !== 'string') {

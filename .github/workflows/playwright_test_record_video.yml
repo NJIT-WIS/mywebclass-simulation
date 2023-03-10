@@ -40,7 +40,7 @@ jobs:
 
       - name: Generate Lighthouse Report and Convert it to PDF using create_pdf_from_lighthouseJsonOutput.js
         run: |
-          lighthouse http://localhost:3000 --output json --output-path ./test-results/report.json --chrome-flags="--headless --no-sandbox --disable-gpu"
+          lighthouse http://localhost:3000 --output json --output-path report.json --chrome-flags="--headless --no-sandbox --disable-gpu"
           npm install playwright
           node create_pdf_from_lighthouseJsonOutput.js
 

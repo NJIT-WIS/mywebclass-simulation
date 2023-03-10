@@ -21,15 +21,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libgbm-dev         
-          sudo apt-get install -y libgbm-dev xinit
           npm ci
           npx playwright install chromium
-          npm install -g playwright lighthouse chrome-launcher axe-core chromium wait-on
-
-      - name: Start the X server
-        run: |
-          export DISPLAY=:0
-          startx & sleep 5
+          npm install -g lighthouse chrome-launcher axe-core chromium wait-on
 
       - name: Start the application
         run: |

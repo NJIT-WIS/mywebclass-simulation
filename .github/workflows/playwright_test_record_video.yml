@@ -1,4 +1,4 @@
-name: Just Test with Playwright
+name: Run Playright and Generate LightHouse PDF Report
 
 on:
   # Runs on pushes targeting the default branch
@@ -31,7 +31,7 @@ jobs:
       - name: Run PLaywright tests
         run: npx playwright test --config=playwright.config.js
 
-      - name: Generate Lighthouse Report and Convert it to PDF using script.js
+      - name: Generate Lighthouse Report and Convert it to PDF using create_pdf_from_lighthouseJsonOutput.js
         run: |
             lighthouse http://localhost:3000 --output json --output-path ./test-results/lighthouse/report.json
             node create_pdf_from_lighthouseJsonOutput.js

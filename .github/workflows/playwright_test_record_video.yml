@@ -1,4 +1,4 @@
-name: Run Playwright and Generate LightHouse PDF Report
+name: Run Playwright and Generate a video, screenshots, and LightHouse HTML Report
 
 on:
   push:

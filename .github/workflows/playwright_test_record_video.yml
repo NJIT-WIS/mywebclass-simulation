@@ -34,6 +34,7 @@ jobs:
       - name: Generate Lighthouse Report and Convert it to PDF using create_pdf_from_lighthouseJsonOutput.js
         run: |
             lighthouse http://localhost:3000 --output json --output-path ./test-results/report.json
+            npm install chromium
             node create_pdf_from_lighthouseJsonOutput.js
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3

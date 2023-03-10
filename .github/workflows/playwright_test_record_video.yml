@@ -1,17 +1,13 @@
-name: Run Playright and Generate LightHouse PDF Report
+name: Run Playwright and Generate LightHouse PDF Report
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: "*"
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
 jobs:
-  
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -19,29 +15,27 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 17.x
+          node-version: "17.x"
 
       - name: Install dependencies
         run: |
+          npm ci
           npx playwright install chromium
-          npm install -g lighthouse
-          npm install 
-          npm install -g chrome-launcher
-          npm install -g axe-core
-          npm install -g chromium
+          npm install -g lighthouse chrome-launcher axe-core chromium wait-on
 
-          npm run start & npx wait-on http://localhost:3000
+      - name: Start the application
+        run: npm run start & npx wait-on http://localhost:3000
 
-      - name: Run PLaywright tests
+      - name: Run Playwright tests
         run: npx playwright test --config=playwright.config.js
 
       - name: Generate Lighthouse Report and Convert it to PDF using create_pdf_from_lighthouseJsonOutput.js
         run: |
-            lighthouse http://localhost:3000 --output json --output-path ./test-results/report.json
-            node create_pdf_from_lighthouseJsonOutput.js
+          lighthouse http://localhost:3000 --output json --output-path ./test-results/report.json
+          node create_pdf_from_lighthouseJsonOutput.js
+
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3
         with:
           name: test-results
-          path: |
-                ./test-resu* 
+          path: ./test-results

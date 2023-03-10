@@ -26,7 +26,7 @@ jobs:
           npx playwright install chromium
           npm install lighthouse
           npm install 
-          npm run start
+          npm run start & npx wait-on http://localhost:3000
 
       - name: Run PLaywright tests
         run: npx playwright test --config=playwright.config.js

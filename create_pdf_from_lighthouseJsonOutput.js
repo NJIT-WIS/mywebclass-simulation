@@ -8,7 +8,11 @@ const { chromium } = require('playwright');
   const report = fs.readFileSync('./test-results/report.json', 'utf8');
   const reportObj = JSON.parse(report);
 
-  await page.setContent(reportObj.report);
+  if (typeof reportObj.report !== 'string') {
+    throw new Error('Report is not a string');
+  }
+
+  await page.setContent(JSON.stringify(reportObj.report));
   await page.pdf({ path: './test-results/light_house_report.pdf', format: 'A4' });
 
   await browser.close();

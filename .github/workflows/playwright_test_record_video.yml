@@ -1,4 +1,4 @@
-name: Run Playwright and Generate LightHouse PDF Report
+name: Run Playwright and Generate a video, screenshots, and LightHouse HTML Report
 
 on:
   push:
@@ -20,15 +20,10 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgbm-dev
+          sudo apt-get install -y libgbm-dev         
           npm ci
           npx playwright install chromium
           npm install -g lighthouse chrome-launcher axe-core chromium wait-on
-
-      - name: Start the X server
-        run: |
-          export DISPLAY=:0
-          startx & sleep 5
 
       - name: Start the application
         run: |
@@ -38,12 +33,9 @@ jobs:
       - name: Run Playwright tests
         run: npx playwright test --config=playwright.config.js
 
-      - name: Generate Lighthouse Report and Convert it to PDF using create_pdf_from_lighthouseJsonOutput.js
+      - name: Generate Lighthouse Report
         run: |
-          lighthouse http://localhost:3000 --output json --output-path ./test-results/report.json --chrome-flags="--headless --no-sandbox --disable-gpu"
-          npm install playwright
-          node create_pdf_from_lighthouseJsonOutput.js
-
+          lighthouse http://localhost:3000 --output html --output-path ./test-results/report.html --chrome-flags="--headless --no-sandbox --disable-gpu"
       - name: Upload report, screenshots and videos of failed tests
         uses: actions/upload-artifact@v3
         with:

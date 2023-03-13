@@ -2,8 +2,16 @@ version: "3.8"
 
 services:
     master_branch:
+      image: nathandhernandez/mywebclass:master
+      container_name: master_branch
+      pull_policy: always
+      restart: always
+      ports:
+        - "80:80"
+      labels:
+        - 'com.centurylinklabs.watchtower.enable=true'
     development_branch:
-      image: kaw393939/mywebclass:development
+      image: nathandhernandez/mywebclass:development
       container_name: development_branch
       pull_policy: always
       restart: always

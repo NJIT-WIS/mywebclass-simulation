@@ -63,3 +63,5 @@ Finally, use  Playwright to create powerful and reliable automated tests for web
 
 
 # ADD YOUR PROJECT LINKS BELOW THIS 
+
+## [John Idone & Kevin Nipal's Project link](https://github.com/users/jidone7061/projects/3)

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Content Template</title>
+    <!-- idk how to use scss -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- borrowing the header for now -->
+	<!-- lets try
+	<header class="fixed-top" role="banner">
+        <nav aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark " role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="/">MyWebClass.org</a>
+                <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                        data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
+                    <span aria-hidden="true" class="navbar-toggler-icon"></span>
+                    <span class="visually-hidden">Toggle navigation</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="content.html">Content Template</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="#">My Website</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<main role="main">
+		<nav aria-label="Breadcrumb" class="my-3 ms-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-auto text-start">
+                        <ol class="breadcrumb my-0">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+							<li class="breadcrumb-item"><a href="/">Example</a></li>
+                            <li aria-current="page" class="breadcrumb-item active">Content Template</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+		<div class="row">
+			<div class="col-lg-8">
+				<h2 class="pb-4 mb-4">Content Template</h2>
+					<p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper risus nec est finibus mattis. Sed pulvinar nisi sed nulla tincidunt, a sagittis elit tincidunt. Nunc ut volutpat orci, nec hendrerit purus. Ut nisi tellus, bibendum ut diam at, viverra ullamcorper lorem. Aenean sit amet libero ultrices, rhoncus est at, aliquet augue. Fusce tellus quam, ornare consequat tempor eget, tincidunt vel orci. Integer rutrum nisi aliquet lectus consequat, non suscipit leo tincidunt. Integer nec lorem in ante vehicula cursus. Aliquam elementum enim lorem, sit amet tincidunt magna pellentesque non. Mauris efficitur porttitor eros eget molestie. Proin porta tortor eget lacus mattis, non ultricies tortor ultrices. Cras eget tempor justo, at molestie ipsum. Nunc viverra, erat a convallis auctor, nunc ante sagittis arcu, non egestas lorem dolor sed erat.</p>
+
+					<p class="lead mb-4">Morbi pharetra bibendum sem, commodo semper arcu interdum sit amet. Vestibulum mattis turpis eu elementum pellentesque. Sed vitae est a orci auctor rutrum. Nulla facilisi. Quisque porttitor augue dolor, vitae aliquet lectus mattis a. Praesent vitae dolor ut lectus congue euismod. Nam maximus purus metus, vel efficitur ex euismod sit amet. In aliquam dolor sit amet neque elementum, quis aliquet arcu tempus. Duis faucibus, mauris sit amet vulputate mattis, nulla dui accumsan augue, sodales ultricies velit lectus vitae odio. Nam sem lacus, suscipit quis dolor sit amet, rutrum scelerisque orci. Suspendisse quis dictum sapien, nec ultrices nibh.</p>
+
+					<p class="lead">Aliquam laoreet placerat nibh, nec rutrum quam malesuada vitae. Pellentesque blandit massa lacus, vitae hendrerit diam sodales sed. Vestibulum dapibus sem mi, at mollis turpis pretium quis. Nam aliquam convallis est, volutpat bibendum ipsum molestie vitae. Etiam gravida eleifend turpis. Ut rutrum ultricies arcu, id scelerisque leo sollicitudin at. Nullam non ligula a nibh fringilla interdum vel dignissim purus. Suspendisse blandit augue augue. Donec quis erat tellus. Nulla tincidunt ipsum ipsum, non elementum massa suscipit vitae. Nullam sagittis odio at turpis condimentum lacinia. Duis quis est efficitur, ultrices dui nec, mollis risus. Proin aliquet ex non dolor bibendum vestibulum.</p>
+				</div>
+
+			<div class="col-md-4 toc">
+                <h2>Table of Contents</h2>
+                <ul class="list-group nav-fill">
+                    <li class="list-group-item"><a class="nav-link" href="#">Welcome</a></li>
+                    <li class="list-group-item"><a class="nav-link" href="#">Section 1</a></li>
+                    <li class="list-group-item"><a class="nav-link" href="#">Section 2</a></li>
+                    <li class="list-group-item"><a class="nav-link" href="#">Section 3</a></li>
+                </ul>
+            </div>
+	</main>
+
+
+	<footer>
+		<p>&copy; 2023 Tutorial Website. All rights reserved.</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

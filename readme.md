@@ -30,7 +30,7 @@ To get started, we recommend using project management methodologies like Kanban,
 
 To install the project, use PyCharm and the git clone command. You'll also need to install the project dependencies with the command npm install. Additionally, set up your own Docker Hub repository for the build image and add your Docker username and password to GitHub secrets to allow for automatic uploading with the GitHub Action.
 
-Finally, use Playwright to create powerful and reliable automated tests for web applications. By mastering these concepts and tools, you'll be well on your way to creating high-quality web applications and delivering value to your customers. Good luck with the MyWebClass.org Simulation project!
+Finally, use  Playwright to create powerful and reliable automated tests for web applications. By mastering these concepts and tools, you'll be well on your way to creating high-quality web applications and delivering value to your customers. Good luck with the MyWebClass.org Simulation project!
 
 ## Link to Project Deployments
 

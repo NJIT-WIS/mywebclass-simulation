@@ -1,5 +1,5 @@
 | Issue Title | Story Points | Issue Link | Status | Assigned To | Assigned On | Completed On | Category | Status Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Example Issue 1 | 3 | https://github.com/user/repo/issues/1 | In Progress | John Doe | 2023-03-01 | - | Bug | Fixing memory leak |
-| Example Issue 2 | 5 | https://github.com/user/repo/issues/2 | To Do | Jane Smith | 2023-03-05 | - | Feature | Waiting for design review |
+| Define project scope, objectives, and milestones | 3 | https://github.com/Sarahsparxx/mywebclass-simulation/issues/1 | Project Backlog |  Sarah Ibewuike | 3/15/2023 | - | Documentation | Defined the scope and objectives of the project |
+| Assign tasks to team members and set deadlines | 5 | https://github.com/Sarahsparxx/mywebclass-simulation/issues/2 | Sprint Backlog | Sarah Ibewuike | 3/15/2023 | - | Documentation | Assign tasks to team members |
 | Example Issue 3 | 2 | https://github.com/user/repo/issues/3 | Done | Abena | 2023-03-08 | 2023-03-10 | Improvement | Tested and verified |

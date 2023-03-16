@@ -4,10 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Content Template</title>
+	<title>MyWebClass.org Home Page</title>
     <!-- idk how to use scss -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', '358513935');
+	</script>
 </head>
 
 <body>
@@ -22,6 +30,9 @@
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
 							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="templates/template-content.html">Content Template</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">About</a>
@@ -40,44 +51,93 @@
 
 
 	<main role="main">
-		<nav aria-label="Breadcrumb" class="my-3 ms-3">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-auto text-start">
-                        <ol class="breadcrumb my-0">
-                            <li class="breadcrumb-item"><a href="/">Home</a></li>
-							<li class="breadcrumb-item"><a href="/">Example</a></li>
-                            <li aria-current="page" class="breadcrumb-item active">Content Template</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-9">
-					<h1 class="bd-title">Content Template</h1>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper risus nec est finibus mattis. Sed pulvinar nisi sed nulla tincidunt, a sagittis elit tincidunt. Nunc ut volutpat orci, nec hendrerit purus. Ut nisi tellus, bibendum ut diam at, viverra ullamcorper lorem. Aenean sit amet libero ultrices, rhoncus est at, aliquet augue. Fusce tellus quam, ornare consequat tempor eget, tincidunt vel orci. Integer rutrum nisi aliquet lectus consequat, non suscipit leo tincidunt. Integer nec lorem in ante vehicula cursus. Aliquam elementum enim lorem, sit amet tincidunt magna pellentesque non. Mauris efficitur porttitor eros eget molestie. Proin porta tortor eget lacus mattis, non ultricies tortor ultrices. Cras eget tempor justo, at molestie ipsum. Nunc viverra, erat a convallis auctor, nunc ante sagittis arcu, non egestas lorem dolor sed erat.</p>
-					<p class="lead">Morbi pharetra bibendum sem, commodo semper arcu interdum sit amet. Vestibulum mattis turpis eu elementum pellentesque. Sed vitae est a orci auctor rutrum. Nulla facilisi. Quisque porttitor augue dolor, vitae aliquet lectus mattis a. Praesent vitae dolor ut lectus congue euismod. Nam maximus purus metus, vel efficitur ex euismod sit amet. In aliquam dolor sit amet neque elementum, quis aliquet arcu tempus. Duis faucibus, mauris sit amet vulputate mattis, nulla dui accumsan augue, sodales ultricies velit lectus vitae odio. Nam sem lacus, suscipit quis dolor sit amet, rutrum scelerisque orci. Suspendisse quis dictum sapien, nec ultrices nibh.</p>
+				<nav aria-label="Breadcrumb" class="my-3 ms-3">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-auto text-start">
+								<ol class="breadcrumb my-0">
+									<li aria-current="page" class="breadcrumb-item active"><a href="/">Home</a></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
 
-					<h2 class="pt-4 mb-4">Subtopic 1</h2>
-					<p class="lead">Aliquam laoreet placerat nibh, nec rutrum quam malesuada vitae. Pellentesque blandit massa lacus, vitae hendrerit diam sodales sed. Vestibulum dapibus sem mi, at mollis turpis pretium quis. Nam aliquam convallis est, volutpat bibendum ipsum molestie vitae. Etiam gravida eleifend turpis. Ut rutrum ultricies arcu, id scelerisque leo sollicitudin at. Nullam non ligula a nibh fringilla interdum vel dignissim purus. Suspendisse blandit augue augue. Donec quis erat tellus. Nulla tincidunt ipsum ipsum, non elementum massa suscipit vitae. Nullam sagittis odio at turpis condimentum lacinia. Duis quis est efficitur, ultrices dui nec, mollis risus. Proin aliquet ex non dolor bibendum vestibulum.</p>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper risus nec est finibus mattis. Sed pulvinar nisi sed nulla tincidunt, a sagittis elit tincidunt. Nunc ut volutpat orci, nec hendrerit purus. Ut nisi tellus, bibendum ut diam at, viverra ullamcorper lorem. Aenean sit amet libero ultrices, rhoncus est at, aliquet augue. Fusce tellus quam, ornare consequat tempor eget, tincidunt vel orci. Integer rutrum nisi aliquet lectus consequat, non suscipit leo tincidunt. Integer nec lorem in ante vehicula cursus. Aliquam elementum enim lorem, sit amet tincidunt magna pellentesque non. Mauris efficitur porttitor eros eget molestie. Proin porta tortor eget lacus mattis, non ultricies tortor ultrices. Cras eget tempor justo, at molestie ipsum. Nunc viverra, erat a convallis auctor, nunc ante sagittis arcu, non egestas lorem dolor sed erat.</p>
-
-					<h2 class="pt-4 mb-4">Subtopic 2</h2>
-					<p class="lead">Morbi pharetra bibendum sem, commodo semper arcu interdum sit amet. Vestibulum mattis turpis eu elementum pellentesque. Sed vitae est a orci auctor rutrum. Nulla facilisi. Quisque porttitor augue dolor, vitae aliquet lectus mattis a. Praesent vitae dolor ut lectus congue euismod. Nam maximus purus metus, vel efficitur ex euismod sit amet. In aliquam dolor sit amet neque elementum, quis aliquet arcu tempus. Duis faucibus, mauris sit amet vulputate mattis, nulla dui accumsan augue, sodales ultricies velit lectus vitae odio. Nam sem lacus, suscipit quis dolor sit amet, rutrum scelerisque orci. Suspendisse quis dictum sapien, nec ultrices nibh.</p>
-					<p class="lead">Aliquam laoreet placerat nibh, nec rutrum quam malesuada vitae. Pellentesque blandit massa lacus, vitae hendrerit diam sodales sed. Vestibulum dapibus sem mi, at mollis turpis pretium quis. Nam aliquam convallis est, volutpat bibendum ipsum molestie vitae. Etiam gravida eleifend turpis. Ut rutrum ultricies arcu, id scelerisque leo sollicitudin at. Nullam non ligula a nibh fringilla interdum vel dignissim purus. Suspendisse blandit augue augue. Donec quis erat tellus. Nulla tincidunt ipsum ipsum, non elementum massa suscipit vitae. Nullam sagittis odio at turpis condimentum lacinia. Duis quis est efficitur, ultrices dui nec, mollis risus. Proin aliquet ex non dolor bibendum vestibulum.</p>
+			<div class="row">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="3000">
+					<div class="carousel-inner carousel-fade">
+						<div class="carousel-item active d-flex align-items-center">
+							<img src="assets/images/closeup-rainbow-chalk.jpg" class="d-block w-100">
+							<div class="carousel-caption">
+								<h5>First slide label</h5>
+								<p class="d-none d-md-block">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+							</div>
+						</div>
+						<div class="carousel-item d-flex align-items-center">
+							<img src="assets/images/books-piled-left.jpg" class="d-block w-100">
+							<div class="carousel-caption">
+								<h5>Second slide label</h5>
+								<p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="carousel-item d-flex align-items-center">
+							<img src="assets/images/spooky-dystopian-classroom.jpg" class="d-block w-100">
+							<div class="carousel-caption">
+								<h5>Third slide label</h5>
+								<p class="d-none d-md-block">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
+			</div>
 
-				<div class="col-lg-3 toc d-none d-lg-block">
-					<h2>On this page</h2>
-					<ul class="list-group nav-fill">
-						<li class="list-group-item"><a class="nav-link" href="#">Welcome</a></li>
-						<li class="list-group-item"><a class="nav-link" href="#">Section 1</a></li>
-						<li class="list-group-item"><a class="nav-link" href="#">Section 2</a></li>
-						<li class="list-group-item"><a class="nav-link" href="#">Section 3</a></li>
-					</ul>
+			<div class="row pt-4">
+				<div class="col-md-4">
+					<div class="card rounded mb-4 shadow-sm">
+						<img class="card-img-top" src="assets/images/student-learning-on-laptop.jpg">
+						<div class="card-body">
+							<h5 class="card-title">As a Student</h5>
+							<p class="card-text">Effectively acquiring knowledge and skills often involves learning from experienced practitioners who actively engage in teaching and learning by doing. This approach offers a valuable opportunity to develop practical insights and enhance professional competencies.</p>
+						</div>
+						<div class="card-footer">
+							<a href="student.html" class="btn btn-primary">Learn</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card rounded mb-4 shadow-sm">
+						<img class="card-img-top" src="assets/images/pointing-at-laptop-screen.jpg">
+						<div class="card-body">
+							<h5 class="card-title">As a Contributor</h5>
+							<p class="card-text">Make a meaningful contribution to the advancement of learning and development by sharing your knowledge and expertise with your peers through this collaborative educational platform.</p>
+						</div>
+						<div class="card-footer">
+							<a href="contributor.html" class="btn btn-primary">Share</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card rounded mb-4 shadow-sm">
+						<img class="card-img-top" src="assets/images/guy-teaching-in-classroom-with-website-projector.jpg">
+						<div class="card-body">
+							<h5 class="card-title">As a Teacher</h5>
+							<p class="card-text">Integrate this valuable knowledge into your classroom instruction through our collection of lesson plans and other educational resources.</p>
+						</div>
+						<div class="card-footer">
+							<a href="teacher.html" class="btn btn-primary">Educate</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

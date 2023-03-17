@@ -1,12 +1,12 @@
 const { test, expect } = require('@playwright/test')
 
 
-test('test-valid-navbar-links', async ( {context} ) => {
+test('test-valid-navbar-links', async ({browser}) => {
 
 //    const pagesToCheck = ['http://localhost:3000',
 //                          'http://localhost:3000/templates/template-content.html',
 //    ]
-
+    const context = await browser.newContext()
     const page = await context.newPage();
 
     const pagesToCheck = ['/',

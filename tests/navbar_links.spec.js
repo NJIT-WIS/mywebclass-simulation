@@ -32,7 +32,7 @@ test('test-valid-navbar-links', async ({browser}) => {
     }
 })
 
-test.only('navbar-contains-correct-links-and-wording', async ({page}) => {
+test('navbar-contains-correct-links-and-wording', async ({page}) => {
     const expectedNavbarLinks = [ ["Home", "/"],
                                   ["Content Template", "/templates/template-content.html"]
     ]

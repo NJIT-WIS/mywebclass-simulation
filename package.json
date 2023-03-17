@@ -36,6 +36,7 @@
   "devDependencies": {
     "@playwright/test": "^1.31.1",
     "autoprefixer": "^10.4.13",
+    "axe-playwright": "^1.2.3",
     "babel-loader": "^9.1.2",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",

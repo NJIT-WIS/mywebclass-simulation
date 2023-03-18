@@ -69,84 +69,61 @@
             </div>
         </div>
     </main>
+<div id="cookie-modal">
+		<p>This website uses cookies to improve your experience. By continuing to use this website, you consent to our use of cookies.</p>
+		<button id="cookie-accept">Accept</button>
+	</div>
 
+	<script>
+		// Get the modal element
+		var modal = document.getElementById("cookie-modal");
 
-<script>
-		// function to set cookie
-		function setCookie(cname, cvalue, exdays) {
-			var d = new Date();
-			d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-			var expires = "expires=" + d.toUTCString();
-			document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		// Get the accept button
+		var acceptButton = document.getElementById("cookie-accept");
+
+		// Check if the cookie exists
+		var cookieAccepted = document.cookie.indexOf("cookie_accepted=") >= 0;
+
+		// If the cookie doesn't exist, show the modal
+		if (!cookieAccepted) {
+			modal.style.display = "block";
 		}
 
-		// function to check if cookie exists
-		function checkCookie() {
-			var cookieName = "myCookie";
-			var cookieValue = "accepted";
-			var cookies = document.cookie.split(';');
-			for (var i = 0; i < cookies.length; i++) {
-				var cookie = cookies[i].trim();
-				if (cookie.indexOf(cookieName) == 0) {
-					return true;
-				}
-			}
-			setCookie(cookieName, cookieValue, 30);
-			return false;
-		}
-
-		// function to close modal and set cookie
-		function closeModal() {
-			document.getElementById('cookieModal').style.display = 'none';
-			setCookie('myCookie', 'accepted', 30);
-		}
-
-		// check if cookie exists
-		window.onload = function() {
-			if(!checkCookie()) {
-				document.getElementById('cookieModal').style.display = 'block';
-			}
-		}
+		// When the accept button is clicked, set the cookie and hide the modal
+		acceptButton.onclick = function() {
+			// Set the cookie to expire in 30 days
+			var date = new Date();
+			date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+			var expires = "expires=" + date.toUTCString();
+			document.cookie = "cookie_accepted=true; " + expires;
+			modal.style.display = "none";
+		};
 	</script>
-	<style>
-		/* styling for modal */
-		#cookieModal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  max-width: 90%;
-  padding: 20px;
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-}
-
-
-		#cookieModal p {
-			margin: 0;
-			padding: 5px;
-			font-size: 14px;
-			line-height: 1.5;
-		}
-
-		#cookieModal button {
-			margin-top: 10px;
+    <style>
+		#cookie-modal {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
 			padding: 10px;
+			background-color: #fff;
+			border-top: 1px solid #ccc;
+			display: none;
+			z-index: 9999;
+		}
+		#cookie-modal p {
+			margin: 0;
+			font-size: 14px;
+		}
+		#cookie-modal button {
+			background-color: #007bff;
 			border: none;
-			background-color: #4CAF50;
-			color: white;
+			color: #fff;
+			padding: 10px;
+			margin-top: 10px;
 			cursor: pointer;
 		}
-	</style>
-    <!-- cookie modal -->
-	<div id="cookieModal">
-		<p>This website uses cookies to improve your experience. By continuing to use this site, you are agreeing to our use of cookies.</p>
-		<button onclick="closeModal()">Got it!</button>
-	</div>
+
 
 
 

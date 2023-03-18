@@ -69,66 +69,89 @@
             </div>
         </div>
     </main>
-      <div class="cookie-consent">
-    <p>This website uses cookies to improve your experience. By clicking <b>Agree</b>, you consent to our use of cookies in accordance with our <a href="privacy.html">Privacy Policy</a>.</p><button id="consent-button"> I Agree</button>
-  </div>
-  <script>
-  const cookieStorage = {
-  getItem: (item) => {
-      const cookies = document.cookie
-          .split(';')
-          .map(cookie => cookie.split('='))
-          .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
-      return cookies[item];
-  },
-  setItem: (item, value) => {
-      document.cookie = `${item}=${value};`
-  }
-}
-
-const storageType = cookieStorage;
-const consentPropertyName = 'jdc_consent';
-const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
-const saveToStorage = () => storageType.setItem(consentPropertyName, true);
-
-window.onload = () => {
-
-  const acceptFn = event => {
-      saveToStorage(storageType);
-      consentPopup.classList.add('hidden');
-  }
-  const consentPopup = document.getElementById('consent-popup');
-  const acceptBtn = document.getElementById('accept');
-  acceptBtn.addEventListener('click', acceptFn);
-
-  if (shouldShowPopup(storageType)) {
-      setTimeout(() => {
-          consentPopup.classList.remove('hidden');
-      }, 2000);
-  }
-
-};
 
 
-  </script>
-    <style>
-        .cookie-consent {
+<script>
+		// function to set cookie
+		function setCookie(cname, cvalue, exdays) {
+			var d = new Date();
+			d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+			var expires = "expires=" + d.toUTCString();
+			document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}
+
+		// function to check if cookie exists
+		function checkCookie() {
+			var cookieName = "myCookie";
+			var cookieValue = "accepted";
+			var cookies = document.cookie.split(';');
+			for (var i = 0; i < cookies.length; i++) {
+				var cookie = cookies[i].trim();
+				if (cookie.indexOf(cookieName) == 0) {
+					return true;
+				}
+			}
+			setCookie(cookieName, cookieValue, 30);
+			return false;
+		}
+
+		// function to close modal and set cookie
+		function closeModal() {
+			document.getElementById('cookieModal').style.display = 'none';
+			setCookie('myCookie', 'accepted', 30);
+		}
+
+		// check if cookie exists
+		window.onload = function() {
+			if(!checkCookie()) {
+				document.getElementById('cookieModal').style.display = 'block';
+			}
+		}
+	</script>
+	<style>
+		/* styling for modal */
+		#cookieModal {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #d2f3ca;
+  width: 400px;
+  max-width: 90%;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
 }
 
 
+		#cookieModal p {
+			margin: 0;
+			padding: 5px;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+
+		#cookieModal button {
+			margin-top: 10px;
+			padding: 10px;
+			border: none;
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+		}
+	</style>
+    <!-- cookie modal -->
+	<div id="cookieModal">
+		<p>This website uses cookies to improve your experience. By continuing to use this site, you are agreeing to our use of cookies.</p>
+		<button onclick="closeModal()">Got it!</button>
+	</div>
 
 
 
-}
-    </style>
+
+
 
 
 

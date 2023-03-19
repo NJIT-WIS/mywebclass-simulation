@@ -27,7 +27,7 @@ function createPrivacyModal () {
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Privacy Policy</h5>
+            <h3 class="modal-title">Privacy Policy</h3>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">

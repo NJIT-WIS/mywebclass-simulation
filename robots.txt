@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Sitemap: https://nathandh.github.io/mywebclass-simulation/sitemap.xml

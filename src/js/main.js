@@ -23,12 +23,12 @@ window.addEventListener('resize', () => {
 
 function createPrivacyModal () {
   const modalHtml = `
-    <div class="modal fade" id="privacyModal" tabindex="-1">
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="modal-body" aria-label="Privacy Policy Modal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Privacy Policy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <h1 class="modal-title">Privacy Policy</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
           </div>
           <div class="modal-body">
             <p>Please read our <a href="privacy.html" target="_blank">Privacy Policy</a> carefully before using our website.</p>

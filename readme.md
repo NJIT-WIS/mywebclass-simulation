@@ -63,3 +63,8 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 
 
 # ADD YOUR PROJECT LINKS BELOW THIS 
+1. [Project Dashboard](https://github.com/users/kl63/projects/3)
+2. [Part 1 - Team Management Documentations](https://github.com/kl63/mywebclass-simulation/wiki/Part-1-Team-Management-Documentations)
+3. [Productivity Log](https://github.com/kl63/mywebclass-simulation/blob/master/productivity_log.md)
+3. [Part 3 - Project Analysis Documentation](https://github.com/kl63/mywebclass-simulation/wiki/Part-3-Project-Analysis-Documentation)
+4. 

@@ -49,8 +49,6 @@
     "@playwright/test": "^1.31.1",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
-    "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.3",
     "css-loader": "^6.7.3",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",
@@ -78,6 +76,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
     "@popperjs/core": "^2.11.6"
   }
 }

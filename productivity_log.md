@@ -30,7 +30,7 @@
 | [Test 9] - Homepage loads successfully  | 5      | https://github.com/kl63/mywebclass-simulation/issues/44  | To Do   | Lucicto S.     | 3/21/23 | - | Features  | Needs To Be Worked   |
 | [Test 10] - Test if clicking the "Accept" button closes the cookie modal  | 5      | https://github.com/kl63/mywebclass-simulation/issues/46  | To Do   | Lucicto S.     | 3/21/23 | - | Features  | Needs To Be Worked   |
 | [Test 11] - tracking cookies is functioning  | 5      | https://github.com/kl63/mywebclass-simulation/issues/47  | To Do   | Lucicto S.     | 3/21/23 | - | Features  | Needs To Be Worked   |
-| [[Test 12] - Privacy policy includes Google Analytics  | 5      | https://github.com/kl63/mywebclass-simulation/issues/48  | To Do   | Lucicto S.     | 3/21/23 | - | Features  | Needs To Be Worked   |
+| [Test 12] - Privacy policy includes Google Analytics  | 5      | https://github.com/kl63/mywebclass-simulation/issues/48  | To Do   | Lucicto S.     | 3/21/23 | - | Features  | Needs To Be Worked   |
 | [Test 13] - Testing for lang  | 2      | https://github.com/kl63/mywebclass-simulation/issues/50  | Completed   | Kevin L.     | 3/21/23 | 3/21/23 | Features | Completed/Closed  |
 | [Test 13] - Testing for lang  | 2      | https://github.com/kl63/mywebclass-simulation/issues/50  | Completed   | Kevin L.     | 3/21/23 | 3/21/23 | Features | Completed/Closed  |
 | [Test 15-18] - Testing with different browsers and devices  | 3      | https://github.com/kl63/mywebclass-simulation/issues/51  | Completed   | Kevin L.     | 3/21/23 | 3/21/23 | Features  | Completed/Closed  |

@@ -33,4 +33,4 @@ We reserve the right to make changes to this Privacy Policy at any time. We will
 
 ## Contact Us
 
-If you have any questions about this Privacy Policy or our practices, please contact us at [insert contact information].
+If you have any questions about this Privacy Policy or our practices, please contact us at MyWebClass@NJIT.

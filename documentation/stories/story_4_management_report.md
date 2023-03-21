@@ -8,5 +8,11 @@
 - Includes link to projects issue queue
 - Includes link to productivity task log file 
 
+#### Assigned to: 
+- Callie Dieffenbach
+
+#### Due Date: 
+- 3/24/2023
+
 ## Epic related to this story: 
 - Epic 2

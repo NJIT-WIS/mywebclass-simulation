@@ -10,12 +10,17 @@
     "test": "npx standard && npx playwright test --config=playwright.config.js",
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack  --config webpack.config.prod.js",
-    "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js"
+    "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js",
+    "prettier": "cd src && prettier --write .",
+    "prepare": "husky install"
   },
   "standard": {
     "ignore": [
       "public_html"
     ]
+  },
+  "lint-staged": {
+    "src/**/*": "prettier --write --ignore-unknown"
   },
   "eslintConfig": {
     "extends": [
@@ -27,7 +32,7 @@
     "type": "git",
     "url": "git+https://github.com/NJIT-WIS/mywebclass.git"
   },
-  "author": "Keith Williams @ NJIT.EDU",
+  "author": "Team ndh2, jv494, dl349 @ NJIT",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NJIT-WIS/mywebclass/issues"
@@ -43,12 +48,15 @@
     "glob": "^9.0.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.3",
     "image-webpack-loader": "^8.1.0",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-webpack-plugin": "^2.4.2",
+    "lint-staged": "^13.2.0",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss-loader": "^7.0.2",
+    "prettier": "2.8.5",
     "purgecss-webpack-plugin": "^5.0.0",
     "sass": "^1.58.3",
     "sass-loader": "^13.2.0",

@@ -14,7 +14,7 @@ status dashboard, and tracking project milestones.
 #### User Stories: 
 - As a product manager, I want to generate a customizable project analysis report to evaluate my team's progress, milestones, budget, and risks, so that I can make informed decisions about the project's future.
 - (User story 6 here)
-- (User story 7 here)
+- As a project manager, I want to generate a product development report so that I can summarize the research conducted for the product and how it was implemented.
 
 #### Dependencies: 
 - Project Management
@@ -38,4 +38,5 @@ status dashboard, and tracking project milestones.
 # List stories related to this theme
 - User Story 5: [Project Analysis Report](../stories/story_5_project_analysis_report.md)
 - User Story 6: [DevOps and Site Reliability Report](../stories/)
-- User Story 7: [Product Development Report](../stories/story_7_.md)
+- User Story 7: [Product Development Report](../stories/story_7_product_development_report.md)
+

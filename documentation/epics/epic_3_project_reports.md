@@ -12,7 +12,9 @@ status dashboard, and tracking project milestones.
 - Increase project success rates
 
 #### User Stories: 
-- ...
+- As a product manager, I want to generate a customizable project analysis report to evaluate my team's progress, milestones, budget, and risks, so that I can make informed decisions about the project's future.
+- (User story 6 here)
+- (User story 7 here)
 
 #### Dependencies: 
 - Project Management

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://nathandh.github.io/mywebclass-simulation/sitemap.xml

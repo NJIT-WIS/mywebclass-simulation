@@ -5,5 +5,11 @@
 - Provides a clear overview of each team member's productivity
 - Team members add their assigned tasks 
 
+#### Assigned to: 
+- Callie Dieffenbach
+
+#### Due Date: 
+3/21/2023
+
 ## Epic related to this story: 
 - Epic 2

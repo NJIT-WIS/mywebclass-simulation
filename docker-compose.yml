@@ -3,7 +3,7 @@ version: "3.8"
 services:
     master_branch:
     development_branch:
-      image: erikguaman/mywebclasssimulation
+      image: erikguaman/mywebclass-simulation
       container_name: development_branch
       pull_policy: always
       restart: always

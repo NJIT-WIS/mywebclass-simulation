@@ -1,6 +1,6 @@
-User Story 6: "As a product development team member, I want to access a comprehensive DevOps and Site Reliability Report, So that I can ensure the efficient delivery and stable operation of our product."
+### User Story 6: "As a product development team member, I want to access a comprehensive DevOps and Site Reliability Report, So that I can ensure the efficient delivery and stable operation of our product."
 
-Acceptance Criteria:
+#### Acceptance Criteria:
 
 - The report should provide an overview of our product's DevOps and Site Reliability practices, including continuous integration, continuous deployment, and infrastructure monitoring.
 
@@ -12,10 +12,10 @@ Acceptance Criteria:
 
 - The report should provide a clear visualization of the metrics and trends, enabling team members to quickly identify areas of success and opportunities for growth.
 
-Story Points:
+#### Story Points:
 
 3
 
-Team Member:
+#### Team Member:
 
 Bryan Tello

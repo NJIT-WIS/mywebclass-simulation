@@ -9,5 +9,14 @@
 - Ensure website design and layout are user-friendly and easy to navigate.
 - Implement best practices for website performance, including page load time and mobile responsiveness.
 
+#### Story Points: 
+2 
+
+#### Team member: 
+Callie Dieffenbach
+
+#### Deadline: 
+3/21/2023
+
 ## Epic related to this story
 - Epic 6

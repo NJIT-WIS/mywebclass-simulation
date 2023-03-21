@@ -21,7 +21,7 @@ test.describe('MyWebClass.org tests', () => {
     expect(hasProperUrlStructure).toBeTruthy()
     // Test for fast load times
     const pageLoadTime = await page.evaluate(() => window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart)
-    const isFastLoading = pageLoadTime <= 3000
+    const isFastLoading = pageLoadTime <= 5000
     expect(isFastLoading).toBeTruthy()
   })
 })

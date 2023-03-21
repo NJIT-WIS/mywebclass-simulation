@@ -11,6 +11,8 @@
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack  --config webpack.config.prod.js",
     "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js",
+    "lint": "eslint --ext js,jsx -c .eslintrc.json src",
+    "lint-fix": "eslint --ext js,jsx -c .eslintrc.json src --fix",
     "prettier": "cd src && prettier --write .",
     "prepare": "husky install"
   },
@@ -20,7 +22,12 @@
     ]
   },
   "lint-staged": {
-    "src/**/*": "prettier --write --ignore-unknown"
+    "src/**/*": [
+      "npm run prettier"
+    ],
+    "src/**/*.{js,jsx}": [
+      "npm run lint"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +52,9 @@
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
     "css-loader": "^6.7.3",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "glob": "^9.0.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",

@@ -8,6 +8,9 @@
 - Includes link to projects issue queue
 - Includes link to productivity task log file 
 
+#### Story points: 
+3 
+
 #### Assigned to: 
 - Callie Dieffenbach
 

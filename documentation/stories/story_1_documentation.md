@@ -13,7 +13,4 @@
 Callie Dieffenbach
 
 #### Deadline: 
-- 3/21/2023
-
-## Epics related to this user story:
-- Epic 1:
+3/21/2023

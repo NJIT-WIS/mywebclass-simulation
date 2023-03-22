@@ -40,6 +40,6 @@ The purpose of this epic is to streamline project management and enhance product
 - Priority 2
 
 ## List stories related to this epic
-- User story 2
-- User story 3
-- User story 4
+- [User Story 2](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_2_project_board.md)
+- [User Story 3](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_3_productivity_log.md)
+- [User Story 4](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_4_management_report.md)

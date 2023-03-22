@@ -44,7 +44,7 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 4. TBD
 
 # Project Setup
-## I am giving you my code; howevever, you should replace what I did with your own work.  Feel free to choose another CSS framework; howevever, you must complete the project simulation's requirements. 
+## I am giving you my code; howevever, you should replace what I did with your own work.  Feel free to choose another CSS framework; howevever, you must complete the project simulation's requirement. 
 
 - [GitHubPages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - Configure your project with the DockerHub Username and Password in the project settings and make a repo.  

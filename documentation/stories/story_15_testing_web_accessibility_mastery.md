@@ -1,6 +1,4 @@
-### User Story 15: "As a quality assurance specialist working on the Product Development theme, I want to perform comprehensive accessibility testing, 
-including automated, manual, and user-based methods, to identify and resolve any potential issues that may hinder the user experience for individuals 
-with disabilities, ensuring that our Product Development webpage is fully accessible and inclusive for all users."
+### User Story 15: "As a quality assurance specialist working on the Product Development theme, I want to perform comprehensive accessibility testing, including automated, manual, and user-based methods, to identify and resolve any potential issues that may hinder the user experience for individuals with disabilities, ensuring that our Product Development webpage is fully accessible and inclusive for all users."
 
 #### Acceptance Criteria:
 

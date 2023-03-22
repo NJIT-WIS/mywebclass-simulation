@@ -51,7 +51,7 @@ accessibility audit, and a detailed accessibility report.
 
 - Priority 2
 
-###List stories related to this theme
+### List stories related to this theme
 
 - User Story 14: [Conduct research & Implement features](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_14_implement_web_accessibility_mastery.md)
 - User Story 15: [Perform testing/resolve issues](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_15_testing_web_accessibility_mastery.md)

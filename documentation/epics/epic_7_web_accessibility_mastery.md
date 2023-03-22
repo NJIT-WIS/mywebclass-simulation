@@ -9,12 +9,19 @@ accessibility audit, and a detailed accessibility report.
 #### Goals:
 
 - Enhance the user experience for individuals of all abilities
+  
 - Ensure compliance with Web Content Accessibility Guidelines (WCAG)
+  
 - Identify and rectify potential accessibility barriers
+  
 - Foster a culture of inclusion in web design and development
+  
 - Conduct web accessibility research
+  
 - Implement necessary changes
+  
 - Perform accessibility testing
+  
 - Resolve any identified issues
 
 #### User Stories:
@@ -53,8 +60,8 @@ accessibility audit, and a detailed accessibility report.
 
 ### List stories related to this theme
 
-- User Story 14: [Conduct research & Implement features](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_14_implement_web_accessibility_mastery.md)
-- User Story 15: [Perform testing/resolve issues](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_15_testing_web_accessibility_mastery.md)
+- User Story 14: [Conduct Research & Implement Features](../stories/story_14_implement_web_accessibility_mastery.md)
+- User Story 15: [Perform Testing/Resolve Issues](../stories/story_15_testing_web_accessibility_mastery.md)
 
 
 

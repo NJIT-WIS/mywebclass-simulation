@@ -33,5 +33,5 @@
 - 4
 
 # List stories related to this epic
-- [User Story 16](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_16_content_template.md)
-- [User Story 17](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_17_develop_homepage.md)
+- User Story 16: [Develop Content Template](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_16_content_template.md)
+- User Story 17: [Develop Homepage](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_17_develop_homepage.md)

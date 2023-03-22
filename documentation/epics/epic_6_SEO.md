@@ -33,5 +33,5 @@ Improved search engine rankings and increased website traffic can drive business
 - 6
 
 # List stories related to this theme
-- [User Story 12](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_12_implement_SEO.md)
-- [User Story 13](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_13_testing_SEO.md)
+- User Story 12: [Conduct Research & Implement Features](../stories/story_12_implement_SEO.md)
+- User Story 13: [Perform Testing/Resolve Issues](../stories/story_13_testing_SEO.md)

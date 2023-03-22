@@ -11,11 +11,11 @@ Acceptance Criteria:
 
 Story points: 
 
-2
+- 2
 
 Team Member:
 
-Bryan Tello
+- Bryan Tello
 
 Deadline:
 

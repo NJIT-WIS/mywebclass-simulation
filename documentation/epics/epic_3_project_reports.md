@@ -37,6 +37,6 @@ status dashboard, and tracking project milestones.
 
 # List stories related to this theme
 - User Story 5: [Project Analysis Report](../stories/story_5_project_analysis_report.md)
-- User Story 6: [DevOps and Site Reliability Report](../stories/)
+- User Story 6: [DevOps and Site Reliability Report](../stories/)[https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_6_devops_and_site_reliability_report.md]
 - User Story 7: [Product Development Report](../stories/story_7_product_development_report.md)
 

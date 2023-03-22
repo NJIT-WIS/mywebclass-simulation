@@ -53,9 +53,9 @@ Limited availability of subject matter experts for user testing and feedback
 - Bryan Tello
 
 # List epics related to this initiative
-- Epic 4 
-- Epic 5
-- Epic 6 
-- Epic 7
-- Epic 8 
-- Epic 9
+- [Epic 4](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_4_research_for_website.md) 
+- [Epic 5](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_5_research_features.md)
+- [Epic 6](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_6_SEO.md)
+- [Epic 7](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_7_web_accessibility_mastery.md)
+- [Epic 8](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_8_develop_website.md)
+- [Epic 9](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_9_GDPR.md)

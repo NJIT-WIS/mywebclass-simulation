@@ -30,8 +30,8 @@
 - It will improve website engagement, encourage website visitors to explore other pages on the website, and enhance the overall user experience. A visually appealing and user-friendly website can also improve the organization's reputation and credibility, leading to increased customer trust and loyalty.
 
 #### Priority: 
-- 
+- 4
 
 # List stories related to this epic
-- User story 16 
-- User story 17 
+- [User Story 16](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_16_content_template.md)
+- [User Story 17](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_17_develop_homepage.md)

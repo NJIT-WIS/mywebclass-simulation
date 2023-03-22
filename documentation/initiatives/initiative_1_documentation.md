@@ -54,6 +54,6 @@ This initiative aims to create a comprehensive set of documentation and establis
 - Truong Dang
 
 ## List epics related to this theme
-- Epic 1: Initial Documentation
-- Epic 2: Project Management System
-- Epic 3: Project Reports
+- [Epic 1](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_1_create_documentation.md)
+- [Epic 2](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_2_project_management.md)
+- [Epic 3](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_3_project_reports.md)

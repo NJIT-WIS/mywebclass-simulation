@@ -1,6 +1,4 @@
-### User Story 22: "As a DevOps engineer working on the Product Development theme, I want to measure deployment times, research ways to optimize them, and 
-implement measurable improvements, ensuring that our webpage updates are deployed efficiently and with minimal downtime for users interested in our 
-product development resources."
+### User Story 22: "As a DevOps engineer working on the Product Development theme, I want to measure deployment times, research ways to optimize them, and implement measurable improvements, ensuring that our webpage updates are deployed efficiently and with minimal downtime for users interested in our product development resources."
 
 #### Acceptance Criteria:
 

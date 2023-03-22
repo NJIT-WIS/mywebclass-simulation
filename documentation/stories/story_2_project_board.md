@@ -11,6 +11,3 @@
 
 #### Due Date: 
 - 3/21/2023
-
-## Epic related to this story:
-- Epic 2 

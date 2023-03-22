@@ -42,4 +42,4 @@ to support this activity.
 
 # List stories related to this theme
 - User Story 21: [Set Up Deployment](../stories/story_21_setup_ployment.md)
-- User Story 22: [Measure Deployment Times](../stories/story_20)
+- User Story 22: [Measure Deployment Times](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_22_optimize_deployment_times_research_measure&_implement_improvements.md)

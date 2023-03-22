@@ -7,6 +7,10 @@ import * as bootstrap from 'bootstrap';
 import allPage from './allPages';
 import contentPage from './contentPage';
 
+// Imports here allow SiteMap and Robots.txt to be picked up and emitted by Webpack
+import '../sitemap.xml';
+import '../robots.txt';
+
 document.addEventListener('DOMContentLoaded', () => {
   allPage.initialize();
   contentPage.initialize();

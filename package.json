@@ -7,20 +7,15 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "npx standard && npx playwright test --config=playwright.config.js",
+    "test": "npm run prettier && npm run lint && npx playwright test --config=playwright.config.js",
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack  --config webpack.config.prod.js",
     "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js",
-    "lint": "eslint --ext js,jsx -c .eslintrc.json src",
-    "lint-fix": "eslint --ext js,jsx -c .eslintrc.json src --fix",
+    "lint": "eslint --ext js,jsx -c .eslintrc.json src webpack.config.dev.js webpack.config.prod.js",
+    "lint-fix": "eslint --ext js,jsx -c .eslintrc.json src webpack.config.dev.js webpack.config.prod.js --fix",
     "lighthouse": "cd lighthouse && npx lighthouse http://localhost:3000/ --output",
     "prettier": "cd src && prettier --write --ignore-unknown .",
     "prepare": "husky install"
-  },
-  "standard": {
-    "ignore": [
-      "public_html"
-    ]
   },
   "lint-staged": {
     "src/**/*": [
@@ -28,12 +23,6 @@
     ],
     "src/**/*.{js,jsx}": [
       "npm run lint"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "semistandard",
-      "standard-jsx"
     ]
   },
   "repository": {
@@ -70,7 +59,6 @@
     "purgecss-webpack-plugin": "^5.0.0",
     "sass": "^1.58.3",
     "sass-loader": "^13.2.0",
-    "standard": "^17.0.0",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.6",
     "webpack": "^5.75.0",

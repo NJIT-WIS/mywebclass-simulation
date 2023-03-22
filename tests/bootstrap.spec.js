@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test')
 
 test('Check presence of Bootstrap classes', async ({ page }) => {
-  await page.goto('https://www.example.com')
+  await page.goto('https://localhost:3000')
 
   // Check for presence of elements with Bootstrap CSS classes
   const navbar = await page.waitForSelector('.navbar')

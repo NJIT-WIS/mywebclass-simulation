@@ -3,7 +3,7 @@ name: Documentation
 about: This is to submit documentation updates
 title: ''
 labels: documentation
-assignees: kaw393939
+assignees: ''
 
 ---
 

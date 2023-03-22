@@ -1,6 +1,6 @@
 {
   "name": "mywebclass.org",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Help for students and teachers learning advanced technologies.",
   "main": "src/index.js",
   "directories": {
@@ -25,14 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NJIT-WIS/mywebclass.git"
+    "url": "git+https://github.com/kptl823/mywebclass-simulation.git"
   },
   "author": "Keith Williams @ NJIT.EDU",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NJIT-WIS/mywebclass/issues"
+    "url": "https://github.com/kptl823/mywebclass-simulation.git"
   },
-  "homepage": "https://github.com/NJIT-WIS/mywebclass#readme",
+  "homepage": "https://github.com/kptl823/mywebclass-simulation.git",
   "devDependencies": {
     "@playwright/test": "^1.31.1",
     "autoprefixer": "^10.4.13",

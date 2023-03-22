@@ -17,7 +17,8 @@ body.banner-offset {
   margin-top: calc(var(--bs-gutter-y) + var(--banner-height));
 }
 
-#sidebarMenu .nav-link.active {
+#sidebarMenu .nav-link.active,
+#toc_menu .nav-link.active {
   text-decoration: underline;
 }
 footer {

@@ -13,7 +13,8 @@
     "grade": "python -m pytest -c pytest_grade.ini && npx playwright test --config=playwright_grade.config.js",
     "lint": "eslint --ext js,jsx -c .eslintrc.json src",
     "lint-fix": "eslint --ext js,jsx -c .eslintrc.json src --fix",
-    "prettier": "cd src && prettier --write .",
+    "lighthouse": "cd lighthouse && npx lighthouse http://localhost:3000/ --output",
+    "prettier": "cd src && prettier --write --ignore-unknown .",
     "prepare": "husky install"
   },
   "standard": {
@@ -61,6 +62,7 @@
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-webpack-plugin": "^2.4.2",
+    "lighthouse": "^10.0.2",
     "lint-staged": "^13.2.0",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss-loader": "^7.0.2",
@@ -76,8 +78,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.3",
-    "@popperjs/core": "^2.11.6"
+    "bootstrap-icons": "^1.10.3"
   }
 }

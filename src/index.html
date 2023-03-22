@@ -11,7 +11,7 @@
     <meta name="google-site-verification" content="jQfnSzxRC9a_BStfFUVRIpIj-0UhEss2Z4gc2VCW5bY" />
     <!--Basic meta info -->
     <meta name="keywords" content="My Webclass Homepage" />
-    <meta name="author" content="Keith Williams" />
+    <meta name="author" content="Arly Volmar | Dina Lahham | Nathan Hernandez" />
     <meta name="description" content="A project to help educators integrate new technoliges into their teaching" />
 
     <!--OpenGraph meta -->
@@ -21,12 +21,21 @@
     <meta property="og:url" content="" />
   </head>
 
-  <body class="pt-5">
+  <body class="pt-3">
     <div class="container-fluid">
       <header role="banner" class="fixed-top">
         <nav role="navigation" aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
-            <a class="navbar-brand" href="/">MyWebClass.org</a>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img
+                src="assets/images/logo.jpg"
+                alt="MyWebClass Logo"
+                width="56"
+                height="30"
+                class="d-inline-block align-text-top"
+              />
+              MyWebClass
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -42,32 +51,41 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="content.html">Content Template</a>
+                  <a class="nav-link" href="/story.html" aria-label="Our Story Link">Our Story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/privacy.html" aria-label="Privacy Policy Link">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="content.html" aria-label="Content Template Link">Content Template [Beta]</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
       </header>
+
       <main>
         <div class="container my-5">
-          <div class="row p-4 pb-0 pe-lg-0 pt-lg-0 align-items-center rounded-3 border shadow-lg">
-            <div class="col-lg-7 p-3 p-lg-3 pt-lg-1">
-              <h1 class="display-6 fw-bold lh-1">Revolutionize your teaching</h1>
+          <div class="row p-4 pb-4 pe-lg-4 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="col-lg-6 p-3 p-lg-3 pt-lg-0">
+              <h1 class="display-6 fw-bold lh-1">Empowering Educators for a Digital World</h1>
               <p class="lead">
-                Empower your students with cutting-edge software engineering skills. Join MyWebClass and discover
-                advanced technologies that will transform your teaching and their learning journey.
+                MyWebClass is a website providing accessible resources to educators teaching modern technology, to their
+                students. Join today and discover the ways our website can transform your teaching, and help you
+                confidently prepare students for successful futures in the digital age.
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">Start Here</button>
+                <a class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" href="/story.html">Start Here</a>
               </div>
             </div>
-            <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg">
               <img
                 class="rounded-lg-3 img-fluid"
-                src="assets/images/teacher.gif"
-                alt="a teacher with students"
-                width="720"
+                src="assets/images/MyWebClass_Promo.jpg"
+                alt="MyWebClass Students learning programming from a Teacher"
+                width="886"
+                height="575"
               />
             </div>
           </div>
@@ -76,33 +94,47 @@
       <footer class="py-5 container">
         <div class="row">
           <div class="col">
-            <h5>About Us</h5>
+            <h1>About Us</h1>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="story.html" class="nav-link p-0 text-muted">Our Story</a></li>
               <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-muted active" aria-current="page" href="privacy.html">Privacy Policy</a>
+                <a href="story.html" class="nav-link p-0 text-muted" aria-label="Our Story Link">Our Story</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  class="nav-link p-0 text-muted active"
+                  aria-current="page"
+                  href="privacy.html"
+                  aria-label="Privacy Policy Link"
+                  >Privacy Policy</a
+                >
               </li>
             </ul>
           </div>
 
           <div class="col-sm-3">
-            <h5>Share on Social Media</h5>
+            <h1>Share on Social Media</h1>
             <ul class="nav">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted"><i class="bi bi-linkedin me-2"></i></a>
+                <a href="#" class="nav-link p-0 text-muted" aria-label="LinkedIn Link"
+                  ><i class="bi bi-linkedin me-2"></i
+                ></a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted"><i class="bi bi-twitter me-2"></i></a>
+                <a href="#" class="nav-link p-0 text-muted" aria-label="Twitter Link"
+                  ><i class="bi bi-twitter me-2"></i
+                ></a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted"><i class="bi bi-facebook me-2"></i></a>
+                <a href="#" class="nav-link p-0 text-muted" aria-label="Facebook Link"
+                  ><i class="bi bi-facebook me-2"></i
+                ></a>
               </li>
             </ul>
           </div>
 
           <div class="col-md-5 offset-md-1 mb-3">
             <form>
-              <h5>Subscribe to our newsletter</h5>
+              <h1>Subscribe to our newsletter</h1>
               <p>Monthly digest of what's new and exciting from us.</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                 <label for="newsletter1" class="visually-hidden">Email address</label>

@@ -1,4 +1,4 @@
-### User Story 8: "As a quality assurance specialist working on the Product Development theme, I want to develop and perform automated tests using Playwright to measure our webpage's performance in the browser, ensuring that the site loads quickly, runs smoothly, and provides an optimal user experience for all visitors interested in our product development resources."
+### User Story 20: "As a quality assurance specialist working on the Product Development theme, I want to develop and perform automated tests using Playwright to measure our webpage's performance in the browser, ensuring that the site loads quickly, runs smoothly, and provides an optimal user experience for all visitors interested in our product development resources."
 
 #### Acceptance Criteria:
 

@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test')
 
 test('newsletter subscription', async ({ page }) => {
   // Navigate to the website
-  await page.goto('https://example.com')
+  await page.goto('http://localhost:3000')
 
   // Click the newsletter sign-up button
   const newsletterButton = await page.waitForSelector('#newsletter-btn')

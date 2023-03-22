@@ -11,3 +11,4 @@ venv
 .github/workflows/*.bak
 .vscode
 docs
+.DS_Store

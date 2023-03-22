@@ -14,7 +14,7 @@
     "lint": "eslint --ext js,jsx -c .eslintrc.json src",
     "lint-fix": "eslint --ext js,jsx -c .eslintrc.json src --fix",
     "lighthouse": "cd lighthouse && npx lighthouse http://localhost:3000/ --output",
-    "prettier": "cd src && prettier --write .",
+    "prettier": "cd src && prettier --write --ignore-unknown .",
     "prepare": "husky install"
   },
   "standard": {

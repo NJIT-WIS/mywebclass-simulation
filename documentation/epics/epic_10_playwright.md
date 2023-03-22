@@ -37,4 +37,4 @@ The "Develop automated tests with Playwright" epic involves the development of a
 
 # List stories related to this theme
 - User Story 19: [Develop automated tests with Playwright](../stories/story_19_develop_tests_Playwright.md)
-- User Story 20: [Perform the Testing and Measure Site Performance](../stories/story_20)
+- User Story 20: [Perform the Testing and Measure Site Performance](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_20_testing_&_measuring.md)

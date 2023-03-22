@@ -17,6 +17,3 @@ Callie Dieffenbach
 
 #### Due Date: 
 3/24/2023
-
-## Epic related to this story: 
-- Epic 3

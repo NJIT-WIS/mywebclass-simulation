@@ -14,6 +14,3 @@ Callie Dieffenbach
 
 #### Due date: 
 3/24/2023
-
-## Epics related to this user story: 
-- Epic 8 

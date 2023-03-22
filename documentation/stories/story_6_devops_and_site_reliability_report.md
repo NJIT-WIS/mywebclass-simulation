@@ -13,13 +13,10 @@
 - The report should provide a clear visualization of the metrics and trends, enabling team members to quickly identify areas of success and opportunities for growth.
 
 #### Story Points:
-
 3
 
 #### Team Member:
-
 Bryan Tello
 
 #### Deadline:
-
 3/24/23

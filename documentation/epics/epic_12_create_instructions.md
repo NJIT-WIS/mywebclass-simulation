@@ -13,6 +13,9 @@ Goals:
 
 User Stories:
 
+- User Story 23: "As a technical writer working on the Product Development theme, I want to create easy-to-understand and reliable instructions for installing our project on both Mac and Windows computers, ensuring that developers can seamlessly set up their local environment and begin working on the webpage without any complications or delays."
+- User Story 24: "As a technical writer working on the Product Development theme, I want to create easy-to-understand instructions and scripts for deploying the project and, if necessary, setting up the development server, ensuring that developers can efficiently deploy the webpage and configure their local servers without any complications or delays."
+
 
 Dependencies:
 

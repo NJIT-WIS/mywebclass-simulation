@@ -20,8 +20,6 @@ test('Check Accessibility and Usability', async ({ page }) => {
     expect(label).toBeTruthy()
   }
 
-
-
   // Ensure there are no empty headings
   const headings = await page.$$('h1, h2, h3, h4, h5, h6')
   for (const heading of headings) {

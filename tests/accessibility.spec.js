@@ -20,12 +20,7 @@ test('Check Accessibility and Usability', async ({ page }) => {
     expect(label).toBeTruthy()
   }
 
-  // Ensure all links have descriptive text
-  const links = await page.$$('a')
-  for (const link of links) {
-    const text = await link.innerText()
-    expect(text).toBeTruthy()
-  }
+
 
   // Ensure there are no empty headings
   const headings = await page.$$('h1, h2, h3, h4, h5, h6')

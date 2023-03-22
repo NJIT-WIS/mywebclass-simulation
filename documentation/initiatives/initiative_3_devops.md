@@ -53,6 +53,6 @@ This initiative aims to establish a reliable and efficient DevOps framework that
 - Bryan Tello
 
 ## List epics related to this theme
-- Epic 10 
-- Epic 11 
-- Epic 12  
+- [Epic 10](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_10_playwright.md)
+- [Epic 11](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/epics/epic_11_set_up_deployments.md)
+- Epic 12

@@ -19,7 +19,9 @@ Goals:
 
 User Stories:
 
--
+- User Story 14: "As a web developer focused on Product Development, I want to conduct thorough research on web accessibility best practices and seamlessly implement the necessary features within our webpage, ensuring that all users, regardless of their abilities, can effectively engage with our content and benefit from our product development resources.
+
+- User Story 15: "As a quality assurance specialist working on the Product Development theme, I want to perform comprehensive accessibility testing, including automated, manual, and user-based methods, to identify and resolve any potential issues that may hinder the user experience for individuals with disabilities, ensuring that our Product Development webpage is fully accessible and inclusive for all users."
 
 Dependencies:
 

@@ -32,4 +32,4 @@ The purpose of this epic is to devlope a comprehensive framework for organizing 
 - 1, as this should be completed before continuing website development
 
 # List stories related to this theme
-- [User Story 1](https://github.com/cad448/mywebclass-simulation/blob/master/documentation/stories/story_1_documentation.md)
+- User Story 1: [Create theme, initiatives, epics, user stories, wiki](../stories/story_1_documentation.md)

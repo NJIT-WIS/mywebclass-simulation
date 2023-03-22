@@ -1,4 +1,4 @@
-### User Story 13: As a technical writer working on the Product Development theme, I want to create easy-to-understand and reliable instructions for installing our project on both Mac and Windows computers, ensuring that developers can seamlessly set up their local environment and begin working on the webpage without any complications or delays.
+### User Story 13: "As a technical writer working on the Product Development theme, I want to create easy-to-understand and reliable instructions for installing our project on both Mac and Windows computers, ensuring that developers can seamlessly set up their local environment and begin working on the webpage without any complications or delays."
 
 Acceptance Criteria:
 

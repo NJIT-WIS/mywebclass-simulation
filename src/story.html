@@ -10,7 +10,7 @@
 
     <!--Basic meta info -->
     <meta content="My Webclass Homepage | Our Story" name="keywords" />
-    <meta content="Keith Williams" name="author" />
+    <meta content="Arly Volmar | Dina Lahham | Nathan Hernandez" name="author" />
     <meta content="The story and mission of MyWebClass.org" name="description" />
 
     <!--OpenGraph meta -->
@@ -24,8 +24,17 @@
     <div class="container-fluid">
       <header class="fixed-top" role="banner">
         <nav aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-          <div class="container">
-            <a class="navbar-brand" href="/">MyWebClass.org</a>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img
+                src="assets/images/logo.jpg"
+                alt="MyWebClass Logo"
+                width="48"
+                height="30"
+                class="d-inline-block align-text-top"
+              />
+              MyWebClass
+            </a>
             <button
               aria-controls="navbarCollapse"
               aria-expanded="false"
@@ -38,10 +47,18 @@
               <span aria-hidden="true" class="navbar-toggler-icon"></span>
               <span class="visually-hidden">Toggle navigation</span>
             </button>
+            <!--- TODO - Nit: On the duplicated navigation code. Need to either refactor to import common elements.
+                  Or switch to ReactJS or some other library that better facilitates Component Development --->
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="content.html">Content Template</a>
+                  <a class="nav-link" href="/story.html" aria-label="Out Story Link">Our Story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/privacy.html" aria-label="Privacy Policy Link">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="content.html" aria-label="Content Template Link">Content Template [Beta]</a>
                 </li>
               </ul>
             </div>
@@ -65,7 +82,7 @@
       <div class="container">
         <div class="row">
           <!-- Sidebar menu with scrollspy -->
-          <nav class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse position-fixed" id="sidebarMenu">
+          <nav class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse position-fixed" id="toc_menu">
             <div class="position-sticky pt-3">
               <h2 class="justify-left">Navigation</h2>
               <!-- Javascript builds out the navigation items -->
@@ -74,63 +91,129 @@
 
           <!-- Main content area -->
           <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4">
-            <h1 class="fw-bold border-bottom" id="title">Our Story</h1>
-            <div class="text-muted mb-3">
-              By <a href="#">Author Name</a><span class="text-muted me-3"> Last Updated: January 1, 2022</span>
-              <span class="text-muted" id="readingTime">0</span>
-            </div>
+            <section id="title">
+              <h1 class="fw-bold border-bottom">Our Story</h1>
+              <div class="text-muted mb-1">
+                By: Dina Lahham | Arly Volmar | Nathan Hernandez | ChatGPT
+                <span class="text-muted me-3"> Last Updated: March 21, 2023</span>
+                <span class="text-muted" id="readingTime">0</span>
+              </div>
+            </section>
             <div>
-              <section class="row">
-                <h2 class="h4 mb-4">Mission</h2>
+              <section id="section-welcome">
+                <h2 class="h4 mb-1">Welcome</h2>
                 <p>
-                  Our mission is to create a community of people committed to helping students of all ages and
-                  backgrounds succeed in the modern software industry by providing educational opportunities and a
-                  practical, hands-on learning experience.
+                  Welcome to MyWebClass, a website dedicated to providing resources to educators who want to teach
+                  modern technology, such as cutting-ege software engineering skills, to their students. With the world
+                  becoming increasingly digital, it is important for students to have a strong foundation in these
+                  skills to prepare them for future careers. However, it can be daunting for educators who are not most
+                  up-to-date or familiar with the latest technologies available to teach these subjects effectively.
                 </p>
-
-                <h2 class="h4 mb-4">Values</h2>
+                <p>
+                  That's where we come in. Our website offers a range of resources, including lesson plans, activities,
+                  assessments, and teaching guides, all designed to make teaching technology and software engineering
+                  accessible and engaging for both educators and students. Whether you are a seasoned technology
+                  educator or new to teaching these subjects, we have something for everyone.
+                </p>
+              </section>
+              <section id="section-mission">
+                <h2 class="h4 mb-1">Mission</h2>
+                <p>
+                  At MyWebClass, our mission is to empower educators with the knowledge and resources they need to teach
+                  modern technology skills, including cutting-edge software engineering, to their students. As the world
+                  becomes more digital, we believe it is critical for students to have a strong foundation in these
+                  skills to succeed in future careers. We recognize the challenges that educators may face in keeping up
+                  with the latest technologies, and we are committed to providing them with the support they need to
+                  teach these subjects effectively.
+                </p>
+              </section>
+              <section id="section-values">
+                <h2 class="h4 mb-1">Values</h2>
                 <ul>
                   <li>
-                    <strong>People:</strong> We value the people in our community and believe that every student and
-                    teacher has the potential to succeed. We strive to create an inclusive and supportive environment
-                    where everyone feels welcome to learn and grow.
+                    <strong>People:</strong> We value people above all else. We believe that every individual has the
+                    potential to learn and succeed, and we are committed to providing inclusive and accessible resources
+                    that empower educators and students of all backgrounds. We strive to create a welcoming and
+                    supportive community that encourages collaboration and fosters personal and professional growth. We
+                    recognize that our success depends on the success of our users, and we are dedicated to helping them
+                    achieve their goals. Above all, we are driven by a passion for education and a belief in the
+                    transformative power of technology to create a brighter future for all.
                   </li>
                   <li>
-                    <strong>Learning:</strong> We believe that learning is a lifelong process and that everyone has
-                    something to teach and something to learn. We are committed to providing educational opportunities
-                    that help students and teachers gain experience with new technologies and learn advanced software
-                    engineering concepts.
+                    <strong>Learning:</strong> We value learning as the foundation of personal and professional growth.
+                    We believe that modern technology skills are essential for success in today's world, and we are
+                    committed to providing high-quality educational resources that help educators and students achieve
+                    their goals. We believe that learning should be accessible to everyone, regardless of their
+                    background or experience, and we are dedicated to creating an inclusive and supportive learning
+                    environment that encourages exploration, experimentation, and innovation. We believe in the power of
+                    collaboration and community to facilitate learning, and we are committed to fostering connections
+                    between educators, students, and industry professionals to ensure that our content remains relevant
+                    and up-to-date. Above all, we believe that learning is a lifelong journey, and we are committed to
+                    supporting our users in their pursuit of knowledge and skill development.
                   </li>
                   <li>
-                    <strong>Efficiency:</strong> We recognize that time is a valuable resource, and we strive to make
-                    the most of it. We aim to provide a practical, hands-on learning experience that allows students and
-                    teachers to develop the skills they need to succeed in the modern software industry quickly.
+                    <strong>Efficiency:</strong>We value efficiency in all aspects of our work. We believe that
+                    educators' time and resources are valuable, and we are committed to providing them with efficient
+                    and effective solutions for teaching modern technology skills. We strive to streamline our processes
+                    and optimize our resources to deliver high-quality, up-to-date materials and support to our
+                    educators and students. We believe that by promoting efficiency, we can help educators achieve their
+                    goals and prepare students for successful futures in the digital age.
                   </li>
                   <li>
-                    <strong>Dependability:</strong> We understand the importance of being reliable and consistent. We
-                    aim to provide a stable and dependable platform for students and teachers to learn and collaborate.
+                    <strong>Dependability:</strong> At MyWebClass, we value dependability as a fundamental aspect of our
+                    work. We recognize the critical importance of educators having access to reliable and trustworthy
+                    resources to effectively teach modern technology skills to their students. As such, we are committed
+                    to being a dependable partner for our educators, delivering consistent and high-quality educational
+                    materials and support. We strive to be responsive to the needs of our educators and students and to
+                    always follow through on our commitments. We believe that by being dependable, we can earn the trust
+                    of our partners and help them achieve their goals in preparing students for successful careers in
+                    the rapidly evolving world of technology.
                   </li>
                 </ul>
-                <p>
-                  Each of these values supports our mission by creating a welcoming and supportive environment for
-                  students and teachers to learn and grow. Our focus on people ensures that everyone feels included and
-                  valued, and our commitment to learning provides educational opportunities that help students and
-                  teachers succeed in the modern software industry. Our emphasis on efficiency and dependability allows
-                  us to provide a practical, reliable platform that makes the most of everyone's time.
-                </p>
-
-                <h2 class="h4 mb-4">Origin</h2>
+                <p>Each of these core values supports our mission in distinct ways:</p>
+                <ul>
+                  <li>
+                    Our <strong>Value of People</strong> above all else drives us to provide inclusive and accessible
+                    resources, ensuring that educators and students of all backgrounds have the opportunity to learn and
+                    succeed in modern technology skills.
+                  </li>
+                  <li>
+                    Our <strong>Value of Learning</strong> as the foundation of personal and professional growth
+                    underpins our commitment to providing high-quality educational resources and fostering an inclusive
+                    and supportive learning environment, enabling educators and students to effectively teach and learn
+                    modern technology skills.
+                  </li>
+                  <li>
+                    Our <strong>Values of Efficiency and Dependability</strong> enable us to deliver streamlined and
+                    reliable educational materials and support, empowering educators to teach modern technology skills
+                    effectively and equipping students with a strong foundation to succeed in future careers in the
+                    ever-evolving world of technology.
+                  </li>
+                </ul>
+              </section>
+              <section id="section-origin">
+                <h2 class="h4 mb-2">Origin</h2>
                 <p>
                   Mywebclass.org was founded in 2023 by Keith Williams, a University Lecturer at New Jersey Institute of
                   Technology with over 30 years of experience as a software engineer, entrepreneur, and 17 years of
-                  experience as a university lecturer and in k-12 education. Keith founded mywebclass.org to help bridge
+                  experience as a university lecturer and in K-12 education. Keith founded mywebclass.org to help bridge
                   the gap between educators and professionals in the software industry by creating a community of people
                   committed to helping students of all ages and backgrounds succeed.
                 </p>
 
                 <p>
+                  MyWebClass is carried forward in its latest form by Arly Volmar, Dina Lahham, and Nathan Hernandez.
+                  Each brings their unique talents and experiences in order to deliver the latest great feature
+                  enhancements and improvements necessary to continue to improve the MyWebClass customer experience!
+                </p>
+
+                <p>
                   Thank you for your interest in mywebclass.org. Together, we can create a community of people committed
                   to helping students of all ages and backgrounds succeed in the modern software industry.
+                  <em
+                    >Let's keep working towards this goal and make a positive impact in the lives of countless
+                    individuals!</em
+                  >
                 </p>
               </section>
             </div>
@@ -141,10 +224,18 @@
             <div class="col">
               <h1>About Us</h1>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a class="nav-link p-0 text-muted" href="story.html">Our Story</a></li>
+                <li class="nav-item mb-2">
+                  <a class="nav-link p-0 text-muted" href="story.html" aria-label="Our Story Link">Our Story</a>
+                </li>
 
                 <li class="nav-item mb-2">
-                  <a aria-current="page" class="nav-link p-0 text-muted active" href="privacy.html">Privacy Policy</a>
+                  <a
+                    aria-current="page"
+                    class="nav-link p-0 text-muted active"
+                    href="privacy.html"
+                    aria-label="Privacy Policy Link"
+                    >Privacy Policy</a
+                  >
                 </li>
               </ul>
             </div>
@@ -153,13 +244,19 @@
               <h1>Share on Social Media</h1>
               <ul class="nav">
                 <li class="nav-item mb-2">
-                  <a class="nav-link p-0 text-muted" href="#"><i class="bi bi-linkedin me-2"></i></a>
+                  <a class="nav-link p-0 text-muted" href="#" aria-label="LinkedIn Link"
+                    ><i class="bi bi-linkedin me-2"></i
+                  ></a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link p-0 text-muted" href="#"><i class="bi bi-twitter me-2"></i></a>
+                  <a class="nav-link p-0 text-muted" href="#" aria-label="Twitter Link"
+                    ><i class="bi bi-twitter me-2"></i
+                  ></a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link p-0 text-muted" href="#"><i class="bi bi-facebook me-2"></i></a>
+                  <a class="nav-link p-0 text-muted" href="#" aria-label="Facebook Link"
+                    ><i class="bi bi-facebook me-2"></i
+                  ></a>
                 </li>
               </ul>
             </div>

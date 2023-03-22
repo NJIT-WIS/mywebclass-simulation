@@ -28,15 +28,15 @@ function createPrivacyModal() {
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Privacy Policy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Policy modal Close Button"></button>
           </div>
           <div class="modal-body">
             <p>Please read our <a href="privacy.html" target="_blank">Privacy Policy</a> carefully before using our website.</p>
             <p>Do you agree to our Privacy Policy?</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Disagree</button>
-            <button type="button" class="btn btn-primary" id="agreeButton">Agree</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Disagree Policy Button">Disagree</button>
+            <button type="button" class="btn btn-primary" id="agreeButton" aria-label="Agree Policy Button">Agree</button>
           </div>
         </div>
       </div>

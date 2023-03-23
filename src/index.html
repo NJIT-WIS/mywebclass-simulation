@@ -2,16 +2,15 @@
 <html lang="EN">
 
 <head>
-    <!--characterset UTF-8 Watch this: https://youtu.be/MijmeoH9LT4 -->
-
     <title>MyWebClass.org</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Basic meta info -->
     <meta name="keywords" content="My Webclass Homepage">
-    <meta name="author" content="Keith Williams"/>
+    <meta name="author" content="Callie Bryan Truong"/>
     <meta name="description" content="A project to help educators integrate new technoliges into their teaching">
 
     <!--OpenGraph meta -->
@@ -20,6 +19,22 @@
     <meta property="og:image" content="assets/images/logo.png"/>
     <meta property="og:url" content=""/>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4VFG6HE1H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-L4VFG6HE1H');
+    </script>
+
+    <!-- Bootstrap Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Add jQuery for language switching -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="pt-5">
@@ -27,63 +42,166 @@
     <header role="banner" class="fixed-top">
         <nav role="navigation" aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="/">MyWebClass.org</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html">MyWebClass.org</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Toggle navigation</span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="content.html">Content Template</a>
+                            <a class="nav-link" data-lang="en" href="content.html">Content Template</a>
+                            <a class="nav-link d-none" data-lang="fr" href="content.html">Modèle de contenu</a>
+                            <a class="nav-link d-none" data-lang="es" href="content.html">Plantilla de contenido</a>
+                        </li>
+                        <!-- Add language switcher -->
+                        <li class="nav-item">
+                            <select id="language-switcher" class="form-select">
+                                <option value="en" selected>English</option>
+                                <option value="es">Español</option>
+                                <option value="fr">French</option>
+                            </select>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <div class="container my-5">
+    <!-- Add data-lang attributes for each translatable element -->
+    <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-0 align-items-center rounded-3 border shadow-lg ">
                 <div class="col-lg-7 p-3 p-lg-3 pt-lg-1">
-                    <h1 class="display-6 fw-bold lh-1">Revolutionize your teaching</h1>
-                    <p class="lead">Empower your students with cutting-edge software engineering skills. Join
+                    <h1 class="display-6 fw-bold lh-1" data-lang="en">Revolutionize Your Teaching</h1>
+                    <h1 class="display-6 fw-bold lh-1 d-none" data-lang="es">Revoluciona tu enseñanza</h1>
+                    <h1 class="display-6 fw-bold lh-1 d-none" data-lang="fr">Révolutionnez votre enseignement</h1>
+                    <p class="lead" data-lang="en">Empower your students with cutting-edge software engineering skills. Join
                         MyWebClass and discover advanced technologies that will transform your teaching and their
                         learning journey.</p>
+                    <p class="lead d-none" data-lang="es">Empodere a sus estudiantes con habilidades de ingeniería de software de vanguardia. Únase a
+                        MyWebClass y descubra tecnologías avanzadas que transformarán su enseñanza y su viaje de aprendizaje.</p>
+                    <p class="lead d-none" data-lang="fr">Donnez à vos élèves des compétences de pointe en génie logiciel. Rejoignez
+                        MyWebClass et découvrez des technologies avancées qui transformeront votre enseignement et leur parcours d'apprentissage.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">Start
-                            Here
-                        </button>
+                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold" data-lang="en">Start Here</button>
+                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold d-none" data-lang="es">Comenzar Aquí</button>
+                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold d-none" data-lang="fr">Commencer Ici</button>
                     </div>
                 </div>
                 <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                    <img class="rounded-lg-3 img-fluid" src="assets/images/teacher.gif"
-                         alt="a teacher with students" width="720">
+                    <img class="rounded-lg-3 img-fluid" src="assets/images/teacher.gif" alt="a teacher with students" width="720">
+                </div>
+            </div>
+    </div>
+</main>
+<!-- Cookie Modal-->
+    <div class="modal fade" id="cookie-consent" tabindex="-1" role="dialog" aria-labelledby="cookie-consent-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cookie-consent-title">Cookie Consent</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This website uses cookies to improve your experience. By clicking <b>Agree</b>, you consent to our use of cookies in accordance with our <a href="privacy.html">Privacy Policy</a>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="accept-button" type="button" class="btn btn-primary" data-bs-dismiss="modal">I Agree</button>
+                    <button id="decline-button" type="button" class="btn btn-secondary" data-bs-dismiss="modal">I Decline</button>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+    <style>
+        #cookie-consent {
+             z-index: 1051;
+        }
+
+        #cookie-consent .modal-dialog {
+            margin-top: 10%;
+        }
+
+        #cookie-consent .modal-body {
+            margin-bottom: 20px;
+        }
+
+        #cookie-consent .modal-footer {
+            border-top: 0;
+        }
+    </style>
+
+    <script>
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) {
+                return parts.pop().split(";").shift();
+            }
+        }
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var cookieConsent = document.getElementById("cookie-consent");
+
+            // Check if cookie is present
+            if (getCookie("cookie_consent") === "true") {
+                // Cookie is present, do nothing
+            } else {
+                // Cookie is not present, show cookie consent modal
+                var modal = new bootstrap.Modal(cookieConsent);
+                modal.show();
+            }
+
+            // Add event listener to accept button
+            document.getElementById("accept-button").addEventListener("click", function() {
+            // Set cookie
+            setCookie("cookie_consent", "true", 365);
+        });
+
+        // Add event listener to decline button
+        document.getElementById("decline-button").addEventListener("click", function() {
+        // Set cookie
+        setCookie("cookie_consent", "false", 365);
+        // Delete existing cookies
+        document.cookie.split(";").forEach(function(c) {
+            document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+                });
+            });
+        });
+    </script>
+
     <footer class="py-5 container">
         <div class="row">
             <div class="col">
-                <h5>About Us</h5>
+                <h5 data-lang="en">About Us</h5>
+                <h5 class="d-none" data-lang="es">Sobre nosotras</h5>
+                <h5 class="d-none" data-lang="fr">à propos de nous</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                    <li class="nav-item mb-2"><a href="story.html" class="nav-link p-0 text-muted">Our
-                        Story</a>
-                    </li>
+                        <li class="nav-item mb-2"><a href="story.html" class="nav-link p-0 text-muted" data-lang="en">Our Story</a>
+                            <li class="nav-item mb-2"><a href="story.html" class="nav-link p-0 text-muted d-none" data-lang="es">nuestra historia</a>
+                                <li class="nav-item mb-2"><a href="story.html" class="nav-link p-0 text-muted d-none" data-lang="fr">notre histoire</a></li>
 
-                    <a class="nav-link mb-2 p-0 text-muted active" aria-current="page" href="privacy.html">Privacy
-                        Policy</a>
-                    </li>
-                    </li>
+                                <a class="nav-link mb-2 p-0 text-muted active" aria-current="page" href="privacy.html" data-lang="en">Privacy Policy</a>
+                                <a class="nav-link mb-2 p-0 text-muted active d-none" aria-current="page" href="privacy.html" data-lang="es">política de privacidad</a>
+                                <a class="nav-link mb-2 p-0 text-muted active d-none" aria-current="page" href="privacy.html" data-lang="fr">politique de confidentialité</a>
+                            </li>
+                        </li>
                 </ul>
             </div>
 
             <div class="col-sm-3 ">
-                <h5>Share on Social Media</h5>
+                <h5 data-lang="en">Share on Social Media</h5>
+                <h5 class="d-none" data-lang="es">Compartir en las redes sociales</h5>
+                <h5 class="d-none" data-lang="fr">Partager sur les réseaux sociaux</h5>
                 <ul class="nav">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
                             class="bi bi-linkedin me-2"></i></a></li>
@@ -95,14 +213,18 @@
                 </ul>
             </div>
 
-
             <div class="col-md-5 offset-md-1 mb-3">
                 <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <h5  data-lang="en">Subscribe to our newsletter</h5>
+                    <h5 class="d-none" data-lang="es">Comparte en Redes SocialesSuscríbete a nuestro boletín</h5>
+                    <h5 class="d-none" data-lang="fr">Partager sur les réseaux sociauxInscrivez-vous à notre newsletter</h5>
+                    <p data-lang="en">Monthly digest of what's new and exciting from us.</p>
+                    <p class="d-none" data-lang="es">Resumen mensual de lo que es nuevo y emocionante de nosotros.</p>
+                    <p class="d-none" data-lang="fr">Résumé mensuel de ce qui est nouveau et excitant de notre part.</p>
                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <input id="newsletter-en" type="text" class="form-control" data-lang="en" placeholder="Email address">
+                        <input id="newsletter-es" type="text" class="form-control d-none" data-lang="es" placeholder="Dirección de correo electrónico">
+                        <input id="newsletter-fr" type="text" class="form-control d-none" data-lang="fr" placeholder="Adresse e-mail">
                         <button class="btn btn-primary" type="button">Subscribe</button>
                     </div>
                 </form>
@@ -111,5 +233,23 @@
     </footer>
 </div>
 </body>
-
 </html>
+
+<script>
+    function switchLanguage(lang) {
+        $('[data-lang]').each(function () {
+            if ($(this).data('lang') === lang) {
+                $(this).removeClass('d-none');
+            } else {
+                $(this).addClass('d-none');
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        $('#language-switcher').on('change', function () {
+            var lang = $(this).val();
+            switchLanguage(lang);
+        });
+    });
+</script>

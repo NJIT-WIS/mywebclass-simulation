@@ -2,9 +2,8 @@
 <html lang="EN">
 
 <head>
-    <!--characterset UTF-8 Watch this: https://youtu.be/MijmeoH9LT4 -->
-
     <title>MyWebClass.org | Our Story</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <meta charset="UTF-8">
 
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -19,37 +18,30 @@
     <meta content="" property="og:description"/>
     <meta content="assets/images/logo.png" property="og:image"/>
     <meta content="" property="og:url"/>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4VFG6HE1H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-L4VFG6HE1H');
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body>
 <div class="container-fluid">
     <header class="fixed-top" role="banner">
-        <nav aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark " role="navigation">
-            <div class="container">
-                <a class="navbar-brand" href="/">MyWebClass.org</a>
-                <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
-                        class="navbar-toggler"
-                        data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">
-                    <span aria-hidden="true" class="navbar-toggler-icon"></span>
-                    <span class="visually-hidden">Toggle navigation</span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="content.html">Content Template</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
         <nav aria-label="Breadcrumb" class="py-3 d-none d-md-block">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-auto text-start">
                         <ol class="breadcrumb my-0">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li aria-current="page" class="breadcrumb-item active">Content Template</li>
+                            <li aria-current="page" class="breadcrumb-item active">Our Story</li>
                         </ol>
                     </div>
                 </div>
@@ -59,69 +51,58 @@
 
     <div class="container">
         <div class="row">
-            <!-- Sidebar menu with scrollspy -->
-            <nav class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse position-fixed" id="sidebarMenu">
-                <div class="position-sticky pt-3">
-                    <h2 class="justify-left">Navigation</h2>
-                    <!-- Javascript builds out the navigation items -->
-                </div>
-            </nav>
-
             <!-- Main content area -->
             <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4">
-
                 <h1 class="fw-bold border-bottom" id="title">Our Story</h1>
-                <div class="text-muted mb-3 ">By <a href="#">Author Name</a><span class="text-muted me-3"> Last Updated:
-              January 1, 2022</span> <span class="text-muted" id="readingTime">0</span>
-                </div>
-                    <section class="row">
-                            <h2 class="h4 mb-4">Mission</h2>
-                            <p>Our mission is to create a community of people committed to helping students of all ages
-                                and backgrounds succeed in the modern software industry by providing educational
-                                opportunities and a practical, hands-on learning experience.</p>
+                <div class="text-muted mb-3 ">By <a href="https://www.linkedin.com/in/2dt/">Callie Bryan Truong</a>.<span class="text-muted me-3"> Last Updated: January 1, 2023</span> </div>
+                <div class="text-muted">Site visits: <span id="readingTime"></span></div>
+                <section class="row">
+                    <h2 class="h4 mb-4">Mission</h2>
+                    <p>Our mission is to create a community of people committed to helping students of all ages
+                        and backgrounds succeed in the modern software industry by providing educational
+                        opportunities and a practical, hands-on learning experience.</p>
 
-                            <h2 class="h4 mb-4">Values</h2>
-                            <ul>
-                                <li><strong>People:</strong> We value the people in our community and believe that every
-                                    student and teacher has the potential to succeed. We strive to create an inclusive
-                                    and supportive environment where everyone feels welcome to learn and grow.
-                                </li>
-                                <li><strong>Learning:</strong> We believe that learning is a lifelong process and that
-                                    everyone has something to teach and something to learn. We are committed to
-                                    providing educational opportunities that help students and teachers gain experience
-                                    with new technologies and learn advanced software engineering concepts.
-                                </li>
-                                <li><strong>Efficiency:</strong> We recognize that time is a valuable resource, and we
-                                    strive to make the most of it. We aim to provide a practical, hands-on learning
-                                    experience that allows students and teachers to develop the skills they need to
-                                    succeed in the modern software industry quickly.
-                                </li>
-                                <li><strong>Dependability:</strong> We understand the importance of being reliable and
-                                    consistent. We aim to provide a stable and dependable platform for students and
-                                    teachers to learn and collaborate.
-                                </li>
-                            </ul>
-                            <p>Each of these values supports our mission by creating a welcoming and supportive
-                                environment for students and teachers to learn and grow. Our focus on people ensures
-                                that everyone feels included and valued, and our commitment to learning provides
-                                educational opportunities that help students and teachers succeed in the modern software
-                                industry. Our emphasis on efficiency and dependability allows us to provide a practical,
-                                reliable platform that makes the most of everyone's time.</p>
+                    <h2 class="h4 mb-4">Values</h2>
+                    <ul>
+                        <li><strong>People:</strong> We value the people in our community and believe that every
+                            student and teacher has the potential to succeed. We strive to create an inclusive
+                            and supportive environment where everyone feels welcome to learn and grow.
+                        </li>
+                        <li><strong>Learning:</strong> We believe that learning is a lifelong process and that
+                            everyone has something to teach and something to learn. We are committed to
+                            providing educational opportunities that help students and teachers gain experience
+                            with new technologies and learn advanced software engineering concepts.
+                        </li>
+                        <li><strong>Efficiency:</strong> We recognize that time is a valuable resource, and we
+                            strive to make the most of it. We aim to provide a practical, hands-on learning
+                            experience that allows students and teachers to develop the skills they need to
+                            succeed in the modern software industry quickly.
+                        </li>
+                        <li><strong>Dependability:</strong> We understand the importance of being reliable and
+                            consistent. We aim to provide a stable and dependable platform for students and
+                            teachers to learn and collaborate.
+                        </li>
+                    </ul>
+                    <p>Each of these values supports our mission by creating a welcoming and supportive
+                        environment for students and teachers to learn and grow. Our focus on people ensures
+                        that everyone feels included and valued, and our commitment to learning provides
+                        educational opportunities that help students and teachers succeed in the modern software
+                        industry. Our emphasis on efficiency and dependability allows us to provide a practical,
+                        reliable platform that makes the most of everyone's time.</p>
 
-                            <h2 class="h4 mb-4">Origin</h2>
-                            <p>Mywebclass.org was founded in 2023 by Keith Williams, a University Lecturer at New Jersey
-                                Institute of Technology with over 30 years of experience as a software engineer,
-                                entrepreneur, and 17 years of experience as a university lecturer and in k-12 education.
-                                Keith founded mywebclass.org to help bridge the gap between educators and professionals
-                                in the software industry by creating a community of people committed to helping students
-                                of all ages and backgrounds succeed.</p>
+                    <h2 class="h4 mb-4">Origin</h2>
+                    <p>Mywebclass.org was founded in 2023 by Keith Williams, a University Lecturer at New Jersey
+                        Institute of Technology with over 30 years of experience as a software engineer,
+                        entrepreneur, and 17 years of experience as a university lecturer and in k-12 education.
+                        Keith founded mywebclass.org to help bridge the gap between educators and professionals
+                        in the software industry by creating a community of people committed to helping students
+                        of all ages and backgrounds succeed.</p>
 
-                            <p>Thank you for your interest in mywebclass.org. Together, we can create a community of
-                                people committed to helping students of all ages and backgrounds succeed in the modern
-                                software industry.</p>
-                        </div>
+                    <p>Thank you for your interest in mywebclass.org. Together, we can create a community of
+                        people committed to helping students of all ages and backgrounds succeed in the modern
+                        software industry.</p>
+
                     </section>
-
 
             </main>
         </div>
@@ -169,6 +150,7 @@
             </div>
         </footer>
     </div>
+</div>
 </body>
 
 </html>

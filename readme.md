@@ -64,3 +64,8 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 
 # ADD YOUR PROJECT LINKS BELOW THIS 
 - [Github Pages Live Site Deployment](https://jar285.github.io/mywebclass-simulation/)
+
+## Links the Create easy-to-understand instructions and scripts to deploy the project and reliable instructions for installing the project.
+- [ instructions and scripts to deploy the project](https://github.com/jar285/mywebclass-simulation/wiki/MyWebClass-Simulation-Setup-and-Deployment)
+
+- [  reliable instructions for installing the project](https://github.com/jar285/mywebclass-simulation/wiki/DevOps-Tasks:--reliable-instructions-for-installing-the-project)

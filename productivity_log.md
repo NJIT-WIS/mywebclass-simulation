@@ -7,11 +7,11 @@
 | Updated Playwright definition from upstream repo. || [link](https://github.com/nathandh/mywebclass-simulation/pull/2) | Merged | Nathan | 3/11 | 3/11 | tasks |  |
 | [Project Setup] - Docker| 2 | https://github.com/nathandh/mywebclass-simulation/issues/5| Done| Nathan/Dina | 3/11 | 3/11 | Tasks |  |
 | Create a comprehensive privacy policy that includes required disclosures and consent forms | 1 | https://github.com/nathandh/mywebclass-simulation/issues/31 |Done| Arly | 3/11/23 | 3/20/23 | Tasks |  |
-| updated the privacy policy  || [link](https://github.com/nathandh/mywebclass-simulation/pull/39) | Merged | Arly | 3/11 | 3/20 | tasks |  |
+|Adjust Parent Kanban Style Board to provide high level overview of project | 2 |https://github.com/nathandh/mywebclass-simulation/issues/32| Done| Nathan | 3/11/23 | 3/20/23 | Tasks |  |
 | Setup and make use of Google Analytics, possibly cookies, and possibly local browser storage of information as needed to glean desired user insights  | 1 |https://github.com/nathandh/mywebclass-simulation/issues/19| Done| Arly | 3/11 | 3/20 | Tasks |  |
-| Google Analytics  || [link](https://github.com/nathandh/mywebclass-simulation/pull/41) | Merged | Arly/Dina | 3/11 | 3/19 | tasks |  |
-| Development  || [link](https://github.com/nathandh/mywebclass-simulation/pull/42) | Merged | Arly | 3/11 | 3/20 | tasks |  |
-| W3c validation and File Fixes || [link](https://github.com/nathandh/mywebclass-simulation/pull/50) | Merged | Nathan | 3/11 | 3/21 | tasks |  |
+| Create and submit a sitemap to help search engines crawl and index the website | 1 | https://github.com/nathandh/mywebclass-simulation/issues/18| Done | All | 3/11/23 | 3/19/23 | Tasks |  |
+|Research and implement changes to improve the website's search engine optimization (SEO) to increase the visibility of the website on search engines like Google | 5 | https://github.com/nathandh/mywebclass-simulation/issues/17| Done| Dina| 3/11/23 | 3/20/23 | Tasks |  |
+|Run the website through Lighthouse and address any accessibility issues identified by the tool, ensuring the website meets WCAG 2.2 accessibility guidelines | 5 | https://github.com/nathandh/mywebclass-simulation/issues/12| Done | All| 3/11/23| 3/21/23 | Tasks |  |
 | Fix type in closing <p> tag in privacy.html. | | [link](https://github.com/nathandh/mywebclass-simulation/pull/51) | Merged | Nathan | 3/21 | 3/21 | tasks |  |
 |Develop a responsive content template and homepage for the website| 2 | https://github.com/nathandh/mywebclass-simulation/issues/9| Done| Nathan | 3/21 | 3/21 | Tasks | |
 | Identify and fix areas of non-compliance | 2 |https://github.com/nathandh/mywebclass-simulation/issues/29| Done| Dina| 3/11 | 3/21 | Tasks |  |
@@ -23,3 +23,7 @@
 |Review and Combine Project Documentation|
 | Create robots.txt file so that site can be indexed properly in Search Engines such as Google | 5 | https://github.com/nathandh/mywebclass-simulation/issues/16 | Done | All | 3/11/23 | 3/20/23 | Tasks | |
 | Scan website for GDPR compliance by running GDPR scanner and run a scan to detect any potential GDPR violations | 1 | https://github.com/nathandh/mywebclass-simulation/issues/28 | Done | Arly | 3/11/23 | 3/20/23 | Completed multiple scans as we build the website |
+| Set up a deployment that all members of your team can see to view the progress of the sprint | 2 | https://github.com/nathandh/mywebclass-simulation/issues/22 | Done | All | 3/11/23 | 3/17/23| Tasks||
+| Validate website by inputting the website URL into the W3C validator tool | 1 | https://github.com/nathandh/mywebclass-simulation/issues/13 | Done | 3/11/23 | 3/20/23 | Tasks | |
+
+  

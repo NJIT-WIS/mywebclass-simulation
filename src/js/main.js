@@ -8,6 +8,7 @@ import allPage from './allPages'
 import contentPage from './contentPage'
 
 document.addEventListener('DOMContentLoaded', () => {
+  setLanguage()
   allPage.initialize()
   contentPage.initialize()
 })
@@ -109,3 +110,14 @@ document.addEventListener('DOMContentLoaded', () => {
   createPrivacyModal()
   loadGoogleAnalytics()
 })
+
+function setLanguage () {
+  // Get the user's preferred language
+  const userLang = navigator.language || navigator.userLanguage
+
+  // Check if the user's language is supported (in this example, we're checking for English)
+  const supportedLang = userLang.substring(0, 2).toLowerCase() === 'en' ? 'en' : 'en'
+
+  // Set the 'lang' attribute of the 'html' tag to the supported language
+  document.documentElement.setAttribute('lang', supportedLang)
+}

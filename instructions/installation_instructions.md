@@ -1,4 +1,4 @@
-### Installation Instructions
+### Installation Instructions Step By Step
 
 1. First, make sure that you have Git installed on your computer. You can check if it is installed by opening a terminal or command prompt and typing "git --version". If Git is not installed, download and install it from the official website: https://git-scm.com/downloads.
 

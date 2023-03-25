@@ -11,3 +11,5 @@
 5. Once you are in the project folder, type "npm install" (or "yarn install" if the project uses Yarn) to install any necessary dependencies for the project. This command will download and install all of the project's required packages and modules.
 
 6. After the dependencies have finished installing, you can run the project by typing "npm start" (or "yarn start" if the project uses Yarn). This will start the project and open it in your default browser.
+
+That's it! You should now have the Github project installed and running on your computer. Keep in mind that these steps may vary slightly depending on the specific project and its requirements, but these general steps should work for most projects.

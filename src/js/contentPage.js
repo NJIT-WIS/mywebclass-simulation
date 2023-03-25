@@ -128,3 +128,7 @@ function setTabindexAttributeForNavLinks () {
     link.setAttribute('tabindex', '0')
   })
 }
+
+document.getElementById("shareButton").addEventListener("click", function() {
+  // Code to handle the button click event goes here
+});

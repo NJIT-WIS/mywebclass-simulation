@@ -1,5 +1,12 @@
 const { test, expect } = require('@playwright/test');
 
+test.beforeEach(async ({ page }) => {
+  await page.goto('http://localhost:3000');
+  // Since we are only testing the Privacy Modal here, bypass the GTAG modal by first
+  // setting the cookieconsent_status to ALLOW
+  await page.evaluate(() => localStorage.setItem('cookieconsent_status', 'allow'));
+});
+
 test('Check Local Storage for privacyPolicyAgree key TRUE and no visible privacyModal', async ({ page }) => {
   await page.goto('http://localhost:3000');
   await page.evaluate(() => localStorage.setItem('privacyPolicyAgree', 'true')); // set localStorage key

@@ -13,6 +13,9 @@
 ### [Epic - Content Template and Homepage Development](https://github.com/jccjcat/mywebclass-simulation/issues/7)
 ### [Epic - GDPR Compliance and Website Legal ](https://github.com/jccjcat/mywebclass-simulation/issues/8)
 ## User Stories
+
+Detailed User Story information can be found on [the User Stories page](user-stories.md).
+
 Epic - Web Accessibility and Internationalization:
 - [User Story - As a website owner, I want to use Google Lighthouse to analyze my website's accessibility, so that I can ensure that all users can access and use my website.](https://github.com/jccjcat/mywebclass-simulation/issues/9)
 - [User Story - As a global user of the website, I want the website to be available in multiple languages so that I can easily navigate and understand the content in my preferred language.](https://github.com/jccjcat/mywebclass-simulation/issues/17)

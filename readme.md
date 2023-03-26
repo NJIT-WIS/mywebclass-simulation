@@ -62,5 +62,14 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 - Sprint 3 - Building a CMS
 - Sprint 4 - TBD
 
+## Team: 
+- [Jan Chris Tacbianan](https://github.com/jccjcat)
+- [Faran Chaudhry](https://github.com/Faranch)
+- [Rachel Stone](https://github.com/rstone1214)
 
-# ADD YOUR PROJECT LINKS BELOW THIS 
+## Project Links:
+- [Project Board](https://github.com/users/jccjcat/projects/2)
+- [Issues](https://github.com/jccjcat/mywebclass-simulation/issues)
+- [Project Management Documentation](documentation/project-management/project-management.md)
+- [Deployment Instructions](documentation/development/deployment-instructions.md)
+- [Installation Instructions](documentation/development/installation-instructions.md)

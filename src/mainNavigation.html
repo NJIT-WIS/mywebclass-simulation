@@ -1,0 +1,61 @@
+<nav role="navigation" aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./">
+      <img
+        src="assets/images/logo.jpg"
+        alt="MyWebClass Logo"
+        width="56"
+        height="30"
+        class="d-inline-block align-text-top"
+      />
+      MyWebClass
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Toggle navigation</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="story.html" aria-label="Our Story Link" data-i18n="navigation.story-link"
+            >Our Story</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="privacy.html" aria-label="Privacy Policy Link" data-18n="navigation.privacy-link"
+            >Privacy Policy</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="content.html" aria-label="Content Template Link" data-i18n="navigation.content-link"
+            >[Content Template]</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="languageSelector"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span data-i18n="navigation.language">Language</span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li><a class="dropdown-item" href="#" onclick="changeSiteLanguage('en')">English</a></li>
+            <li><a class="dropdown-item" href="#" onclick="changeSiteLanguage('es')">Español</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

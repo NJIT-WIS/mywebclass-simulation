@@ -61,52 +61,18 @@
 
     <div class="container-fluid">
       <header role="banner" class="fixed-top">
-        <nav role="navigation" aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./">
-              <img
-                src="assets/images/logo.jpg"
-                alt="MyWebClass Logo"
-                width="56"
-                height="30"
-                class="d-inline-block align-text-top"
-              />
-              MyWebClass
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarCollapse"
-              aria-controls="navbarCollapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Toggle navigation</span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="story.html" aria-label="Our Story Link">Our Story</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="privacy.html" aria-label="Privacy Policy Link">Privacy Policy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="content.html" aria-label="Content Template Link">Content Template [Beta]</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <!-- Shared Navigation -->
+        <!-- Nit and TODO: Transition this to something like React for better component reuse and scaling -->
+        <div id="main-navigation"></div>
       </header>
 
       <main>
         <div class="container my-5">
           <div class="row p-4 pb-4 pe-lg-4 pt-lg-5 align-items-center rounded-3 border shadow-lg">
             <div class="col-lg-6 p-3 p-lg-3 pt-lg-0">
-              <h1 class="display-6 fw-bold lh-1">Empowering Educators for a Digital World</h1>
+              <h1 class="display-6 fw-bold lh-1" data-i18n="index.intro-heading">
+                Empowering Educators for a Digital World
+              </h1>
               <p class="lead">
                 MyWebClass is a website providing accessible resources to educators teaching modern technology, to their
                 students. Join today and discover the ways our website can transform your teaching, and help you

@@ -60,45 +60,9 @@
 
     <div class="container-fluid">
       <header class="fixed-top" role="banner">
-        <nav aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./">
-              <img
-                src="assets/images/logo.jpg"
-                alt="MyWebClass Logo"
-                width="48"
-                height="30"
-                class="d-inline-block align-text-top"
-              />
-              MyWebClass
-            </a>
-            <button
-              aria-controls="navbarCollapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              class="navbar-toggler"
-              data-bs-target="#navbarCollapse"
-              data-bs-toggle="collapse"
-              type="button"
-            >
-              <span aria-hidden="true" class="navbar-toggler-icon"></span>
-              <span class="visually-hidden">Toggle navigation</span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="story.html" aria-label="Our Story Link">Our Story</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="privacy.html" aria-label="Privacy Policy Link">Privacy Policy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="content.html" aria-label="Content Template Link">Content Template [Beta]</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <!-- Shared Navigation -->
+        <!-- Nit and TODO: Transition this to something like React for better component reuse and scaling -->
+        <div id="main-navigation"></div>
 
         <nav aria-label="Breadcrumb" class="py-3 d-none d-md-block">
           <div class="container">

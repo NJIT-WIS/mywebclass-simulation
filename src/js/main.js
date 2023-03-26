@@ -3,25 +3,21 @@ import '../scss/styles.scss';
 // Import all of Bootstrap's JS
 import { Modal } from 'bootstrap';
 import * as bootstrap from 'bootstrap';
-
-import allPage from './allPages';
+// Imported JS definition inclusions
+import allPages from './allPages';
 import contentPage from './contentPage';
+import i18next from './i18next';
 
 // Imports here allow SiteMap and Robots.txt to be picked up and emitted by Webpack
 import '../sitemap.xml';
 import '../robots.txt';
-
-document.addEventListener('DOMContentLoaded', () => {
-  allPage.initialize();
-  contentPage.initialize();
-});
 
 let resizeTimer;
 
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
-    allPage.initialize();
+    allPages.initialize();
   }, 250);
 });
 
@@ -112,7 +108,20 @@ function loadGoogleAnalytics() {
   }
 }
 
+function i18NextInit() {
+  const scriptElement = document.createElement('script');
+  scriptElement.type = 'text/javascript';
+  scriptElement.innerHTML = i18next.toString();
+  document.head.appendChild(scriptElement);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  // Privacy and Analytics initialized
   createPrivacyModal();
   loadGoogleAnalytics();
+  // Imported JS definitions for pages/content initialized
+  allPages.initialize();
+  contentPage.initialize();
+  // Add i18Next support and custom configuration
+  // i18NextInit();
 });

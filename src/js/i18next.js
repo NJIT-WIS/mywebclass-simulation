@@ -39,7 +39,7 @@ function changeSiteLanguage(language) {
 function loadLanguageSupport() {
   // Configure i18next
   i18next.use(LanguageDetector).init({
-    debug: true,
+    debug: false,
     resources: {
       en: {
         translation: enTranslation,

@@ -108,13 +108,6 @@ function loadGoogleAnalytics() {
   }
 }
 
-function i18NextInit() {
-  const scriptElement = document.createElement('script');
-  scriptElement.type = 'text/javascript';
-  scriptElement.innerHTML = i18next.toString();
-  document.head.appendChild(scriptElement);
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   // Privacy and Analytics initialized
   createPrivacyModal();
@@ -122,6 +115,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Imported JS definitions for pages/content initialized
   allPages.initialize();
   contentPage.initialize();
-  // Add i18Next support and custom configuration
-  // i18NextInit();
 });

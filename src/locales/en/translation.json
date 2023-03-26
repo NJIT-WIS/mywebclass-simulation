@@ -5,7 +5,85 @@
     "privacy-link": "Privacy Policy",
     "content-link": "[Content Template]"
   },
+  "breadcrumbs": {
+    "home-link-crumb": "Home",
+    "content-template-crumb": "Content Template",
+    "story-page-crumb": "Our Story",
+    "privacy-page-crumb": "Privacy Policy"
+  },
   "index": {
-    "intro-heading": "Empowering Educators for a Digital World"
+    "intro-heading": "Empowering Educators for a Digital World",
+    "lead-text": "MyWebClass is a website providing accessible resources to educators teaching modern technology, to their\n students. Join today and discover the ways our website can transform your teaching, and help you\n confidently prepare students for successful futures in the digital age.",
+    "start-here-btn": "Start Here"
+  },
+  "footer": {
+    "about-header-text": "About Us",
+    "social-media-header": "Share on Social Media",
+    "newsletter-subscribe-header": "Subscribe to our newsletter",
+    "newsletter-subscribe-form-email": "Email address",
+    "newsletter-subscribe-form-btn": "Subscribe"
+  },
+  "story-page": {
+    "sidebar-heading-text": "Navigation",
+    "main-story-heading": "Our Story",
+    "section-welcome-header": "Welcome",
+    "section-welcome-p1": "Welcome to MyWebClass, a website dedicated to providing resources to educators who want to teach\n modern technology, such as cutting-ege software engineering skills, to their students. With the world\n becoming increasingly digital, it is important for students to have a strong foundation in these\n skills to prepare them for future careers. However, it can be daunting for educators who are not most\n up-to-date or familiar with the latest technologies available to teach these subjects effectively.",
+    "section-welcome-p2": "That's where we come in. Our website offers a range of resources, including lesson plans, activities,\n assessments, and teaching guides, all designed to make teaching technology and software engineering\n accessible and engaging for both educators and students. Whether you are a seasoned technology\n educator or new to teaching these subjects, we have something for everyone.",
+    "section-mission-header": "Mission",
+    "section-mission-p1": "At MyWebClass, our mission is to empower educators with the knowledge and resources they need to teach\n modern technology skills, including cutting-edge software engineering, to their students. As the world\n becomes more digital, we believe it is critical for students to have a strong foundation in these\n skills to succeed in future careers. We recognize the challenges that educators may face in keeping up\n with the latest technologies, and we are committed to providing them with the support they need to\n teach these subjects effectively.",
+    "section-values-header": "Values",
+    "section-values-p1-people-lead": "People:",
+    "section-values-p1-people-text": "We value people above all else. We believe that every individual has the\n potential to learn and succeed, and we are committed to providing inclusive and accessible resources\n that empower educators and students of all backgrounds. We strive to create a welcoming and\n supportive community that encourages collaboration and fosters personal and professional growth. We\n recognize that our success depends on the success of our users, and we are dedicated to helping them\n achieve their goals. Above all, we are driven by a passion for education and a belief in the\n transformative power of technology to create a brighter future for all.",
+    "section-values-p2-learning-lead": "Learning:",
+    "section-values-p2-learning-text": "We value learning as the foundation of personal and professional growth.\n We believe that modern technology skills are essential for success in today's world, and we are\n committed to providing high-quality educational resources that help educators and students achieve\n their goals. We believe that learning should be accessible to everyone, regardless of their\n background or experience, and we are dedicated to creating an inclusive and supportive learning\n environment that encourages exploration, experimentation, and innovation. We believe in the power of\n collaboration and community to facilitate learning, and we are committed to fostering connections\n between educators, students, and industry professionals to ensure that our content remains relevant\n and up-to-date. Above all, we believe that learning is a lifelong journey, and we are committed to\n supporting our users in their pursuit of knowledge and skill development.",
+    "section-values-p3-efficiency-lead": "Efficiency:",
+    "section-values-p3-efficiency-text": "We value efficiency in all aspects of our work. We believe that\n educators' time and resources are valuable, and we are committed to providing them with efficient\n and effective solutions for teaching modern technology skills. We strive to streamline our processes\n and optimize our resources to deliver high-quality, up-to-date materials and support to our\n educators and students. We believe that by promoting efficiency, we can help educators achieve their\n goals and prepare students for successful futures in the digital age",
+    "section-values-p4-dependability-lead": "Dependability:",
+    "section-values-p4-dependability-text": "At MyWebClass, we value dependability as a fundamental aspect of our\n work. We recognize the critical importance of educators having access to reliable and trustworthy\n resources to effectively teach modern technology skills to their students. As such, we are committed\n to being a dependable partner for our educators, delivering consistent and high-quality educational\n materials and support. We strive to be responsive to the needs of our educators and students and to\n always follow through on our commitments. We believe that by being dependable, we can earn the trust\n of our partners and help them achieve their goals in preparing students for successful careers in\n the rapidly evolving world of technology.",
+    "section-values-mission-supports": "Each of these core values supports our mission in distinct ways:",
+    "section-values-value-of-people-lead-our": "Our",
+    "section-values-value-of-people-lead": "Value of People",
+    "section-values-value-of-people-text": "above all else drives us to provide inclusive and accessible\n resources, ensuring that educators and students of all backgrounds have the opportunity to learn and\n succeed in modern technology skills.",
+    "section-values-value-of-learning-lead": "Value of Learning",
+    "section-values-value-of-learning-text": "as the foundation of personal and professional growth\n underpins our commitment to providing high-quality educational resources and fostering an inclusive\n and supportive learning environment, enabling educators and students to effectively teach and learn\n modern technology skills.",
+    "section-values-value-of-efficiency-dependability-lead": "Values of Efficiency and Dependability",
+    "section-values-value-of-efficiency-dependability-text": "enable us to deliver streamlined and\n reliable educational materials and support, empowering educators to teach modern technology skills\n effectively and equipping students with a strong foundation to succeed in future careers in the\n ever-evolving world of technology.",
+    "section-origin-header": "Origin",
+    "section-origin-p1": "Mywebclass.org was founded in 2023 by Keith Williams, a University Lecturer at New Jersey Institute of\n Technology with over 30 years of experience as a software engineer, entrepreneur, and 17 years of\n experience as a university lecturer and in K-12 education. Keith founded mywebclass.org to help bridge\n the gap between educators and professionals in the software industry by creating a community of people\n committed to helping students of all ages and backgrounds succeed.",
+    "section-origin-p2": "MyWebClass is carried forward in its latest form by Arly Volmar, Dina Lahham, and Nathan Hernandez.\n Each brings their unique talents and experiences in order to deliver the latest great feature\n enhancements and improvements necessary to continue to improve the MyWebClass customer experience!",
+    "section-origin-p3-lead": "Thank you for your interest in mywebclass.org. Together, we can create a community of people committed\n to helping students of all ages and backgrounds succeed in the modern software industry.",
+    "section-origin-p3-em-text": "Let's keep working towards this goal and make a positive impact in the lives of countless individuals!"
+  },
+  "privacy-page": {
+    "sidebar-heading-text": "Navigation",
+    "main-privacy-heading": "Our Story",
+    "section-privacy-intro-header": "Terms Consent",
+    "section-privacy-intro-p1": "At MyWebClass, we are committed to protecting the privacy of our users. This Privacy Policy explains\n how we collect, use, and protect your personal information. By using our website, you consent to the\n terms of this Privacy Policy.",
+    "section-privacy-information-we-collect-header": "Info Collected",
+    "section-privacy-information-we-collect-p1": "When you visit our website, we may collect the following types of personal information:",
+    "section-privacy-information-we-collect-item-1": "Information you provide us directly, such as your name, email address, and phone number when you\n sign up for our services or contact us.",
+    "section-privacy-information-we-collect-item-2": "Information we collect automatically through cookies and other tracking technologies, such as your\n IP address, browser type, and device type.",
+    "section-privacy-information-we-collect-item-3": "Information we receive from third-party sources, such as Google Analytics, which we use to track\n website traffic and usage.",
+    "section-how-we-use-your-information-header": "Information Use",
+    "section-how-we-use-your-information-p1": "We may use the personal information we collect in the following ways:",
+    "section-how-we-use-your-information-item-1": "To provide you with our services and respond to your inquiries.",
+    "section-how-we-use-your-information-item-2": "To personalize your experience on our website.",
+    "section-how-we-use-your-information-item-3": "To improve our website and services.",
+    "section-how-we-use-your-information-item-4": "To send you marketing communications about our services or other products and services that we\n believe may be of interest to you.",
+    "section-how-we-protect-your-information-header": "Protections",
+    "section-how-we-protect-your-information-p1": "We take reasonable measures to protect your personal information from unauthorized access, use, or\n disclosure. We use industry-standard security measures, such as firewalls and encryption, to protect\n your personal information.",
+    "section-google-analytics-header": "Google Analytics",
+    "section-google-analytics-p1": "We use Google Analytics to track website traffic and usage. Google Analytics collects information\n about your use of our website, including your IP address, and may place cookies on your computer. This\n information is used to improve our website and services.",
+    "section-changes-to-your-privacy-policy-header": "Changes Notice",
+    "section-changes-to-your-privacy-policy-p1": "We reserve the right to make changes to this Privacy Policy at any time. We will notify you of any\n material changes by posting the updated Privacy Policy on our website. Your continued use of our\n website after any such changes constitutes your acceptance of the revised Privacy Policy.",
+    "section-contact-us-header": "Contact Us",
+    "section-content-us-p1": "If you have any questions about this Privacy Policy or our practices, please contact us."
+  },
+  "content-page": {
+    "sidebar-heading-text": "Navigation",
+    "main-content-heading": "Article Title",
+    "section2-heading": "Section 2",
+    "section3-heading": "Section 3",
+    "section4-heading": "Section 4"
   }
 }

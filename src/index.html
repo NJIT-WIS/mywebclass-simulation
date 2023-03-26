@@ -74,64 +74,22 @@
             </div>
         </div>
     </main>
+
 <div class="cookie-consent">
     <p>This website uses cookies to improve your experience. By clicking <b>Agree</b>, you consent to our use of cookies in accordance with our <a href="privacy_policy.html">Privacy Policy</a>.</p><button id="consent-button"> I Agree</button>
   </div>
   <script>
-  function getCookie(name) {
-  var value = "; " + document.cookie;
-  var parts = value.split("; " + name + "=");
-  if (parts.length == 2) {
-    return parts.pop().split(";").shift();
-  }
-  }
+      var cookieConsent = document.querySelector('.cookie-consent');
+var cookieAccept = document.querySelector('#cookie-accept');
 
-  function setCookie(name, value, days) {
-  var expires = "";
-  if (days) {
-    var date = new Date();
-    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-    expires = "; expires=" + date.toUTCString();
-  }
-  document.cookie = name + "=" + value + expires + "; path=/";
-  }
+if (!localStorage.getItem('cookie-consent')) {
+  cookieConsent.classList.add('show');
+}
 
-  document.addEventListener("DOMContentLoaded", function() {
-  var cookieConsent = document.querySelector(".cookie-consent");
-  var overlay = document.createElement("div");
-  overlay.classList.add("overlay");
-
-  // Check if cookie is present
-  if (getCookie("cookie_consent") === "true") {
-    // Cookie is present, hide cookie consent banner
-    cookieConsent.style.display = "none";
-    // Enable scrolling
-    document.body.style.overflow = "auto";
-  } else {
-    // Cookie is not present, show cookie consent banner
-    cookieConsent.style.display = "block";
-    // Disable scrolling
-    document.body.style.overflow = "hidden";
-    // Add overlay
-    document.body.appendChild(overlay);
-  }
-
-  // Add event listener to consent button
-  document
-    .getElementById("consent-button")
-    .addEventListener("click", function() {
-      // Set cookie
-      setCookie("cookie_consent", "true", 365);
-      // Remove cookie consent banner
-      cookieConsent.style.display = "none";
-      // Remove overlay
-      document.body.removeChild(overlay);
-      // Enable scrolling
-      document.body.style.overflow = "auto";
-    });
-  });
-
-
+cookieAccept.addEventListener('click', function() {
+  localStorage.setItem('cookie-consent', true);
+  cookieConsent.classList.remove('show');
+});
   </script>
     <style>
         .cookie-consent {

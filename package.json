@@ -60,7 +60,11 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6"
-  }
+    "@popperjs/core": "^2.11.6",
+    "currency.js": "^2.0.4"
+  },
 
+  "overrides": {
+    "graceful-fs": "^4.2.10"
   }
+}

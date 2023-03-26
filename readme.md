@@ -71,4 +71,4 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 
 ## Project Links
 - [Issues](https://github.com/ahg3/mywebclass-simulation/issues)
-- [Project Management Documentation]
+- [Project Management Documentation](documentation/installation instructions)

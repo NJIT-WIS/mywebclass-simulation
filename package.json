@@ -62,8 +62,5 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6"
   }
-    "overrides": {
-    "graceful-fs": "^4.2.10"
+
   }
-  }
-}

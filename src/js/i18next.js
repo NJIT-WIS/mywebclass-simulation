@@ -34,7 +34,7 @@ function changeSiteLanguage(language) {
 
 /**
  * Loads the custom i18next configuration that includes language support for English, Spanish and French.
- * Sets the fallback language to Enlish by default.
+ * Sets the fallback language to English by default.
  */
 function loadLanguageSupport() {
   // Configure i18next

@@ -10,4 +10,4 @@ test('Should display the correct title and heading', async ({ page }) => {
   // Expect the page heading to be "Privacy Policy".
   const heading = await page.$eval('h1', el => el.textContent);
   await expect(heading).toEqual('Privacy Policy');
-});
+})

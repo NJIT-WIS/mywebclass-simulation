@@ -1,22 +1,32 @@
 version: "3.8"
 
 services:
-    master_branch:
-    development_branch:
-      image: sumansmhalsank11/mywebclass_simulation:development
-      container_name: development_branch
-      pull_policy: always
-      restart: always
-      ports:
-        - "8000:80"
-      labels:
-        - 'com.centurylinklabs.watchtower.enable=true' 
-    watchtower:
-      image: containrrr/watchtower
-      container_name: watchtower
-      restart: always
-      command: '--interval 30 --label-enable --cleanup'
-      volumes:
+  master_branch:
+    image: sumansmhalsank11/mywebclass_simulation:master
+    container_name: master_branch
+    pull_policy: always
+    restart: always
+    ports:
+      - "8001:80"
+    labels:
+      - 'com.centurylinklabs.watchtower.enable=true'
+
+  development_branch:
+    image: sumansmhalsank11/mywebclass_simulation:development
+    container_name: development_branch
+    pull_policy: always
+    restart: always
+    ports:
+      - "8000:80"
+    labels:
+      - 'com.centurylinklabs.watchtower.enable=true'
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: always
+    command: '--interval 30 --label-enable --cleanup'
+    volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      labels:
+    labels:
       - 'com.centurylinklabs.watchtower.enable: true'

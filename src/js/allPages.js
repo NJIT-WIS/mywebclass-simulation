@@ -37,7 +37,7 @@ function addScrollOffsetClass() {
  */
 function addSharedNavigation() {
   const xhr = new XMLHttpRequest();
-  const url = '../mainNavigation.html';
+  const url = './mainNavigation.html';
 
   xhr.open('GET', url);
   xhr.onload = function sharedNavFetch() {
@@ -58,7 +58,7 @@ function addSharedNavigation() {
  */
 function addSharedFooter() {
   const xhr = new XMLHttpRequest();
-  const url = '../mainFooter.html';
+  const url = './mainFooter.html';
 
   xhr.open('GET', url);
   xhr.onload = function sharedFooterFetch() {

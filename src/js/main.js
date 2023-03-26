@@ -71,6 +71,31 @@ function initializePrivacyModal() {
   });
 }
 
+function createWipModal() {
+  const modalHtml = `
+  <!-- WIP Modal -->
+    <div class="modal fade" id="wipModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Work in Progress</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            This feature is currently a work in progress. Please check back later!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Append the WIP modal HTML to the body of the document
+  document.body.insertAdjacentHTML('beforeend', modalHtml);
+}
+
 function loadGoogleAnalytics() {
   // Replace "GA_MEASUREMENT_ID" with your Google Analytics Measurement ID
   const gaMeasurementId = 'G-31RN40BDBG';
@@ -112,6 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Privacy and Analytics initialized
   createPrivacyModal();
   loadGoogleAnalytics();
+  // Add a WIP progress modal for to display on user click for features coming soon
+  createWipModal();
   // Imported JS definitions for pages/content initialized
   allPages.initialize();
   contentPage.initialize();

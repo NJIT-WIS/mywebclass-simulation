@@ -1,3 +1,5 @@
+import { Modal } from 'bootstrap';
+
 /**
  * Calculates the page top banner height based on the element with role = banner.
  * Includes an explicit setting of '59' to account for our shared navigation bar.
@@ -29,6 +31,20 @@ function addScrollOffsetClass() {
   const headings = document.querySelectorAll('main h1, main h2, main h3, main h4, main h5, main h6');
   headings.forEach((heading) => {
     heading.classList.add('scroll-offset');
+  });
+}
+
+/**
+ * Adds a button click listener to the newsletter subscribe button in order to display
+ * a Work In Progress modal to the user, as this feature is not fully implemented.
+ * TODO: Remove, or disable the call to this function once the newsletter is complete.
+ */
+function addNewsletterFormSubscribeListener() {
+  const subscribeBtn = document.getElementById('newsletterSubscribeBtn');
+  const wipModal = new Modal(document.getElementById('wipModal'));
+
+  subscribeBtn.addEventListener('click', () => {
+    wipModal.show();
   });
 }
 
@@ -66,6 +82,10 @@ function addSharedFooter() {
       // Insert the footer HTML into the placeholder
       const navDiv = document.querySelector('#main-footer');
       navDiv.innerHTML = xhr.responseText;
+
+      // TODO: Remove once Newsletter Form is complete.
+      // Add a listener to the subscribe button in the footer, since it is currently WIP
+      addNewsletterFormSubscribeListener();
     } else {
       // Log an error to the console to provide some indication of failure beyond navigation missing
       console.error('Failed to load main footer:', xhr.statusText);
@@ -77,9 +97,13 @@ function addSharedFooter() {
 /**
  * Initialization function called from importing module.
  */
-exports.initialize = function allPagesInitializer() {
+function allPagesInitializer() {
   addSharedNavigation();
   addSharedFooter();
   addScrollOffsetClass();
   calculateBannerHeight();
+}
+
+export default {
+  initialize: allPagesInitializer,
 };

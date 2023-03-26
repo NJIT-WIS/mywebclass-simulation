@@ -26,7 +26,6 @@ test('Check page for Bootstrap primary button with text "Start Here"', async ({ 
   expect(button).toBeTruthy(); // check if button with class 'btn-primary' and text 'Start Here' exists
 });
 
-
 test('Check for newsletter form with email input', async ({ page }) => {
   await page.goto('http://localhost:3000');
 
@@ -39,6 +38,18 @@ test('Check for newsletter form with email input', async ({ page }) => {
 
   const placeholder = await emailInput.getAttribute('placeholder');
   expect(placeholder).toBe('Email address');
+});
+
+test('Check HOME page has a placeholder DIV for a shared Navigation Bar', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  const divNavPlaceholder = await page.$('header[role="banner"] > div#main-navigation');
+  expect(divNavPlaceholder).toBeTruthy(); // check if div with ID 'main-navigation' exists
+});
+
+test('Check HOME page has a placeholder DIV for a shared FOOTER', async ({ page }) => {
+  await page.goto('http://localhost:3000/');
+  const divFooterPlaceholder = await page.$('body > div > div#main-footer');
+  expect(divFooterPlaceholder).toBeTruthy(); // check if div with ID 'main-footer' exists
 });
 
 

@@ -59,53 +59,19 @@
 
     <div class="container-fluid">
       <header class="fixed-top" role="banner">
-        <nav aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./">
-              <img
-                src="assets/images/logo.jpg"
-                alt="MyWebClass Logo"
-                width="48"
-                height="30"
-                class="d-inline-block align-text-top"
-              />
-              MyWebClass
-            </a>
-            <button
-              aria-controls="navbarCollapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              class="navbar-toggler"
-              data-bs-target="#navbarCollapse"
-              data-bs-toggle="collapse"
-              type="button"
-            >
-              <span aria-hidden="true" class="navbar-toggler-icon"></span>
-              <span class="visually-hidden">Toggle navigation</span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="story.html" aria-label="Our Story Link">Our Story</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="privacy.html" aria-label="Privacy Policy Link">Privacy Policy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="content.html" aria-label="Create Template Link">Content Template [Beta]</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <!-- Shared Navigation -->
+        <!-- Nit and TODO: Transition this to something like React for better component reuse and scaling -->
+        <div id="main-navigation"></div>
 
         <nav aria-label="Breadcrumb" class="py-3 d-none d-md-block">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-auto text-start">
                 <ol class="breadcrumb my-0">
-                  <li class="breadcrumb-item"><a href="./">Home</a></li>
-                  <li aria-current="page" class="breadcrumb-item active">Content Template</li>
+                  <li class="breadcrumb-item"><a href="./" data-i18n="breadcrumbs.home-link-crumb">Home</a></li>
+                  <li aria-current="page" class="breadcrumb-item active" data-i18n="breadcrumbs.privacy-page-crumb">
+                    Privacy Policy
+                  </li>
                 </ol>
               </div>
             </div>
@@ -118,7 +84,7 @@
           <!-- Sidebar menu with scrollspy -->
           <nav class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse position-fixed" id="toc_menu">
             <div class="position-sticky pt-3">
-              <h2 class="justify-left">Navigation</h2>
+              <h2 class="justify-left" data-i18n="privacy-page.sidebar-heading-text">Navigation</h2>
               <!-- Javascript builds out the navigation items -->
             </div>
           </nav>
@@ -126,7 +92,7 @@
           <!-- Main content area -->
           <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4">
             <section id="title">
-              <h1 class="fw-bold border-bottom">Privacy Policy</h1>
+              <h1 class="fw-bold border-bottom" data-i18n="privacy-page.main-privacy-heading">Privacy Policy</h1>
               <div class="text-muted mb-3">
                 By: Dina Lahham | Arly Volmar | Nathan Hernandez | ChatGPT
                 <span class="text-muted me-3"> Last Updated: March 21, 2023</span>
@@ -135,129 +101,113 @@
             </section>
             <div>
               <section id="section-privacy-intro">
-                <h1 class="h4 mb-1" id="privacy-policy-section-header">Terms Consent</h1>
-                <p>
+                <h1
+                  class="h4 mb-1"
+                  id="privacy-policy-section-header"
+                  data-i18n="privacy-page.section-privacy-intro-header"
+                >
+                  Terms Consent
+                </h1>
+                <p data-i18n="privacy-page.section-privacy-intro-p1">
                   At MyWebClass, we are committed to protecting the privacy of our users. This Privacy Policy explains
                   how we collect, use, and protect your personal information. By using our website, you consent to the
                   terms of this Privacy Policy.
                 </p>
               </section>
               <section id="section-information-we-collect">
-                <h2 id="information-we-collect">Info Collected</h2>
-                <p>When you visit our website, we may collect the following types of personal information:</p>
+                <h2 id="information-we-collect" data-i18n="privacy-page.section-privacy-information-we-collect-header">
+                  Info Collected
+                </h2>
+                <p data-i18n="privacy-page.section-privacy-information-we-collect-p1">
+                  When you visit our website, we may collect the following types of personal information:
+                </p>
                 <ul>
-                  <li>
+                  <li data-i18n="privacy-page.section-privacy-information-we-collect-item-1">
                     Information you provide us directly, such as your name, email address, and phone number when you
                     sign up for our services or contact us.
                   </li>
-                  <li>
+                  <li data-i18n="privacy-page.section-privacy-information-we-collect-item-2">
                     Information we collect automatically through cookies and other tracking technologies, such as your
                     IP address, browser type, and device type.
                   </li>
-                  <li>
+                  <li data-i18n="privacy-page.section-privacy-information-we-collect-item-3">
                     Information we receive from third-party sources, such as Google Analytics, which we use to track
                     website traffic and usage.
                   </li>
                 </ul>
               </section>
               <section id="section-how-we-use-your-information">
-                <h2 id="how-we-use-your-information">Information Use</h2>
-                <p>We may use the personal information we collect in the following ways:</p>
+                <h2
+                  id="how-we-use-your-information"
+                  data-i18n="privacy-page.section-how-we-use-your-information-header"
+                >
+                  Information Use
+                </h2>
+                <p data-i18n="privacy-page.section-how-we-use-your-information-p1">
+                  We may use the personal information we collect in the following ways:
+                </p>
                 <ul>
-                  <li>To provide you with our services and respond to your inquiries.</li>
-                  <li>To personalize your experience on our website.</li>
-                  <li>To improve our website and services.</li>
-                  <li>
+                  <li data-i18n="privacy-page.section-how-we-use-your-information-item-1">
+                    To provide you with our services and respond to your inquiries.
+                  </li>
+                  <li data-i18n="privacy-page.section-how-we-use-your-information-item-2">
+                    To personalize your experience on our website.
+                  </li>
+                  <li data-i18n="privacy-page.section-how-we-use-your-information-item-3">
+                    To improve our website and services.
+                  </li>
+                  <li data-i18n="privacy-page.section-how-we-use-your-information-item-4">
                     To send you marketing communications about our services or other products and services that we
                     believe may be of interest to you.
                   </li>
                 </ul>
               </section>
               <section id="section-how-we-protect-your-information">
-                <h2 id="how-we-protect-your-information">Protections</h2>
-                <p>
+                <h2
+                  id="how-we-protect-your-information"
+                  data-i18n="privacy-page.section-how-we-protect-your-information-header"
+                >
+                  Protections
+                </h2>
+                <p data-i18n="privacy-page.section-how-we-protect-your-information-p1">
                   We take reasonable measures to protect your personal information from unauthorized access, use, or
                   disclosure. We use industry-standard security measures, such as firewalls and encryption, to protect
                   your personal information.
                 </p>
               </section>
               <section id="section-google-analytics">
-                <h2 id="google-analytics">Google Analytics</h2>
-                <p>
+                <h2 id="google-analytics" data-i18n="privacy-page.section-google-analytics-header">Google Analytics</h2>
+                <p data-i18n="privacy-page.section-google-analytics-p1">
                   We use Google Analytics to track website traffic and usage. Google Analytics collects information
                   about your use of our website, including your IP address, and may place cookies on your computer. This
                   information is used to improve our website and services.
                 </p>
               </section>
               <section id="section-changes-to-your-privacy-policy">
-                <h2 id="changes-to-our-privacy-policy">Changes Notice</h2>
-                <p>
+                <h2
+                  id="changes-to-our-privacy-policy"
+                  data-i18n="privacy-page.section-changes-to-your-privacy-policy-header"
+                >
+                  Changes Notice
+                </h2>
+                <p data-i18n="privacy-page.section-changes-to-your-privacy-policy-p1">
                   We reserve the right to make changes to this Privacy Policy at any time. We will notify you of any
                   material changes by posting the updated Privacy Policy on our website. Your continued use of our
                   website after any such changes constitutes your acceptance of the revised Privacy Policy.
                 </p>
               </section>
               <section id="section-contact-us">
-                <h2 id="contact-us">Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy or our practices, please contact us.</p>
+                <h2 id="contact-us" data-i18n="privacy-page.section-contact-us-header">Contact Us</h2>
+                <p data-i18n="privacy-page.section-contact-us-p1">
+                  If you have any questions about this Privacy Policy or our practices, please contact us.
+                </p>
               </section>
             </div>
           </main>
         </div>
-        <footer class="py-5 container">
-          <div class="row">
-            <div class="col">
-              <h1>About Us</h1>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a class="nav-link p-0 text-muted" href="story.html" aria-label="Our Story Link">Our Story</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a
-                    aria-current="page"
-                    class="nav-link p-0 text-muted active"
-                    href="privacy.html"
-                    aria-label="Privacy Policy Link"
-                    >Privacy Policy</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-sm-3">
-              <h1>Share on Social Media</h1>
-              <ul class="nav">
-                <li class="nav-item mb-2">
-                  <a class="nav-link p-0 text-muted" href="#" aria-label="LinkedIn Link"
-                    ><i class="bi bi-linkedin me-2"></i
-                  ></a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a class="nav-link p-0 text-muted" href="#" aria-label="Twitter Link"
-                    ><i class="bi bi-twitter me-2"></i
-                  ></a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a class="nav-link p-0 text-muted" href="#" aria-label="Facebook Link"
-                    ><i class="bi bi-facebook me-2"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form>
-                <h1>Subscribe to our newsletter</h1>
-                <p>Monthly digest of what's new and exciting from us.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label class="visually-hidden" for="newsletter1">Email address</label>
-                  <input class="form-control" id="newsletter1" placeholder="Email address" type="text" />
-                  <button class="btn btn-primary" type="button">Subscribe</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </footer>
+        <!-- Shared Footer -->
+        <!-- Nit and TODO: Transition this to use something like React for better component reuse and scaling -->
+        <div id="main-footer"></div>
       </div>
     </div>
   </body>

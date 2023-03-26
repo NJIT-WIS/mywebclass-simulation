@@ -29,6 +29,9 @@ function updateReadingTime() {
   readingTimeSpan.textContent = `${readingTime} min read`;
 }
 
+/**
+ * Sets and ensures the active breadcrumb matches the current pageTitle.
+ */
 function setActiveBreadcrumb() {
   const { title } = document;
   const separatorIndex = title.indexOf('|');
@@ -130,6 +133,9 @@ function generateTOC() {
   scrollSpy(); // Highlight correct link when page loads
 }
 
+/**
+ * Initialization function called from importing module.
+ */
 exports.initialize = function contentPageInitializer() {
   updateReadingTime();
   generateTOC();

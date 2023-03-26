@@ -1,0 +1,89 @@
+{
+  "navigation": {
+    "language": "Idioma",
+    "story-link": "Nuestra Historia",
+    "privacy-link": "Política de Privacidad",
+    "content-link": "[Plantilla de Contenido]"
+  },
+  "breadcrumbs": {
+    "home-link-crumb": "Inicio",
+    "content-template-crumb": "Plantilla de Contenido",
+    "story-page-crumb": "Nuestra Historia",
+    "privacy-page-crumb": "Política de Privacidad"
+  },
+  "index": {
+    "intro-heading": "Empoderando a los educadores para un mundo digital",
+    "lead-text": "MyWebClass es un sitio web que proporciona recursos accesibles a los educadores que enseñan tecnología moderna a sus estudiantes. Únete hoy y descubre cómo nuestro sitio web puede transformar tu enseñanza y ayudarte a preparar a tus estudiantes con confianza para un futuro exitoso en la era digital.",
+    "start-here-btn": "Comenzar Aquí"
+  },
+  "footer": {
+    "about-header-text": "Acerca de Nosotros",
+    "social-media-header": "Comparte en Redes Sociales",
+    "newsletter-subscribe-header": "Suscríbete a nuestro boletín informativo",
+    "newsletter-subscribe-form-email": "Correo electrónico",
+    "newsletter-subscribe-form-btn": "Suscribir"
+  },
+  "story-page": {
+    "sidebar-heading-text": "Navegación",
+    "main-story-heading": "Nuestra Historia",
+    "section-welcome-header": "Bienvenida",
+    "section-welcome-p1": "Bienvenido a MyWebClass, un sitio web dedicado a proporcionar recursos a educadores que desean enseñar tecnología moderna, como habilidades de ingeniería de software de vanguardia, a sus estudiantes. Con el mundo cada vez más digital, es importante que los estudiantes tengan una base sólida en estas habilidades para prepararlos para futuras carreras. Sin embargo, puede ser desafiante para los educadores que no están al día o familiarizados con las últimas tecnologías disponibles enseñar estos temas de manera efectiva.",
+    "section-welcome-p2": "Ahí es donde entramos en acción. Nuestro sitio web ofrece una variedad de recursos, incluidos planes de lecciones, actividades, evaluaciones y guías de enseñanza, todos diseñados para hacer que la enseñanza de tecnología e ingeniería de software sea accesible y atractiva tanto para educadores como para estudiantes. Ya sea que seas un educador experimentado en tecnología o nuevo en la enseñanza de estas materias, tenemos algo para todos.",
+    "section-mission-header": "Misión",
+    "section-mission-p1": "En MyWebClass, nuestra misión es empoderar a los educadores con el conocimiento y los recursos que necesitan para enseñar habilidades de tecnología moderna, incluida la ingeniería de software de vanguardia, a sus estudiantes. A medida que el mundo se vuelve más digital, creemos que es fundamental que los estudiantes tengan una base sólida en estas habilidades para tener éxito en futuras carreras. Reconocemos los desafíos a los que los educadores pueden enfrentarse para mantenerse al día con las últimas tecnologías, y estamos comprometidos a proporcionarles el apoyo que necesitan para enseñar estos temas de manera efectiva.",
+    "section-values-header": "Valores",
+    "section-values-p1-people-lead": "Personas:",
+    "section-values-p1-people-text": "Valoramos a las personas por encima de todo. Creemos que cada individuo tiene el potencial de aprender y tener éxito, y estamos comprometidos a proporcionar recursos inclusivos y accesibles que empoderen a educadores y estudiantes de todos los orígenes. Nos esforzamos por crear una comunidad acogedora y de apoyo que fomente la colaboración y fomente el crecimiento personal y profesional. Reconocemos que nuestro éxito depende del éxito de nuestros usuarios, y estamos dedicados a ayudarlos a alcanzar sus objetivos. Por encima de todo, nos impulsa una pasión por la educación y una creencia en el poder transformador de la tecnología para crear un futuro mejor para todos.",
+    "section-values-p2-learning-lead": "Aprendizaje:",
+    "section-values-p2-learning-text": "Valoramos el aprendizaje como la base del crecimiento personal y profesional. Creemos que las habilidades de tecnología moderna son esenciales para el éxito en el mundo de hoy, y estamos comprometidos a proporcionar recursos educativos de alta calidad que ayuden a educadores y estudiantes a alcanzar sus objetivos. Creemos que el aprendizaje debe ser accesible para todos, independientemente de su origen o experiencia, y estamos dedicados a crear un entorno de aprendizaje inclusivo y de apoyo que fomente la exploración, experimentación e innovación. Creemos en el poder de la colaboración y la comunidad para facilitar el aprendizaje, y estamos comprometidos a fomentar conexiones entre educadores, estudiantes y profesionales de la industria para asegurarnos de que nuestro contenido siga siendo relevante y actualizado. Por encima de todo, creemos que el aprendizaje es un viaje de por vida, y estamos comprometidos a apoyar a nuestros usuarios en su búsqueda de conocimiento y desarrollo de habilidades.",
+    "section-values-p3-efficiency-lead": "Eficiencia:",
+    "section-values-p3-efficiency-text": "Valoramos la eficiencia en todos los aspectos de nuestro trabajo. Creemos que el tiempo y los recursos de los educadores son valiosos, y estamos comprometidos a proporcionarles soluciones eficientes y efectivas para enseñar habilidades de tecnología moderna. Nos esforzamos por optimizar nuestros procesos y recursos para ofrecer materiales y soporte de alta calidad y actualizados a nuestros educadores y estudiantes. Creemos que al promover la eficiencia, podemos ayudar a los educadores a alcanzar sus objetivos y preparar a los estudiantes para futuros exitosos en la era digital",
+    "section-values-p4-dependability-lead": "Fiabilidad:",
+    "section-values-p4-dependability-text": "En MyWebClass, valoramos la fiabilidad como un aspecto fundamental de nuestro trabajo. Reconocemos la importancia crítica de que los educadores tengan acceso a recursos confiables y de confianza para enseñar de manera efectiva habilidades de tecnología moderna a sus estudiantes. Como tal, estamos comprometidos a ser un socio confiable para nuestros educadores, entregando materiales educativos y soporte de alta calidad y consistentes. Nos esforzamos por ser receptivos a las necesidades de nuestros educadores y estudiantes y siempre cumplir con nuestros compromisos. Creemos que al ser confiables, podemos ganar la confianza de nuestros socios y ayudarlos a alcanzar sus objetivos en la preparación de estudiantes para carreras exitosas en el mundo en constante evolución de la tecnología.",
+    "section-values-mission-supports": "Cada uno de estos valores fundamentales apoya nuestra misión de maneras distintas:",
+    "section-values-value-of-people-lead-our": "Nuestro",
+    "section-values-value-of-people-lead": "Valor de las Personas",
+    "section-values-value-of-people-text": "por encima de todo, nos impulsa a proporcionar recursos inclusivos y accesibles, asegurando que educadores y estudiantes de todos los orígenes tengan la oportunidad de aprender y tener éxito en habilidades de tecnología moderna.",
+    "section-values-value-of-learning-lead": "Valor del Aprendizaje",
+    "section-values-value-of-learning-text": "como base del crecimiento personal y profesional respalda nuestro compromiso de proporcionar recursos educativos de alta calidad y fomentar un entorno de aprendizaje inclusivo y de apoyo, permitiendo a educadores y estudiantes enseñar y aprender habilidades de tecnología moderna de manera efectiva.",
+    "section-values-value-of-efficiency-dependability-lead": "Valores de la Eficiencia y la Fiabilidad",
+    "section-values-value-of-efficiency-dependability-text": "nos permiten ofrecer materiales educativos y soporte optimizados y confiables, empoderando a los educadores para enseñar habilidades de tecnología moderna de manera efectiva y equipando a los estudiantes con una base sólida para tener éxito en futuras carreras en el mundo siempre cambiante de la tecnología.",
+    "section-origin-header": "Origen",
+    "section-origin-p1": "Mywebclass.org fue fundada en 2023 por Keith Williams, un profesor universitario en el Instituto de Tecnología de Nueva Jersey con más de 30 años de experiencia como ingeniero de software, empresario y 17 años de experiencia como profesor universitario y en educación K-12. Keith fundó mywebclass.org para ayudar a cerrar la brecha entre educadores y profesionales de la industria del software creando una comunidad de personas comprometidas a ayudar a estudiantes de todas las edades y orígenes a tener éxito.",
+    "section-origin-p2": "MyWebClass es llevado adelante en su última forma por Arly Volmar, Dina Lahham y Nathan Hernandez. Cada uno aporta sus talentos y experiencias únicas para ofrecer las últimas características y mejoras necesarias para seguir mejorando la experiencia del cliente de MyWebClass!",
+    "section-origin-p3-lead": "Gracias por su interés en mywebclass.org. Juntos, podemos crear una comunidad de personas comprometidas a ayudar a estudiantes de todas las edades y orígenes a tener éxito en la industria del software moderna.",
+    "section-origin-p3-em-text": "¡Sigamos trabajando hacia este objetivo y hagamos un impacto positivo en la vida de innumerables personas!"
+  },
+  "privacy-page": {
+    "sidebar-heading-text": "Navegación",
+    "main-privacy-heading": "Nuestra Historia",
+    "section-privacy-intro-header": "Consentimiento de Términos",
+    "section-privacy-intro-p1": "En MyWebClass, estamos comprometidos a proteger la privacidad de nuestros usuarios. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos su información personal. Al usar nuestro sitio web, usted acepta los términos de esta Política de Privacidad.",
+    "section-privacy-information-we-collect-header": "Información Recopilada",
+    "section-privacy-information-we-collect-p1": "Cuando visita nuestro sitio web, podemos recopilar los siguientes tipos de información personal:",
+    "section-privacy-information-we-collect-item-1": "Información que nos proporciona directamente, como su nombre, dirección de correo electrónico y número de teléfono cuando se registra en nuestros servicios o se pone en contacto con nosotros.",
+    "section-privacy-information-we-collect-item-2": "Información que recopilamos automáticamente a través de cookies y otras tecnologías de seguimiento, como su dirección IP, tipo de navegador y tipo de dispositivo.",
+    "section-privacy-information-we-collect-item-3": "Información que recibimos de fuentes de terceros, como Google Analytics, que utilizamos para rastrear el tráfico y uso del sitio web.",
+    "section-how-we-use-your-information-header": "Uso de la Información",
+    "section-how-we-use-your-information-p1": "Podemos utilizar la información personal que recopilamos de las siguientes maneras:",
+    "section-how-we-use-your-information-item-1": "Para proporcionarle nuestros servicios y responder a sus consultas.",
+    "section-how-we-use-your-information-item-2": "Para personalizar su experiencia en nuestro sitio web.",
+    "section-how-we-use-your-information-item-3": "Para mejorar nuestro sitio web y servicios.",
+    "section-how-we-use-your-information-item-4": "Para enviarle comunicaciones de marketing sobre nuestros servicios u otros productos y servicios que creemos que puedan ser de su interés.",
+    "section-how-we-protect-your-information-header": "Protecciones",
+    "section-how-we-protect-your-information-p1": "Tomamos medidas razonables para proteger su información personal contra acceso, uso o divulgación no autorizados. Utilizamos medidas de seguridad estándar de la industria, como firewalls y cifrado, para proteger su información personal.",
+    "section-google-analytics-header": "Google Analytics",
+    "section-google-analytics-p1": "Utilizamos Google Analytics para rastrear el tráfico y uso del sitio web. Google Analytics recopila información sobre su uso de nuestro sitio web, incluida su dirección IP, y puede colocar cookies en su computadora. Esta información se utiliza para mejorar nuestro sitio web y servicios.",
+    "section-changes-to-your-privacy-policy-header": "Aviso de Cambios",
+    "section-changes-to-your-privacy-policy-p1": "Nos reservamos el derecho de hacer cambios a esta Política de Privacidad en cualquier momento. Le notificaremos cualquier cambio material publicando la Política de Privacidad actualizada en nuestro sitio web. Su uso continuado de nuestro sitio web después de dichos cambios constituye su aceptación de la Política de Privacidad revisada.",
+    "section-contact-us-header": "Contáctenos",
+    "section-contact-us-p1": "Si tiene alguna pregunta sobre esta Política de Privacidad o nuestras prácticas, contáctenos."
+  },
+  "content-page": {
+    "sidebar-heading-text": "Navegación",
+    "main-content-heading": "Título del Artículo",
+    "section2-heading": "Sección 2",
+    "section3-heading": "Sección 3",
+    "section4-heading": "Sección 4"
+  }
+}

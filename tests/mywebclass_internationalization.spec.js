@@ -1,3 +1,5 @@
+//This is the code for Internationalization
+
 import { test, expect } from '@playwright/test'
 
 test.describe('MyWebClass.org internationalization', () => {

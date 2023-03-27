@@ -7,23 +7,24 @@
 /* Padding below the footer and lighter body text */
 html {
     overflow-y: scroll;
-  }
+}
 
 :root {
     --banner-height: 64px;
-  }
+}
 
 body.banner-offset {
     margin-top: calc(var(--bs-gutter-y) + var(--banner-height));
-  }
+}
 
-  #sidebarMenu .nav-link.active {
+#sidebarMenu .nav-link.active {
     text-decoration: underline;
-  }
-  footer {
+}
+
+footer {
     h1, h2, h3, h4, h5, h6 {
-      font-size: 80%;
+        font-size: 80%;
     }
-  }
+}
 
  

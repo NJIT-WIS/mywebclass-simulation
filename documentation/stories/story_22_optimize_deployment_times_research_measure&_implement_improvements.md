@@ -9,7 +9,7 @@
 
 #### Story Points:
 
-- 3
+- 8
 
 #### Team Member:
 

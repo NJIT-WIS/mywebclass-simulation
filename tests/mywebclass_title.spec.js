@@ -29,5 +29,5 @@ test('Test Case 3: Click on Templates', async ({ page }) => {
     */
     await page.getByRole('link', { name: 'Content Template' }).click();
 
-    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/templates.html');
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/content.html');
 });

@@ -1,0 +1,43 @@
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  --banner-height: 64px; 
+}
+
+body.banner-offset {
+  margin-top: calc(var(--bs-gutter-y) + var(--banner-height));
+}
+
+#sidebarMenu .nav-link.active {
+  text-decoration: underline;
+}
+
+footer h1{
+  font-size: 90%;
+}
+footer h2{
+  font-size: 80%;
+}
+footer h3{
+  font-size: 80%;
+}
+footer h4{
+  font-size: 80%;
+}
+footer h5{
+  font-size: 80%;
+}
+footer h6{
+  font-size: 80%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 0;
+}

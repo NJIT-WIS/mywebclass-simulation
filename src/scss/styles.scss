@@ -1,29 +1,24 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
-@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 html {
-    overflow-y: scroll;
-  }
+  overflow-y: scroll; 
+}
 
 :root {
-    --banner-height: 64px;
-  }
+  --banner-height: 64px;
+}
 
 body.banner-offset {
-    margin-top: calc(var(--bs-gutter-y) + var(--banner-height));
-  }
+  margin-top: calc(var(--bs-gutter-y) + var(--banner-height));
+}
 
-  #sidebarMenu .nav-link.active {
-    text-decoration: underline;
+#sidebarMenu .nav-link.active {
+  text-decoration: underline;
+}
+footer {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 80%;
   }
-  footer {
-    h1, h2, h3, h4, h5, h6 {
-      font-size: 80%;
-    }
-  }
-
- 
+}

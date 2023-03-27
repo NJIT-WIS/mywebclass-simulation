@@ -1,1 +1,87 @@
-{}
+{
+"navigation": {
+"language": "Sprache",
+"story-link": "Unsere Geschichte",
+"privacy-link": "Datenschutzerklärung",
+"content-link": "[Inhaltsvorlage]"
+},
+"breadcrumbs": {
+"home-link-crumb": "Startseite",
+"content-template-crumb": "Inhaltsvorlage",
+"story-page-crumb": "Unsere Geschichte",
+"privacy-page-crumb": "Datenschutzerklärung"
+},
+"index": {
+"intro-heading": "Befähigung von Pädagogen für eine digitale Welt",
+"lead-text": "MyWebClass ist eine Website, die Pädagogen zugängliche Ressourcen zur Verfügung stellt, um modernste Technologien an ihre Schülerinnen und Schüler zu vermitteln. Werden Sie heute Mitglied und entdecken Sie, wie unsere Website Ihren Unterricht verändern kann und wie Sie Ihre Schülerinnen und Schüler sicher auf erfolgreiche Zukunft im digitalen Zeitalter vorbereiten können.",
+"start-here-btn": "Hier anfangen"
+},
+"footer": {
+"about-header-text": "Über uns",
+"social-media-header": "Auf Social Media teilen",
+"newsletter-subscribe-header": "Abonnieren Sie unseren Newsletter",
+"newsletter-subscribe-form-email": "E-Mail-Adresse",
+"newsletter-subscribe-form-btn": "Abonnieren"
+},
+"story-page": {
+"sidebar-heading-text": "Navigation",
+"main-story-heading": "Unsere Geschichte",
+"section-welcome-header": "Willkommen",
+"section-welcome-p1": "Willkommen bei MyWebClass, einer Website, die sich der Bereitstellung von Ressourcen für Pädagogen widmet, die ihren Schülerinnen und Schülern moderne Technologien wie fortschrittliche Software-Engineering-Fähigkeiten vermitteln möchten. In einer immer digitaler werdenden Welt ist es wichtig, dass Schülerinnen und Schüler eine solide Grundlage in diesen Fähigkeiten haben, um sie auf zukünftige Karrieren vorzubereiten. Es kann jedoch für Pädagogen entmutigend sein, die neuesten Technologien nicht zu kennen und diese Fächer effektiv zu unterrichten.",
+"section-welcome-p2": "Hier kommen wir ins Spiel. Unsere Website bietet eine Reihe von Ressourcen, einschließlich Unterrichtsplänen, Aktivitäten, Bewertungen und Unterrichtshilfen, die alle darauf abzielen, das Unterrichten von Technologie und Software-Engineering für Pädagogen und Schülerinnen und Schüler zugänglich und ansprechend zu gestalten. Egal, ob Sie ein erfahrener Technologie-Pädagoge sind oder neu im Unterrichten dieser Fächer, bei uns findet jeder etwas Passendes.",
+"section-mission-header": "Mission",
+"section-mission-p1": "Bei MyWebClass ist es unsere Mission, Pädagogen mit dem Wissen und den Ressourcen auszustatten, die sie benötigen, um modernste Technologie-Fähigkeiten, einschließlich fortschrittlicher Software-Engineering-Kenntnisse, an ihre Schülerinnen und Schüler zu vermitteln. In einer sich immer stärker digitalisierenden Welt ist es unserer Meinung nach entscheidend, dass Schülerinnen und Schüler eine solide Grundlage in diesen Fähigkeiten haben, um in zukünftigen Karrieren erfolgreich zu sein. Wir erkennen die Herausforderungen an, denen Pädagogen gegenüberstehen können, um auf dem neuesten Stand der Technologie zu bleiben und sind bestrebt, ihnen die Unterstützung zu bieten, die sie benötigen, um diese Fächer effektiv zu unterrichten.",
+"section-values-header": "Werte",
+"section-values-p1-people-lead": "Menschen:",
+"section-values-p1-people-text": "Wir schätzen Menschen über alles. Wir glauben, dass jeder Einzelne das Potenzial hat zu lernen und erfolgreich zu sein und engagieren uns für inklusive und zugängliche Ressourcen, die Pädagogen und Schülerinnen und Schüler aller Hintergründe befähigen. Wir streben danach, eine einladende und unterstützende Gemeinschaft zu schaffen, die Zusammenarbeit fördert und persönliches und berufliches Wachstum unterstützt. Wir erkennen, dass unser Erfolg von dem Erfolg unserer Benutzer abhängt und sind darauf ausgerichtet, ihnen zu helfen, ihre Ziele zu erreichen. Vor allem treibt uns die Leidenschaft für Bildung und der Glaube an die transformative Kraft der Technologie an, um eine bessere Zukunft für alle zu schaffen.",
+"section-values-p2-learning-lead": "Lernen:",
+"section-values-p2-learning-text": "Wir schätzen das Lernen als Grundlage für persönliches und berufliches Wachstum. Wir glauben, dass moderne Technologie-Fähigkeiten für den Erfolg in der heutigen Welt unerlässlich sind und engagieren uns für qualitativ hochwertige Bildungsressourcen, die Pädagogen und Schülerinnen und Schüler bei der Erreichung ihrer Ziele unterstützen. Wir glauben, dass Lernen für alle zugänglich sein sollte, unabhängig von ihrem Hintergrund oder ihrer Erfahrung, und engagieren uns für eine inklusive und unterstützende Lernumgebung, die Exploration, Experimentieren und Innovation fördert. Wir glauben an die Kraft der Zusammenarbeit und Gemeinschaft zur Förderung des Lernens und engagieren uns für die Förderung von Verbindungen zwischen Pädagogen, Schülerinnen und Schülern sowie Fachleuten der Branche, um sicherzustellen, dass unser Inhalt relevant und aktuell bleibt. Vor allem glauben wir, dass Lernen eine lebenslange Reise ist und engagieren uns für die Unterstützung unserer Benutzer bei ihrer Suche nach Wissen und Fähigkeitenentwicklung.",
+"section-values-p3-efficiency-lead": "Effizienz:",
+"section-values-p3-efficiency-text": "Wir schätzen Effizienz in allen Bereichen unserer Arbeit. Wir glauben, dass die Zeit und Ressourcen von Pädagogen wertvoll sind und engagieren uns für effiziente und effektive Lösungen für die Vermittlung von modernen Technologie-Fähigkeiten. Wir streben danach, unsere Prozesse zu optimieren und unsere Ressourcen zu optimieren, um hochwertiges, aktuelles Material und Unterstützung für unsere Pädagogen und Schülerinnen und Schüler bereitzustellen. Wir glauben, dass die Förderung von Effizien zur Erreichung der Ziele von Pädagogen beitragen und Schülerinnen und Schüler auf erfolgreiche Karrieren im digitalen Zeitalter vorbereiten.",
+"section-values-p4-dependability-lead": "Verlässlichkeit:",
+"section-values-p4-dependability-text": "Bei MyWebClass schätzen wir Verlässlichkeit als grundlegenden Aspekt unserer Arbeit. Wir erkennen die kritische Bedeutung an, dass Pädagogen Zugang zu zuverlässigen und vertrauenswürdigen Ressourcen haben, um moderne Technologie-Fähigkeiten effektiv an ihre Schülerinnen und Schüler vermitteln zu können. Deshalb sind wir bestrebt, ein verlässlicher Partner für unsere Pädagogen zu sein, der konsistente und hochwertige Bildungsmaterialien und Unterstützung liefert. Wir streben danach, auf die Bedürfnisse unserer Pädagogen und Schülerinnen und Schüler zu reagieren und unsere Zusagen immer einzuhalten. Wir glauben, dass wir durch Verlässlichkeit das Vertrauen unserer Partner gewinnen und ihnen helfen können, ihre Ziele bei der Vorbereitung von Schülerinnen und Schülern auf erfolgreiche Karrieren in der sich schnell entwickelnden Welt der Technologie zu erreichen.",
+"section-values-mission-supports": "Jeder dieser Kernwerte unterstützt unsere Mission auf unterschiedliche Weise:",
+"section-values-value-of-people-lead-our": "Unser",
+"section-values-value-of-people-lead": "Wert der Menschen",
+"section-values-value-of-people-text": "über alles treibt uns an, inklusive und zugängliche Ressourcen bereitzustellen, um Pädagogen und Schülerinnen und Schüler aller Hintergründe die Möglichkeit zu geben, moderne Technologie-Fähigkeiten zu erlernen und erfolgreich zu sein.",
+"section-values-value-of-learning-lead": "Wert des Lernens",
+"section-values-value-of-learning-text": "als Grundlage für persönliches und berufliches Wachstum unterstützt unser Engagement für hochwertige Bildungsressourcen und eine inklusive und unterstützende Lernumgebung, die es Pädagogen und Schülerinnen und Schülern ermöglicht, moderne Technologie-Fähigkeiten effektiv zu vermitteln und zu erlernen.",
+"section-values-value-of-efficiency-dependability-lead": "Werte von Effizienz und Verlässlichkeit",
+"section-values-value-of-efficiency-dependability-text": "ermöglichen es uns, effiziente und verlässliche Bildungsmaterialien und Unterstützung bereitzustellen, die Pädagogen befähigen, moderne Technologie-Fähigkeiten effektiv zu vermitteln, und Schülerinnen und Schüler eine solide Grundlage für erfolgreiche Karrieren in der sich schnell entwickelnden Welt der Technologie bieten.",
+"section-origin-header": "Ursprung",
+"section-origin-p1": "MyWebClass.org wurde 2023 von Keith Williams gegründet, einem Universitätsdozenten am New Jersey Institute of Technology mit über 30 Jahren Erfahrung als Software-Ingenieur, Unternehmer und 17 Jahren Erfahrung als Universitätsdozent und im K-12-Bildungsbereich. Keith gründete MyWebClass.org, um die Kluft zwischen Pädagogen und Fachleuten der Software-Industrie zu überbrücken, indem er eine Community von Menschen schuf, die sich verpflichtet haben, Schülerinnen und Schülern jeden Alters und jeder Herkunft zum Erfolg zu verhelfen.",
+"section-origin-p2": "MyWebClass wird in seiner neuesten Form von Arly Volmar, Dina Lahham und Nathan Hernandez fortgeführt. Jeder von ihnen bringt seine einzigartigen Talente und Erfahrungen ein, um die neuesten großartigen Funktionsverbesserungen und Verbesserungen umzusetzen, die notwendig sind, um das Kundenerlebnis von MyWebClass weiter zu verbessern!",
+"section-origin-p3-lead": "Vielen Dank für Ihr Interesse an MyWebClass.org. Gemeinsam können wir eine Community von Menschen schaffen, die sich verpflichtet haben, Schülerinnen und Schülern jeden Alters und jeder Herkunft zum Erfolg in der modernen Software-Industrie zu verhelfen.",
+"section-origin-p3-em-text": "Lassen Sie uns weiter daran arbeiten, dieses Ziel zu erreichen und einen positiven Einfluss auf das Leben zahlloser Menschen zu nehmen!",
+},
+"privacy-page": {
+"sidebar-heading-text": "Navigation",
+"main-privacy-heading": "Datenschutzrichtlinie",
+"section-privacy-intro-header": "Zustimmung zu den Bedingungen",
+"section-privacy-intro-p1": "Bei MyWebClass sind wir bestrebt, die Privatsphäre unserer Benutzerinnen und Benutzer zu schützen. Diese Datenschutzrichtlinie erläutert, wie wir personenbezogene Daten sammeln, verwenden und schützen. Durch die Nutzung unserer Website erklären Sie sich mit den Bedingungen dieser Datenschutzrichtlinie einverstanden.",
+"section-privacy-information-we-collect-header": "Informationen, die wir sammeln",
+"section-privacy-information-we-collect-p1": "Wenn Sie unsere Website besuchen, können wir folgende Arten personenbezogener Daten sammeln:",
+"section-privacy-information-we-collect-item-1": "Informationen, die Sie uns direkt zur Verfügung stellen, wie Ihren Namen, Ihre E-Mail-Adresse und Ihre Telefonnummer, wenn Sie sich für unsere Dienste anmelden oder uns kontaktieren.",
+"section-privacy-information-we-collect-item-2": "Informationen, die wir automatisch durch Cookies und andere Tracking-Technologien sammeln, wie Ihre IP-Adresse, Browser-Typ und Gerätetyp.",
+"section-privacy-information-we-collect-item-3": "Informationen, die wir von Drittanbietern erhalten, wie zum Beispiel Google Analytics, das wir verwenden, um Website-Traffic und -Nutzung zu verfolgen.",
+"section-how-we-use-your-information-header": "Verwendung Ihrer Informationen",
+"section-how-we-use-your-information-p1": "Wir können die von uns gesammelten personenbezogenen Daten auf folgende Weise verwenden:",
+"section-how-we-use-your-information-item-1": "Um Ihnen unsere Dienste zur Verfügung zu stellen und auf Ihre Anfragen zu antworten.",
+"section-how-we-use-your-information-item-2": "Um Ihr Erlebnis auf unserer Website zu personalisieren.",
+"section-how-we-use-your-information-item-3": "Um unsere Website und Dienste zu verbessern.",
+"section-how-we-use-your-information-item-4": "section-how-we-protect-your-information-p1": "Wir ergreifen angemessene Maßnahmen zum Schutz Ihrer persönlichen Daten vor unbefugtem Zugriff, Verwendung oder Offenlegung. Wir verwenden branchenübliche Sicherheitsmaßnahmen wie Firewalls und Verschlüsselung, um Ihre persönlichen Daten zu schützen.",
+"section-google-analytics-header": "Google Analytics",
+"section-google-analytics-p1": "Wir verwenden Google Analytics, um den Datenverkehr und die Nutzung der Website zu verfolgen. Google Analytics sammelt Informationen über Ihre Nutzung unserer Website, einschließlich Ihrer IP-Adresse, und kann Cookies auf Ihrem Computer platzieren. Diese Informationen werden verwendet, um unsere Website und Dienstleistungen zu verbessern.",
+"section-changes-to-your-privacy-policy-header": "Änderungshinweis",
+"section-changes-to-your-privacy-policy-p1": "Wir behalten uns das Recht vor, diese Datenschutzrichtlinie jederzeit zu ändern. Wir werden Sie über alle wesentlichen Änderungen durch Veröffentlichung der aktualisierten Datenschutzrichtlinie auf unserer Website informieren. Ihre fortgesetzte Nutzung unserer Website nach solchen Änderungen stellt Ihre Zustimmung zur überarbeiteten Datenschutzrichtlinie dar.",
+"section-contact-us-header": "Kontaktieren Sie uns",
+"section-contact-us-p1": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder unseren Praktiken haben, kontaktieren Sie uns bitte."
+},
+"content-page": {
+"sidebar-heading-text": "Navigation",
+"main-content-heading": "Artikel-Titel",
+"section2-heading": "Abschnitt 2",
+"section3-heading": "Abschnitt 3",
+"section4-heading": "Abschnitt 4"
+}
+}

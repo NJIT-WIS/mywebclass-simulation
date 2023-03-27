@@ -4,7 +4,7 @@
 <head>
     <!--characterset UTF-8 Watch this: https://youtu.be/MijmeoH9LT4 -->
 
-    <title>MyWebClass.org</title>
+    <title>MyWebClass.org | Forum </title>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="scss/styles.scss">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/forum.css">
 
     <!--Basic meta info -->
-    <meta name="keywords" content="My Webclass Homepage">
+    <meta name="keywords" content="My Webclass | Forum">
     <meta name="author" content="Allie He, Zach Garcia, Kaan Okul"/>
     <meta name="description" content="A project that creates a hub to help web developers">
 
@@ -44,16 +45,16 @@
                             <a class="nav-link" href="content.html">Content Template</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resources</a>
+                            <a class="nav-link" href="resources.html">Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Forum</a>
+                            <a class="nav-link" href="forum.html">Forum</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="courses.html">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Career</a>
+                            <a class="nav-link" href="career.html">Career</a>
                         </li>
                     </ul>
                 </div>
@@ -62,15 +63,29 @@
     </header>
     <main>
         <div class="container my-5">
-                    <h1 class="display-6 fw-bold lh-1">The only web development hub you'll need!</h1>
-                    <p class="lead">This is an educational hub website for web developers to access high-quality content and 
-                        resources, to learn, grow, and share their knowledge. While also creating a more 
-                        engaged and connected web development community that provides ongoing benefits to web developers.</p>
-                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">Start Here!
-                        </button>
-                    </div>
-                </div>
-            </div>
+
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+              </form>
+
+              <section>
+                <h2>Recent Posts</h2>
+                <ul class="post-list">
+                  <li>
+                    <h3>Post Title 1</h3>
+                    <p>Post Content 1</p>
+                  </li>
+                  <li>
+                    <h3>Post Title 2</h3>
+                    <p>Post Content 2</p>
+                  </li>
+                  <li>
+                    <h3>Post Title 3</h3>
+                    <p>Post Content 3</p>
+                  </li>
+                </ul>
+              </section>
         </div>
     </main>
     <footer class="py-5 container">
@@ -91,15 +106,7 @@
             </div>
 
             <div class="col-sm-3 ">
-                <h5>Share on Social Media</h5>
-                <ul class="nav">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                            class="bi bi-linkedin me-2"></i></a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                            class="bi bi-twitter me-2"></i></a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                            class="bi bi-facebook me-2"></i></a></li>
+                <h5>Tell others about us on your social media!</h5>
                 </ul>
             </div>
 

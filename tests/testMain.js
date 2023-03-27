@@ -9,3 +9,10 @@ test('Test Case 1: Open Privacy Policy', async () => {
 
             expect(page1.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/privacy.html');
 });
+
+test('Test Case 2: Accepting Privacy Policy', async () => {
+            await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+            await page.getByRole('button', { name: 'Agree', exact: true }).click();
+
+            expect(page1.url()).toContain('MyWebClass');
+});

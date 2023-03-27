@@ -1,3 +1,5 @@
+// This is the code for GDPR
+
 const { test,except } = require('playwright');
 
 (async () => { 

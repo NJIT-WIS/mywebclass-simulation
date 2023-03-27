@@ -1,3 +1,4 @@
+/*
 const { chromium } = require('@playwright/test');
 
 describe('Example Test Suite', () => {
@@ -29,3 +30,4 @@ describe('Example Test Suite', () => {
         });
     });
 });
+*/

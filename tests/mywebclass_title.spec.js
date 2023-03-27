@@ -19,3 +19,4 @@ test('Test Case 2: Accepting Privacy Policy', async () => {
     const page1Promise = page.waitForNavigation();
 
     expect(page1.url()).toContain('https://kaanismet.github.io/mywebclass-simulation/');
+});

@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-  --banner-height: 64px;
+  --banner-height: 64px; 
 }
 
 body.banner-offset {
@@ -15,7 +15,7 @@ body.banner-offset {
 }
 
 footer h1{
-  font-size: 80%;
+  font-size: 90%;
 }
 footer h2{
   font-size: 80%;

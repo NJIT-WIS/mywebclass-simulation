@@ -3,7 +3,7 @@
 ### [User Story - As a website owner, I want to use Google Lighthouse to analyze my website's accessibility, so that I can ensure that all users can access and use my website.](https://github.com/jccjcat/mywebclass-simulation/issues/9)
 **Assigned To:** Faran
 
-**Sizing:** 3
+**Sizing:** 5
 
 **Priority:** Medium
 
@@ -14,7 +14,7 @@
 ### [User Story - As a global user of the website, I want the website to be available in multiple languages so that I can easily navigate and understand the content in my preferred language.](https://github.com/jccjcat/mywebclass-simulation/issues/17)
 **Assigned To:**  Faran
 
-**Sizing:** 2
+**Sizing:** 8
 
 **Priority:** Low
 
@@ -115,7 +115,7 @@
 ### [User Story - As a web developer, I want to create a basic folder structure for my new web project using the chosen web framework so that I can organize my files and easily locate them when needed.](https://github.com/jccjcat/mywebclass-simulation/issues/10)
 **Assigned To:** Faran
 
-**Sizing:** 3
+**Sizing:** 5
 
 **Priority:** High
 
@@ -127,7 +127,7 @@
 ### [User Story - As a user of a website, I want the website to be GDPR-compliant to ensure that my personal data is protected and used only for the purposes for which it was collected. ](https://github.com/jccjcat/mywebclass-simulation/issues/26)
 **Assigned To:** Rachel
 
-**Sizing:** 5
+**Sizing:** 8
 
 **Priority:** High
 

@@ -9,7 +9,7 @@ test('Test Case 1: check privacy policy', async ({ page }) => {
     const page1 = await page1Promise;
 
     expect(page1.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/privacy.html');
-})
+});
 
 test('Test Case 2: Accepting Privacy Policy', async ({ page }) => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');

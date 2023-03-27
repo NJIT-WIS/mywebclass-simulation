@@ -13,7 +13,7 @@
 - The report should provide a clear visualization of the metrics and trends, enabling team members to quickly identify areas of success and opportunities for growth.
 
 #### Story Points:
-3
+8
 
 #### Team Member:
 Bryan Tello

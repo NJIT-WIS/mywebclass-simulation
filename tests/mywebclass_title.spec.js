@@ -18,3 +18,11 @@ test('Test Case 2: Accepting Privacy Policy', async ({ page }) => {
 
     expect(page.url()).toContain('https://kaanismet.github.io/mywebclass-simulation/');
 });
+
+test('Test Case 3: Click on Templates', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('link', { name: 'Content Template' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/templates.html');
+
+});

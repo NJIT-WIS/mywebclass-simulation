@@ -21,7 +21,8 @@ test('Test Case 2: Accepting Privacy Policy', async ({ page }) => {
 
 test('Test Case 3: Click on Templates', async ({ page }) => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
-    await page.getByRole('link', { name: 'Content Template' }).click();
+    await page.waitForSelector('a[role="link"][aria-label="Content Template"]');
+    await page.click('a[role="link"][aria-label="Content Template"]');
 
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/templates.html');
 

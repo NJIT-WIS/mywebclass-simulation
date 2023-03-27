@@ -1,4 +1,3 @@
-// This is a playwright test to check if the websiten follows thw GDPR guidleines or not
 
 // @ts-check
 const { test, expect } = require('@playwright/test')

@@ -19,7 +19,7 @@ test.describe('MyWebClass.org internationalization', () => {
 
     // Check if the lang attribute of the HTML tag is set to "en"
     const langAttribute = await page.getAttribute('html', 'lang')
-    expect(langAttribute).toBe('en', 'The lang attribute of the HTML tag is not set to "en".')
+    expect(langAttribute).toEqual('en');
 
     // Perform any additional checks for the "en" language version of the website here, e.g., checking specific text or elements
   })

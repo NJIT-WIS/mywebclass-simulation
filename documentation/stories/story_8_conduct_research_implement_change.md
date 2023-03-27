@@ -7,7 +7,7 @@
 - Compliance is validated by testing the website with assistive technologies and evaluating the user experience for users with disabilities.
 
 #### Story Points:
-2
+3
 
 #### Team Member: 
 Truong Dang

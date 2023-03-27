@@ -1,7 +1,6 @@
-// @ts-check
 const { chromium } = require('playwright');
 
-describe('Open web', () => {
+describe('Website Favicon Test', () => {
   let browser;
   let page;
 
@@ -15,14 +14,15 @@ describe('Open web', () => {
 
   beforeEach(async () => {
     page = await browser.newPage();
+    await page.goto('https://example.com');
   });
 
   afterEach(async () => {
     await page.close();
   });
 
-  it('should open website', async () => {
-    await page.goto('https://mp299.github.io/mywebclass-simulation/');
-    expect(await page.title()).toContain('MyWebClass Homepage');
+  it('Should have a favicon', async () => {
+    const favicon = await page.$('link[rel="icon"]');
+    expect(favicon).toBeTruthy();
   });
 });

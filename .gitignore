@@ -1,7 +1,6 @@
 tests/__pycache__
 grade/__pycache__
 .pytest_cache
-node_modules
 .idea
 venv
 /test-results/

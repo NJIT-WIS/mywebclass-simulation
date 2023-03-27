@@ -2,7 +2,7 @@
 const { test, expect } = require('@playwright/test')
 
 //test
-test('Test Case 1: check privacy policy', async ({ page }) => {
+test('Test Case 1: Check Privacy Policy', async ({ page }) => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
     const page1Promise = page.waitForEvent('popup');
     await page.locator('#privacyModal').getByRole('link', { name: 'Privacy Policy' }).click();
@@ -32,4 +32,12 @@ test('Test Case 4: Click on Our Story', async ({ page }) => {
     await page.getByRole('link', { name: 'Our Story' }).click();
 
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/story.html');
+});
+
+test('Test Case 5: Click on Privacy Policy', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Privacy Policy' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/privacy.html');
 });

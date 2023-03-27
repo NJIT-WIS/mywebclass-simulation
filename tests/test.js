@@ -5,7 +5,7 @@ describe('Example Test Suite', () => {
     let page;
 
     beforeAll(async () => {
-        browser = await .chromium.launch();
+        browser = await chromium.launch();
         page = await browser.newPage();
     });
 
@@ -13,7 +13,7 @@ describe('Example Test Suite', () => {
         await browser.close();
     });
 
-    test('Test Case 1', async () => {
+    test('Test Case 1: Open Privacy Policy', async () => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
     const page1Promise = page.waitForEvent('popup');
     await page.locator('#privacyModal').getByRole('link', { name: 'Privacy Policy' }).click();
@@ -22,4 +22,9 @@ describe('Example Test Suite', () => {
 
     expect(page1.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/privacy.html');
     });
+
+    test('Test Case 2: Accepting Privacy Policy', async () => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    })
   });

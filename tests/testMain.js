@@ -1,5 +1,6 @@
 const { chromium } = require('@playwright/test');
 
+//test 1
 test('Test Case 1: Open Privacy Policy', async () => {
             await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
             const page1Promise = page.waitForEvent('popup');

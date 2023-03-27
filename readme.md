@@ -64,3 +64,12 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 
 
 # ADD YOUR PROJECT LINKS BELOW THIS 
+- [Website Link](https://nathandh.github.io/mywebclass-simulation/)
+- [Istallation Instructions](install_instructions.md)
+- [Deployment Instructions](deployment.md)
+- [Productivity Log](productivity_log.md)
+- [Project Wiki](https://github.com/nathandh/mywebclass-simulation/wiki)
+- [Sprint 1 Taskboard](https://github.com/users/nathandh/projects/7)
+- [MyWebClass Boardcard](https://github.com/users/nathandh/projects/5)
+- [Sprint 1 Retro](https://github.com/users/nathandh/projects/8)
+- [Daily Standup Notes](https://docs.google.com/document/d/1a25TPMuk7EZU091YoZZ5Tl0uhbV32lLZxvVMoQZw_MA/edit)

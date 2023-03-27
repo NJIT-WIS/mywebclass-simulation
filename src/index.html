@@ -40,7 +40,7 @@
 <body class="pt-5">
 <div class="container-fluid">
     <header role="banner" class="fixed-top">
-            <nav class = "navbar navbar-expand-lg p-3 navbar-light bg-light" nav role="navigation" aria-label="Main navigation">
+        <nav class = "navbar navbar-expand-lg p-3 navbar-light bg-light" nav role="navigation" aria-label="Main navigation">
             <div class="container">
                 <a class="navbar-brand" href="index.html">MyWebClass.org</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,48 +49,46 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="col-12">
-                    <ul class="navbar-nav d-flex justify-content-evenly">
+                    <div class="col-12">
+                        <ul class="navbar-nav d-flex justify-content-evenly">
+                            <li class="nav-item">
+                                <a class="nav-link" data-lang="en" href="content.html">Content Template</a>
+                                <a class="nav-link d-none" data-lang="fr" href="content.html">Modèle de contenu</a>
+                                <a class="nav-link d-none" data-lang="es" href="content.html">Plantilla de contenido</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" data-lang="en" href="content.html">Content Template</a>
-                            <a class="nav-link d-none" data-lang="fr" href="content.html">Modèle de contenu</a>
-                            <a class="nav-link d-none" data-lang="es" href="content.html">Plantilla de contenido</a>
-                        </li>
+                            <form class="d-flex">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
 
-                        <form class="d-flex">
-                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-
-                        <!-- Add language switcher -->
-                        <li class="nav-item">
-                            <select id="language-switcher" class="form-select">
-                                <option value="en" selected>English</option>
-                                <option value="es">Español</option>
-                                <option value="fr">French</option>
-                            </select>
-                        </li>
-                    </ul>
+                            <!-- Add language switcher -->
+                            <li class="nav-item">
+                                <select id="language-switcher" class="form-select">
+                                    <option value="en" selected>English</option>
+                                    <option value="es">Español</option>
+                                    <option value="fr">French</option>
+                                </select>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-                    <div class="container col-9 p-md-5">
-                    <h2 class="display-5 fw-bold lh-1" data-lang="en">Empower Your Students with Software Engineering Skills</h2>
-                    <h2 class="display-5 fw-bold lh-1 d-none" data-lang="es">Revoluciona tu enseñanza</h2>
-                    <h2 class="display-5 fw-bold lh-1 d-none" data-lang="fr">Révolutionnez votre enseignement</h2>
-                    <p class="lead" data-lang="en">Transform your teaching and empower your students with the latest software engineering skills. Explore advanced technologies by joining MyWebClass.</p>
-                    <p class="lead d-none" data-lang="es">
-Transforme su enseñanza y capacite a sus estudiantes con las últimas habilidades de ingeniería de software. Explore tecnologías avanzadas uniéndose a MyWebClass.</p>
-                    <p class="lead d-none" data-lang="fr">Transformez votre enseignement et donnez à vos étudiants les dernières compétences en génie logiciel. Explorez les technologies avancées en rejoignant MyWebClass.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold" data-lang="en">Create an Account</button>
-                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold d-none" data-lang="es">Comenzar Aquí</button>
-                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold d-none" data-lang="fr">Commencer Ici</button>
-                    </div>
+    <div class="container col-9 p-md-5">
+        <h2 class="display-5 fw-bold lh-1" data-lang="en">Empower Your Students with Software Engineering Skills</h2>
+        <h2 class="display-5 fw-bold lh-1 d-none" data-lang="es">Revoluciona tu enseñanza</h2>
+        <h2 class="display-5 fw-bold lh-1 d-none" data-lang="fr">Révolutionnez votre enseignement</h2>
+        <p class="lead" data-lang="en">Transform your teaching and empower your students with the latest software engineering skills. Explore advanced technologies by joining MyWebClass.</p>
+        <p class="lead d-none" data-lang="es">Transforme su enseñanza y capacite a sus estudiantes con las últimas habilidades de ingeniería de software. Explore tecnologías avanzadas uniéndose a MyWebClass.</p>
+        <p class="lead d-none" data-lang="fr">Transformez votre enseignement et donnez à vos étudiants les dernières compétences en génie logiciel. Explorez les technologies avancées en rejoignant MyWebClass.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold" data-lang="en">Create an Account</button>
+            <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold d-none" data-lang="es">Comenzar Aquí</button>
+            <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold d-none" data-lang="fr">Commencer Ici</button>
+        </div>
     </div>
 </main>
 <!-- Cookie Modal-->
@@ -102,11 +100,11 @@ Transforme su enseñanza y capacite a sus estudiantes con las últimas habilidad
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>This website uses cookies to improve your experience. By clicking <b>Agree</b>, you consent to our use of cookies in accordance with our <a href="privacy.html">Privacy Policy</a>.</p>
+                    <p>This website uses cookies to improve your experience. By clicking <b>Agree</b>, you consent to the website's use of cookies in accordance with its <a href="privacy.html">Privacy Policy</a>.</p>
                 </div>
                 <div class="modal-footer">
-                    <button id="accept-button" type="button" class="btn btn-primary" data-bs-dismiss="modal">I Agree</button>
-                    <button id="decline-button" type="button" class="btn btn-secondary" data-bs-dismiss="modal">I Decline</button>
+                    <button id="accept-button" type="button" class="btn btn-primary" data-bs-dismiss="modal">Agree</button>
+                    <button id="decline-button" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Decline</button>
                 </div>
             </div>
         </div>
@@ -115,24 +113,21 @@ Transforme su enseñanza y capacite a sus estudiantes con las últimas habilidad
         #cookie-consent {
              z-index: 1051;
         }
-
         #cookie-consent .modal-dialog {
             margin-top: 10%;
         }
-
         #cookie-consent .modal-body {
             margin-bottom: 20px;
         }
-
         #cookie-consent .modal-footer {
             border-top: 0;
         }
     </style>
 
     <script>
-        function getCookie(name) {
+        function getCookie(user) {
             var value = "; " + document.cookie;
-            var parts = value.split("; " + name + "=");
+            var parts = value.split("; " + user + "=");
             if (parts.length == 2) {
                 return parts.pop().split(";").shift();
             }
@@ -162,17 +157,17 @@ Transforme su enseñanza y capacite a sus estudiantes con las últimas habilidad
 
             // Add event listener to accept button
             document.getElementById("accept-button").addEventListener("click", function() {
-            // Set cookie
-            setCookie("cookie_consent", "true", 365);
-        });
+                // Set cookie
+                setCookie("cookie_consent", "true", 365);
+            });
 
-        // Add event listener to decline button
-        document.getElementById("decline-button").addEventListener("click", function() {
-        // Set cookie
-        setCookie("cookie_consent", "false", 365);
-        // Delete existing cookies
-        document.cookie.split(";").forEach(function(c) {
-            document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+            // Add event listener to decline button
+            document.getElementById("decline-button").addEventListener("click", function() {
+                // Set cookie
+                setCookie("cookie_consent", "false", 365);
+                // Delete existing cookies
+                document.cookie.split(";").forEach(function(c) {
+                    document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
                 });
             });
         });

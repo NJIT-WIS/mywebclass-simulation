@@ -2,7 +2,7 @@
 const { test, expect } = require('@playwright/test')
 
 //test
-test('Should have MyWebClass.org title', async ({ page }) => {
+test('Test Case 1: check privacy policy', async ({ page }) => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
     const page1Promise = page.waitForEvent('popup');
     await page.locator('#privacyModal').getByRole('link', { name: 'Privacy Policy' }).click();

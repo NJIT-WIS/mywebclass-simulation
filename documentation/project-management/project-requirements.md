@@ -1,17 +1,36 @@
 # Project Requirements
-1. [Epics](#epics)
-2. [User Stories](#user-stories)
-3. [Sizings and Prioritization](#sizings-and-prioritization)
-4. []()
+1. [Theme and Initiatives](#theme)
+2. [Epics](#epics)
+3. [User Stories](#user-stories)
+4. [Sizings and Prioritization](#sizings-and-prioritization)
+
+
+## Theme and Initiatives
+
+### Theme
+To create a modern and responsive website for learning web development. 
+
+### Initiatives
+- Website Development and Usability
+- DevOps & SRE
+- Legal Compliance
+- Performance and Optimization
 
 ## Epics
-### [Epic - Web Accessibility and Internationalization](https://github.com/jccjcat/mywebclass-simulation/issues/2)
-### [Epic - Search Engine Optimization](https://github.com/jccjcat/mywebclass-simulation/issues/3)
-### [Epic - DevOps](https://github.com/jccjcat/mywebclass-simulation/issues/4)
-### [Epic - Site Reliability Engineering](https://github.com/jccjcat/mywebclass-simulation/issues/5)
-### [Epic - Testing and Quality Assurance](https://github.com/jccjcat/mywebclass-simulation/issues/6)
-### [Epic - Content Template and Homepage Development](https://github.com/jccjcat/mywebclass-simulation/issues/7)
-### [Epic - GDPR Compliance and Website Legal ](https://github.com/jccjcat/mywebclass-simulation/issues/8)
+
+### Initiative: Website Development and Usability
+#### [Epic - Content Template and Homepage Development](https://github.com/jccjcat/mywebclass-simulation/issues/7)
+#### [Epic - Web Accessibility and Internationalization](https://github.com/jccjcat/mywebclass-simulation/issues/2)
+### Initiative: DevOps & SRE
+#### [Epic - DevOps](https://github.com/jccjcat/mywebclass-simulation/issues/4)
+#### [Epic - Site Reliability Engineering](https://github.com/jccjcat/mywebclass-simulation/issues/5)
+### Initiative: Legal Compliance
+#### [Epic - GDPR Compliance and Website Legal ](https://github.com/jccjcat/mywebclass-simulation/issues/8)
+### Initiative: Performance and Optimization
+#### [Epic - Search Engine Optimization](https://github.com/jccjcat/mywebclass-simulation/issues/3)
+#### [Epic - Testing and Quality Assurance](https://github.com/jccjcat/mywebclass-simulation/issues/6)
+
+
 ## User Stories
 
 Detailed User Story information can be found on [the User Stories page](user-stories.md).

@@ -1,3 +1,5 @@
+// This is to check SEO optimization, if the keywords are present
+
 // @ts-check
 const { test, expect } = require('@playwright/test')
 

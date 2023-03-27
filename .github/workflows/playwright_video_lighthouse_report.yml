@@ -24,6 +24,7 @@ jobs:
           npm ci
           npx playwright install chromium
           npm install -g lighthouse chrome-launcher axe-core chromium wait-on
+          npm install @playwright/test
 
       - name: Start the application
         run: |

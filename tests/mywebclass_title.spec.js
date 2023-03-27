@@ -32,7 +32,7 @@ test('Test Case 3: Click on Templates', async ({ page }) => {
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/content.html');
 });
 
-test('Test Case 3: Click on Templates', async ({ page }) => {
+test('Test Case 4: Click on Our Story', async ({ page }) => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
     await page.getByRole('button', { name: 'Agree', exact: true }).click();
     await page.getByRole('link', { name: 'Our Story' }).click();

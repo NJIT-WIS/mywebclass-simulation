@@ -1,5 +1,6 @@
 // @ts-check
 const { test, expect } = require('@playwright/test')
+const { toHaveTitle } = require('expect-playwright');
 
 //test
 test('Test Case 1: check privacy policy', async ({ page }) => {
@@ -10,4 +11,5 @@ test('Test Case 1: check privacy policy', async ({ page }) => {
 
     expect(page1.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/privacy.html');
     await page.goto('http://localhost:3000');
+    await expect(page).toHaveTitle('MyWebClass.org');
 })

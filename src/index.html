@@ -1,115 +1,128 @@
 <!DOCTYPE html>
 <html lang="EN">
-
 <head>
-    <!--characterset UTF-8 Watch this: https://youtu.be/MijmeoH9LT4 -->
-
     <title>MyWebClass.org</title>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Basic meta info -->
-    <meta name="keywords" content="My Webclass Homepage">
-    <meta name="author" content="Keith Williams"/>
-    <meta name="description" content="A project to help educators integrate new technoliges into their teaching">
+<!--Basic meta info -->
+<meta name="keywords" content="My Webclass Homepage">
+<meta name="author" content="Keith Williams"/>
+<meta name="description" content="A project to help educators integrate new technoliges into their teaching">
 
-    <!--OpenGraph meta -->
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
-    <meta property="og:image" content="assets/images/logo.png"/>
-    <meta property="og:url" content=""/>
+<!--OpenGraph meta -->
+<meta property="og:title" content=""/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="assets/images/logo.png"/>
+<meta property="og:url" content=""/>
 
-</head>
+<style>
+    body {
+        background-color: #F8F8F8;
+        font-family: Arial, sans-serif;
+    }
 
-<body class="pt-5">
-<div class="container-fluid">
-    <header role="banner" class="fixed-top">
-        <nav role="navigation" aria-label="Main navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="/">MyWebClass.org</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Toggle navigation</span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="content.html">Content Template</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    .header {
+        background-color: #000000;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .nav-link {
+        color: #FFFFFF;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .banner p {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .btn-start {
+        background-color: #53B8BB;
+        color: #FFFFFF;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .image-container img {
+        width: 80%;
+    }
+
+    .footer {
+        background-color: #E9ECEF;
+        padding: 50px 0;
+    }
+
+    .footer h5 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        margin-bottom: 20px;
+    }
+
+    .footer input[type=text] {
+        width: 60%;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    .footer button {
+        background-color: #53B8BB;
+        color: #FFFFFF;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 10px 20px;
+        border: none;
+    }
+</style>
+    </head>
+<body>
+    <header class="header">
+        <div>
+            <a href="/">
+                <img src="assets/images/logo.png" alt="MyWebClass Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="content.html">Content Template</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class="container my-5">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-0 align-items-center rounded-3 border shadow-lg ">
-                <div class="col-lg-7 p-3 p-lg-3 pt-lg-1">
-                    <h1 class="display-6 fw-bold lh-1">Revolutionize your teaching</h1>
-                    <p class="lead">Empower your students with cutting-edge software engineering skills. Join
-                        MyWebClass and discover advanced technologies that will transform your teaching and their
-                        learning journey.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                        <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">Start
-                            Here
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                    <img class="rounded-lg-3 img-fluid" src="assets/images/teacher.gif"
-                         alt="a teacher with students" width="720">
-                </div>
-            </div>
+        <div class="banner">
+            <h1>Teaching Made Easier</h1>
+            <p>This is a website for teachers to help them educate their students regarding the latest software</p>
         </div>
     </main>
-    <footer class="py-5 container">
-        <div class="row">
-            <div class="col">
-                <h5>About Us</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                    <li class="nav-item mb-2"><a href="story.html" class="nav-link p-0 text-muted">Our
-                        Story</a>
-                    </li>
-
-                    <a class="nav-link mb-2 p-0 text-muted active" aria-current="page" href="privacy.html">Privacy
-                        Policy</a>
-                    </li>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-sm-3 ">
-                <h5>Share on Social Media</h5>
-                <ul class="nav">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                            class="bi bi-linkedin me-2"></i></a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                            class="bi bi-twitter me-2"></i></a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
-                            class="bi bi-facebook me-2"></i></a></li>
-                </ul>
-            </div>
-
-
-            <div class="col-md-5 offset-md-1 mb-3">
-                <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </footer>
-</div>
-</body>
-
-</html>

@@ -1,3 +1,5 @@
+//This is the code for accessibility
+
 const { test, expect } = require('@playwright/test')
 
 test('MyWebClass.org has alt text on images and label element for newsletter input', async ({ page }) => {

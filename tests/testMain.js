@@ -14,5 +14,5 @@ test('Test Case 2: Accepting Privacy Policy', async () => {
             await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
             await page.getByRole('button', { name: 'Agree', exact: true }).click();
 
-            expect(page1.url()).toContain('MyWebClass');
+            expect(page1.url()).toContain('mywebclass-simulation');
 });

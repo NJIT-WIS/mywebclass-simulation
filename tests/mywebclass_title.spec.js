@@ -12,3 +12,10 @@ test('Test Case 1: check privacy policy', async ({ page }) => {
     //await page.goto('http://localhost:3000')
     //await expect(page).toHaveTitle('MyWebClass.org')
 })
+
+test('Test Case 2: Accepting Privacy Policy', async () => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    const page1Promise = page.waitForNavigation();
+
+    expect(page1.url()).toContain('https://kaanismet.github.io/mywebclass-simulation/');

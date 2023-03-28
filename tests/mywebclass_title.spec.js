@@ -74,3 +74,12 @@ test('Test Case 9: Access the Develop and curate', async ({ page }) => {
 
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/content.html#section1');
 });
+
+test('Test Case 10: Access the Create a web forum', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Content Template' }).click();
+    await page.getByRole('link', { name: 'Create a web co...' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/content.html#section2');
+});

@@ -4,18 +4,21 @@ This log is to track issue title,story points, issue link, status, assigned to, 
 
 | Issue Title          | Story Points |   Issue Link |    Status | Assigned to |  Assigned on | Completed on |        Category | Status notes |
 |:---------------------|:------------:|-------------:|----------:|------------:|-------------:|-------------:|----------------:|------------:|
-| Homepage Development |      5       |              | Completed | Suman S Mhalsank,Srinivas Bojja | 25 March '23 | 25 March '23 | Website Feature | Made Changes to the weclass simulation |
-| Automated Testing    |      2       |              | Completed | Suman S Mhalsank | 25 March '23 | 25 March '23 |  Research | Performed research on automated testing, Specifically Playwright |
-|  Accesibility Research and Implementation  | 2 |   |Completed | Suman S Mhalsank | 25 March '23 | 25 March '23 |Research and Testing|  Did research on what accessibility is, how to perform and wrote playwright test |
-|Internationalization Research and Implementation | 2 |   | Completed| Suman S Mhalsank | 25 March '23 |26 March '23| Research and Testing |Did research on what internationalization is, how to perform and wrote playwright test |
-|SEO Research and Implementation | 2 |. | Completed| Suman S Mhalsank| 25 March '23 | 27 March '23 |Research and Testing | learned about SEO and wrote playwright tests|
-|Devops Initial Setup|1 |.  |Completed| Srinivas Bojja| 25 March '23| 25 March '23 | Initial | Changed docker repo names and json files|
-|Google Analytics| 2 |. |Completed | Suman S Mhalsank | 25 March '23 | 27 March '23 | Research and Testing | Made the setup on Google Analytics Intial page and wrote playwright test|
-|Legal Privacy Policy| 2 |  | Completed| Harshith Reddy| 25 March '23 | 26 March '23 |Research and Testing | Read about privacy policies  and wrote playwright test to check if a website has a policy |
-|Wiki for Automated Testing| 1 |. |Completed | Suman S Mhalsank| 27 March '23| 27 March '23| Documentation| wrote about testing, attached github link|
-|Wiki for Web accessibility|1 |.   |Completed| Harshith Reddy| |27 March '23|27 March '23|Documentation| wrote about accessibility, attached github link|
-|Wiki for Legal Compliance|1 | |Completed| Srinivas Bojja| 27 March '23|27 March '23|Documentation|wrote about legal compliance, attached github link|
-|Wiki for Agile Development|1 | |Completed| Srinivas Bojja| 27 March '23|27 March '23|Documentation|wrote about agile, attached github link|
-|Wiki for GDPR |1 | |Completed| Srinivas Bojja| 27 March '23|27 March '23|Documentation|wrote about GDPR, How we follow it, attached github link|
-|GDPR Research and Implementation| 2 || Completed | Srinivas Bojja| 25 March '23| 27 March '23| Research and Testing| added gdpr guidelines to policy and wrote a playwright test|
-|
+| Homepage Development |      5       |  [link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/1 )       | Completed | Suman S Mhalsank,Srinivas Bojja | 25 March '23 | 25 March '23 | Website Feature | Made Changes to the weclass simulation |
+| Automated Testing    |      2       |     [link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/2)       | Completed | Suman S Mhalsank | 25 March '23 | 25 March '23 |  Research | Performed research on automated testing, Specifically Playwright |
+|  Accesibility Research and Implementation  | 2 | [link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/3)  |Completed | Suman S Mhalsank | 25 March '23 | 25 March '23 |Research and Testing|  Did research on what accessibility is, how to perform and wrote playwright test |
+|Internationalization Research and Implementation | 2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/4)   | Completed| Suman S Mhalsank | 25 March '23 |26 March '23| Research and Testing |Did research on what internationalization is, how to perform and wrote playwright test |
+|SEO Research and Implementation | 2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/5) | Completed| Suman S Mhalsank| 25 March '23 | 27 March '23 |Research and Testing | learned about SEO and wrote playwright tests|
+|Devops Initial Setup|1 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/7)  |Completed| Srinivas Bojja| 25 March '23| 25 March '23 | Initial | Changed docker repo names and json files|
+|Google Analytics| 2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/9) |Completed | Suman S Mhalsank | 25 March '23 | 27 March '23 | Research and Testing | Made the setup on Google Analytics Intial page and wrote playwright test|
+|Legal Privacy Policy| 2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/14)  | Completed| Harshith Reddy| 25 March '23 | 26 March '23 |Research and Testing | Read about privacy policies  and wrote playwright test to check if a website has a policy |
+|Wiki for Automated Testing| 2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/17)  |Completed | Suman S Mhalsank| 27 March '23| 27 March '23| Documentation| wrote about testing, attached github link|
+|Wiki for Web accessibility|2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/22)  |Completed| Harshith Reddy| |27 March '23|27 March '23|Documentation| wrote about accessibility, attached github link|
+|Wiki for Legal Compliance|2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/23)|Completed| Srinivas Bojja| 27 March '23|27 March '23|Documentation|wrote about legal compliance, attached github link|
+|Wiki for Agile Development|2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/35) |Completed| Srinivas Bojja| 27 March '23|27 March '23|Documentation|wrote about agile, attached github link|
+|Wiki for GDPR |2 | [link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/36)|Completed| Srinivas Bojja| 27 March '23|27 March '23|Documentation|wrote about GDPR, How we follow it, attached github link|
+|GDPR Research and Implementation| 2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/26)| Completed | Srinivas Bojja| 25 March '23| 27 March '23| Research and Testing| wrote a playwright test to check if the website follows gdpr guidleines|
+|Privacy Policy|2 |[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/28) |Completed| Harshith Reddy| 26 March '23| 27 March '23| Documentation| Added GDPR guidelines to privacy policy of website|
+|Fixed Bug| 2 | [link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/29) |Completed| Harshith Reddy| 27 March '23|27 March '23| Bug Fixed | Fixed the bug of Internationalization test|
+Load Performance | 2 | [link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/33)|Completed| Srinivas Bojja| 27 March '23| 27 March '23| Research and Testing| wrote playwright test for measuring the performance load|
+|Wiki for Internationalization| 2|[link](https://github.com/Sumanmhalsank02/mywebclass-simulation/issues/38) |Completed |Harshith Reddy| 27 March '23| 27 March '23| Documentation| wrote about internationalization and added github link|

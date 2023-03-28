@@ -27,8 +27,10 @@ function createPrivacyModal () {
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title">Privacy Policy</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <h5 class="modal-title">Privacy Policy</h5>
+            <button aria-label="Close Popup" type="button" class="btn-close" data-bs-dismiss="modal">
+              <span class="visually-hidden">Close Popup</span>
+            </button>
           </div>
           <div class="modal-body">
             <p>Please read our <a href="privacy.html" target="_blank">Privacy Policy</a> carefully before using our website.</p>
@@ -106,6 +108,5 @@ function loadGoogleAnalytics () {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  createPrivacyModal()
   loadGoogleAnalytics()
 })

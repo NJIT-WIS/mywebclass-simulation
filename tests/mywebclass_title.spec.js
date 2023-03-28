@@ -42,7 +42,31 @@ test('Test Case 5: Click on Resources', async ({ page }) => {
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/resources.html');
 });
 
-test('Test Case 6: Access the Develop and curate', async ({ page }) => {
+test('Test Case 6: Click on Forum', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Forum' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/forum.html');
+});
+
+test('Test Case 7: Click on Courses', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Courses' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/courses.html');
+});
+
+test('Test Case 8: Click on Career', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Career' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/career.html');
+});
+
+test('Test Case 9: Access the Develop and curate', async ({ page }) => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
     await page.getByRole('button', { name: 'Agree', exact: true }).click();
     await page.getByRole('link', { name: 'Content Template' }).click();

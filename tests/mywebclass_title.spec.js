@@ -38,6 +38,7 @@ test('Test Case 5: Click on Privacy Policy', async ({ page }) => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
     await page.getByRole('button', { name: 'Agree', exact: true }).click();
     //await page.getByLabelText('link', { name: 'Privacy Policy' }).click();
+    await page.waitForSelector('#footer a[title="Privacy Policy"]');
     await page.click('#footer a[title="Privacy Policy"]');
 
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/privacy.html');

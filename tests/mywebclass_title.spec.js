@@ -83,3 +83,21 @@ test('Test Case 10: Access the Create a web forum', async ({ page }) => {
 
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/content.html#section2');
 });
+
+test('Test Case 11: Access the Offer online courses', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Content Template' }).click();
+    await page.getByRole('link', { name: 'Offer online co...' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/content.html#section3');
+});
+
+test('Test Case 12: Access the Provide Resources', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Content Template' }).click();
+    await page.getByRole('link', { name: 'Provide resourc...' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/content.html#section4');
+});

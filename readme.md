@@ -41,7 +41,8 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 1. [Part 1 - Getting Ready for Project 1](https://youtu.be/b60nwHeJjrQ)
 2. [Part 2 - Lean and Using ChatGPT for The Project ](https://youtu.be/EZMRNybUtUI)
 3. [Part 3 - Project Introduction](https://youtu.be/FkPZDFmGuys)
-4. TBD
+4. [Part 4 - Getting Ready for Project 2](https://youtu.be/ZiQIheh5xb4)
+5. [Part 4a - Playwright and LightHouse Action](https://youtu.be/JiIp0NxvHlU)
 
 # Project Setup
 ## I am giving you my code; howevever, you should replace what I did with your own work.  Feel free to choose another CSS framework; howevever, you must complete the project simulation's requirements. 
@@ -61,5 +62,14 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 - Sprint 3 - Building a CMS
 - Sprint 4 - TBD
 
+## Team: 
+- [Jan Chris Tacbianan](https://github.com/jccjcat)
+- [Faran Chaudhry](https://github.com/Faranch)
+- [Rachel Stone](https://github.com/rstone1214)
 
-# ADD YOUR PROJECT LINKS BELOW THIS 
+## Project Links:
+- [Project Board](https://github.com/users/jccjcat/projects/2)
+- [Issues](https://github.com/jccjcat/mywebclass-simulation/issues)
+- [Project Management Documentation](documentation/project-management/project-management.md)
+- [Deployment Instructions](documentation/development/deployment-instructions.md)
+- [Installation Instructions](documentation/development/installation-instructions.md)

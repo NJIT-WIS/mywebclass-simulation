@@ -47,7 +47,7 @@ test('Test Case 5: Access the Develop and curate', async ({ page }) => {
 test('Test Case 6: Click on Resources', async ({ page }) => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
     await page.getByRole('button', { name: 'Agree', exact: true }).click();
-    await page.getByRole('link', { name: 'Content Template' }).click();
+    await page.getByRole('link', { name: 'Resources' }).click();
 
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/resources.html');
 });

@@ -73,4 +73,5 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 - [Issues](https://github.com/ahg3/mywebclass-simulation/issues)
 - [Project Management Documentation](documentation/install_instructions.md)
 - [Project Board](https://github.com/users/ahg3/projects/2/views/1?layout=board)
-- [MyWebClass - Simulation Installation Instructions](https://github.com/ahg3/mywebclass-simulation/wiki/How-to-Install-and-Deploy-MyWebClass---Simulation)
+- [MyWebClass - Simulation Installation Instructions](https://github.com/ahg3/mywebclass-simulation/wiki/How-to-Install-MyWebClass-Simulation)
+- [MyWebClass - Simulation Deployment Instructions](https://github.com/ahg3/mywebclass-simulation/wiki/How-to-Setup-Deployment-Server-and-Deploy-to-Github-Pages)

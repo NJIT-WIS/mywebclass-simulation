@@ -20,7 +20,6 @@ window.addEventListener('resize', () => {
     allPage.initialize()
   }, 250)
 })
-
 function createPrivacyModal () {
   const modalHtml = `
     <div class="modal fade" id="privacyModal" tabindex="-1">
@@ -108,4 +107,54 @@ function loadGoogleAnalytics () {
 document.addEventListener('DOMContentLoaded', () => {
   createPrivacyModal()
   loadGoogleAnalytics()
+})
+
+function createCookieBanner() {
+  const bannerHtml = `
+    <div class="cookie-banner">
+      <p>We use cookies to improve your browsing experience. By using our site, you agree to our <a href="cookie-policy.html" target="_blank">Cookie Policy</a>.</p>
+      <div class="cookie-banner-actions">
+        <button class="btn btn-primary accept">Accept</button>
+        <button class="btn btn-secondary reject">Reject</button>
+        <a href="cookie-policy.html" target="_blank" class="btn btn-link learn-more">Learn More</a>
+      </div>
+    </div>
+  `
+  // Append the banner HTML to the body of the document
+  document.body.insertAdjacentHTML('beforeend', bannerHtml)
+}
+
+function initializeCookieBanner() {
+  const banner = document.querySelector('.cookie-banner')
+    const acceptBtn = document.querySelector('.cookie-banner .accept')
+  const rejectBtn = document.querySelector('.cookie-banner .reject')
+
+  // Check if the user has already given consent
+  const consent = localStorage.getItem('cookieConsent')
+  if (consent === 'accepted' || consent === 'rejected') {
+    banner.style.display = 'none'
+  } else {
+    banner.style.display = 'block'
+  }
+
+  // Handle the click event on the Accept button
+  acceptBtn.addEventListener('click', () => {
+    // Remember the user's choice
+    localStorage.setItem('cookieConsent', 'accepted')
+    // Hide the banner
+    banner.style.display = 'none'
+  })
+
+  // Handle the click event on the Reject button
+  rejectBtn.addEventListener('click', () => {
+    // Remember the user's choice
+    localStorage.setItem('cookieConsent', 'rejected')
+    // Hide the banner
+    banner.style.display = 'none'
+  })
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  createCookieBanner()
+  initializeCookieBanner()
 })

@@ -34,6 +34,13 @@ test('Test Case 4: Click on Our Story', async ({ page }) => {
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/story.html');
 });
 
+test('Test Case 5: Click on Privacy Policy', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Privacy Policy' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/privacy.html');
+});
 /*
 test('Test Case 5: Click on Privacy Policy', async ({ page }) => {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
@@ -44,7 +51,7 @@ test('Test Case 5: Click on Privacy Policy', async ({ page }) => {
 
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/privacy.html');
 });
-*/
+
 test('Test Case 5: Click on Privacy Policy', async ({ page }) => {
   try {
     await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
@@ -59,3 +66,4 @@ test('Test Case 5: Click on Privacy Policy', async ({ page }) => {
     console.error(error);
   }
 });
+*/

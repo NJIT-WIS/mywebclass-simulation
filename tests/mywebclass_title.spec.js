@@ -101,3 +101,12 @@ test('Test Case 12: Access the Provide Resources', async ({ page }) => {
 
     expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/content.html#section4');
 });
+
+test('Test Case 13: Access the Web Development Resources', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Resources' }).click();
+    await page.getByRole('link', { name: 'Web Development...' }).click();
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/resources.html');
+});

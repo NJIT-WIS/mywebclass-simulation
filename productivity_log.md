@@ -10,8 +10,13 @@
 | Update productivity log      | 1            | [link](https://github.com/your-username/repo-name/issues/14)        | Completed | @KaanIsmet  | 2023-03-27  | 2023-03-27   | Project Management | Updating the productivity log                    |
 | Edited navbar for all pages  | 3            | [link](https://github.com/your-username/repo-name/issues/16)        | Completed | @allieyijia | 2023-03-27  | 2023-03-27   | Frontend           | Edit all the nav bars                            |
 | Update productivity log      | 1            | [link](https://github.com/your-username/repo-name/issues/17)        | Completed | @KaanIsmet  | 2023-03-27  | 2023-03-27   | Project Management | Updating the productivity log                    |
-| Run tests                    | 2            | [link](https://github.com/your-username/repo-name/issues/18)        | Completed | @KaanIsmet  | 2023-03-27  | 2023-03-27   | Devops             | Updating the productivity log                    |
-| Make more tests              | 3            | [link](https://github.com/your-username/repo-name/issues/24)        | Completed | @ZachGG421  | 2023-03-27  | 2023-03-27   | Devops             | Updating the productivity log                    |
-| Make by Author a proper link | 1            | [link](https://github.com/your-username/repo-name/issues/27)        | Completed | @KaanIsmet  | 2023-03-27  | 2023-03-27   | Frontend           | Updating the productivity log                    |
+| Run tests                    | 2            | [link](https://github.com/your-username/repo-name/issues/18)        | Completed | @KaanIsmet  | 2023-03-27  | 2023-03-27   | Devops             | Ran tests                                        |
+| Make more tests              | 3            | [link](https://github.com/your-username/repo-name/issues/24)        | Completed | @ZachGG421  | 2023-03-27  | 2023-03-27   | Devops             | Made more playwright tests                       |
+| Make by Author a proper link | 1            | [link](https://github.com/your-username/repo-name/issues/27)        | Completed | @KaanIsmet  | 2023-03-27  | 2023-03-27   | Frontend           | Fix the by Author link                           |
 | Update productivity log      | 1            | [link](https://github.com/your-username/repo-name/issues/28)        | Completed | @KaanIsmet  | 2023-03-27  | 2023-03-27   | Project Management | Updating the productivity log                    |
+| Add pages                    | 4            | [link](https://github.com/your-username/repo-name/issues/21)        | Completed | @allieyijia | 2023-03-27  | 2023-03-27   | Frontend           | Added all the pages                              |
+| I am employer button bug     | 1            | [link](https://github.com/your-username/repo-name/issues/37)        | Completed | @KaanIsmet  | 2023-03-27  | 2023-03-27   | Frontend           | Fixed the I am Employer button bug               |
+| Update productivity log      | 1            | [link](https://github.com/your-username/repo-name/issues/40)        | Completed | @KaanIsmet  | 2023-03-27  | 2023-03-27   | Project Management | Updating the productivity log                    |
+
+
 

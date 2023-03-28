@@ -67,3 +67,13 @@ test('Test Case 5: Click on Privacy Policy', async ({ page }) => {
   }
 });
 */
+
+test('Test Case 6: Access the Develop and curate', async ({ page }) => {
+    await page.goto('https://kaanismet.github.io/mywebclass-simulation/');
+    await page.getByRole('button', { name: 'Agree', exact: true }).click();
+    await page.getByRole('link', { name: 'Content Template' }).click();
+    await page.getByRole('link', { name: 'Develop and cur...' }).click();
+
+
+    expect(page.url()).toBe('https://kaanismet.github.io/mywebclass-simulation/content.html#section1');
+});

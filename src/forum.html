@@ -4,7 +4,7 @@
 <head>
     <!--characterset UTF-8 Watch this: https://youtu.be/MijmeoH9LT4 -->
 
-    <title>MyWebClass.org</title>
+    <title>MyWebClass.org | Forum </title>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="scss/styles.scss">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/forum.css">
 
     <!--Basic meta info -->
-    <meta name="keywords" content="My Webclass Homepage">
+    <meta name="keywords" content="My Webclass | Forum">
     <meta name="author" content="Allie He, Zach Garcia, Kaan Okul"/>
     <meta name="description" content="A project that creates a hub to help web developers">
 
@@ -60,18 +61,34 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4">
+        <section id="title">
+            <h1 class="fw-bold border-bottom">Web Development Resources</h1>
+        </section>
         <div class="container my-5">
-                    <h1 class="display-6 fw-bold lh-1">The only web development hub you'll need!</h1>
-                    <p class="lead">This is an educational hub website for web developers to access high-quality content and 
-                        resources, to learn, grow, and share their knowledge. While also creating a more 
-                        engaged and connected web development community that provides ongoing benefits to web developers.</p>
-                        <a href="resources.html">
-                            <button type="button" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">I am an employer</button>
-                        </a> 
-                    </div>
-                </div>
-            </div>
+
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+              </form>
+
+              <section>
+                <h2>Recent Posts</h2>
+                <ul class="post-list">
+                  <li>
+                    <h3>Post Title 1</h3>
+                    <p>Post Content 1</p>
+                  </li>
+                  <li>
+                    <h3>Post Title 2</h3>
+                    <p>Post Content 2</p>
+                  </li>
+                  <li>
+                    <h3>Post Title 3</h3>
+                    <p>Post Content 3</p>
+                  </li>
+                </ul>
+              </section>
         </div>
     </main>
     <footer class="py-5 container">

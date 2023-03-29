@@ -1,6 +1,6 @@
 
 ## Team Productivity Log
-This log is to track issue title,story points, issue link, status, assigned to, assigned on, completed on, category, status notes.
+This log is to track issue title,story points, issue link, status, assigned to, assigned on, completed on, category, status notes for the entire team working on this project
 
 | Issue Title          | Story Points |   Issue Link |    Status | Assigned to |  Assigned on | Completed on |        Category | Status notes |
 |:---------------------|:------------:|-------------:|----------:|------------:|-------------:|-------------:|----------------:|------------:|
